@@ -22,9 +22,9 @@ public class BirdScript : MonoBehaviour {
 
 	void Awake()
 	{
-		if (true)
+		if (instance == null)
 		{
-			
+			instance = this;
 		}
 	}
 
