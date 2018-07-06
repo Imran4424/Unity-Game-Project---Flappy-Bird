@@ -48,5 +48,13 @@ public class BirdScript : MonoBehaviour {
 			temp.x += forwardSpeed * Time.deltaTime;
 			transform.position = temp;
 		}
+
+		if (didFlap)
+		{
+			didFlap = false;
+
+			myRigidBody.velocity = new Vector2(0,bounceSpeed);
+			anim.SetTrigger("Flap");
+		}
 	}
 }
