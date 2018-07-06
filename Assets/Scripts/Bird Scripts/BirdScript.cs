@@ -60,6 +60,6 @@ public class BirdScript : MonoBehaviour {
 
 	public void FlapTheBird()
 	{
-		
+		didFlap = true;
 	}
 }
