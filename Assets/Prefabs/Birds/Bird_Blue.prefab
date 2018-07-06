@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95648176719982790}
   - component: {fileID: 58219015739219334}
   - component: {fileID: 50713507995166944}
+  - component: {fileID: 114293974105680162}
   m_Layer: 11
   m_Name: Bird_Blue
   m_TagString: Player
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1324709035529192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.64, y: 3.38, z: 0}
+  m_LocalPosition: {x: -4.84, y: 0.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,6 +96,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114293974105680162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324709035529192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4ce4db5fa7d4f4881ea050efc27a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigidBody: {fileID: 50713507995166944}
+  anim: {fileID: 95648176719982790}
+  isAlive: 0
 --- !u!212 &212217706205077986
 SpriteRenderer:
   m_ObjectHideFlags: 1
