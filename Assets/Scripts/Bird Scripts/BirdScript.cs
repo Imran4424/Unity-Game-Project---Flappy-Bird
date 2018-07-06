@@ -26,6 +26,8 @@ public class BirdScript : MonoBehaviour {
 		{
 			instance = this;
 		}
+
+		isAlive = true;
 	}
 
 	// Use this for initialization
