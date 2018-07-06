@@ -12,7 +12,7 @@ public class BirdScript : MonoBehaviour {
 	[SerializeField]
 	private Animator anim;
 
-	private float forwardspeed;
+	private float forwardSpeed;
 
 	private float bouncespeed;
 
