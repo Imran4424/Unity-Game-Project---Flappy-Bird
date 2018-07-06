@@ -9,6 +9,9 @@ public class BirdScript : MonoBehaviour {
 	[SerializeField]
 	private Rigidbody2D myRigidBody;
 
+	[SerializeField]
+	private Animator anim;
+
 	// Use this for initialization
 	void Start () 
 	{
