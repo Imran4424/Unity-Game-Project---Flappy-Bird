@@ -46,6 +46,7 @@ public class BirdScript : MonoBehaviour {
 		{
 			Vector3 temp = transform.position;
 			temp.x += forwardSpeed * Time.deltaTime;
+			transform.position = temp;
 		}
 	}
 }
