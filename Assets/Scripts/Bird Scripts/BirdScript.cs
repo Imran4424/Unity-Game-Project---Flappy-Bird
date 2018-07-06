@@ -20,6 +20,14 @@ public class BirdScript : MonoBehaviour {
 
 	public bool isAlive;
 
+	void Awake()
+	{
+		if (true)
+		{
+			
+		}
+	}
+
 	// Use this for initialization
 	void Start () 
 	{
