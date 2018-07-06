@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour {
 
+	public static BirdScript instance;
+
 	// Use this for initialization
 	void Start () 
 	{
