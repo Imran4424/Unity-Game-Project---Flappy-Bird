@@ -39,4 +39,9 @@ public class BirdScript : MonoBehaviour {
 	{
 		
 	}
+
+	void FixedUpdate()
+	{
+		
+	}
 }
