@@ -57,4 +57,9 @@ public class BirdScript : MonoBehaviour {
 			anim.SetTrigger("Flap");
 		}
 	}
+
+	public void FlapTheBird()
+	{
+		
+	}
 }
