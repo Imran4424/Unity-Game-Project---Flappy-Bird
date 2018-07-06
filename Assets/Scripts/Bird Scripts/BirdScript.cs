@@ -6,6 +6,9 @@ public class BirdScript : MonoBehaviour {
 
 	public static BirdScript instance;
 
+	[SerializeField]
+	private Rigidbody2D myRigidBody;
+
 	// Use this for initialization
 	void Start () 
 	{
