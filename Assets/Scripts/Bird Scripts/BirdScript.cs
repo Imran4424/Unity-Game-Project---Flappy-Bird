@@ -16,7 +16,7 @@ public class BirdScript : MonoBehaviour {
 
 	private float bounceSpeed;
 
-	private bool didFla
+	private bool didFlap;
 
 	// Use this for initialization
 	void Start () 
