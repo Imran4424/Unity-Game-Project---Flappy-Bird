@@ -12,6 +12,8 @@ public class BirdScript : MonoBehaviour {
 	[SerializeField]
 	private Animator anim;
 
+	
+
 	// Use this for initialization
 	void Start () 
 	{
