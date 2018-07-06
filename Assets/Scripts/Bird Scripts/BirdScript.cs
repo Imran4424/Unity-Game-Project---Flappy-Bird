@@ -18,6 +18,8 @@ public class BirdScript : MonoBehaviour {
 
 	private bool didFlap;
 
+	public bool isAlive;
+
 	// Use this for initialization
 	void Start () 
 	{
