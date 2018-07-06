@@ -42,6 +42,10 @@ public class BirdScript : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		
+		if (isAlive)
+		{
+			Vector3 temp = transform.position;
+			temp.x += forwardSpeed * Time.deltaTime;
+		}
 	}
 }
