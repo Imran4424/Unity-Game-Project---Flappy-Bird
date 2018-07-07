@@ -46,6 +46,10 @@ public class PipeCollector : MonoBehaviour
 
 			temp.x = lastPipeX + distance;
 			temp.y = Random.Range (pipeMin, pipeMax);
+
+			target.transform.position = temp;
+
+			lastPipeX = temp.x;
 		}
 	}
 }
