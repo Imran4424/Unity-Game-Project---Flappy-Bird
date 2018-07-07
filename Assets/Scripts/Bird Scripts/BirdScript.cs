@@ -124,6 +124,7 @@ public class BirdScript : MonoBehaviour {
 		if (target.tag == "PipeHolder")
 		{
 			audioSC.PlayOneShot(pointClip);
+			
 		}
 	}
 }
