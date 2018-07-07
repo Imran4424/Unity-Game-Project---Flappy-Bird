@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PipeCollector : MonoBehaviour {
 
+	private GameObject[] pipeHolders;
+
 	// Use this for initialization
 	void Start () {
 		
