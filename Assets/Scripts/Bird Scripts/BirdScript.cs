@@ -64,6 +64,11 @@ public class BirdScript : MonoBehaviour {
 			myRigidBody.velocity = new Vector2(0,bounceSpeed);
 			anim.SetTrigger("Flap");
 		}
+
+		if (true)
+		{
+			
+		}
 	}
 
 	public void FlapTheBird()
