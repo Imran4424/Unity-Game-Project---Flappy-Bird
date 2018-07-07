@@ -40,6 +40,11 @@ public class BGCollector : MonoBehaviour
 
 	}
 
+	void Update()
+	{
+		
+	}
+
 	void OnTriggerEnter2D (Collider2D target)
 	{
 		if (target.tag == "Background")

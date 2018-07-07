@@ -38,6 +38,24 @@ public class PipeCollector : MonoBehaviour
 		}
 	}
 
+	/*
+		must have start function in your code unless it will give problem
+	*/
+
+	void Start ()
+	{
+
+	}
+
+	/*
+		must have update function in your code unless it will give problem
+	*/
+
+	void Update ()
+	{
+
+	}
+
 	void OnTriggerEnter2D (Collider2D target)
 	{
 		if (target.tag == "PipeHolder")
