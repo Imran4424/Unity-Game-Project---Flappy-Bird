@@ -65,9 +65,15 @@ public class BirdScript : MonoBehaviour {
 			anim.SetTrigger("Flap");
 		}
 
-		if (true)
+		if (myRigidBody.velocity.y >= 0)
 		{
-			
+			transform.rotation = Quaternion.Euler(0,0,0);
+		}
+		else
+		{
+			float angle = 0;
+			angle = Mathf.Lerp(0, -90, -myRigidBody.velocity.y / 7);
+			transform.rotation = Quaternion(0,0,angle);
 		}
 	}
 
