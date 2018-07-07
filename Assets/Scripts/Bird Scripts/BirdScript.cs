@@ -104,4 +104,26 @@ public class BirdScript : MonoBehaviour {
 	{
 		didFlap = true;
 	}
+
+	void OnCollisionEnter2D(Collision2D target)
+	{
+		if (target.gameObject.tag == "Ground" || target.gameObject.tag == "Pipe")
+		{
+			if (isAlive)
+			{
+				isAlive = false;
+				anim.SetTrigger("Bird Died");
+
+				audioSC.PlayOneShot(diedClip);
+			}
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D target)
+	{
+		if (target.tag == "PipeHolder")
+		{
+			audioSC.PlayOneShot(pointClip);
+		}
+	}
 }
