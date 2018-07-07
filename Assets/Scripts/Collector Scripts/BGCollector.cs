@@ -7,6 +7,14 @@ public class BGCollector : MonoBehaviour {
 	private GameObject[] backgrounds;
 	private GameObject[] grounds;
 
+	private float lastBGX;
+	private float lastGroundX;
+
+	void Awake()
+	{
+		backgrounds =
+	}
+
 	// Use this for initialization
 	void Start () {
 		
