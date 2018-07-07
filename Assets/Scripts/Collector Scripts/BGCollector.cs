@@ -25,6 +25,11 @@ public class BGCollector : MonoBehaviour
 			{
 				lastBGX = backgrounds[i].transform.position.x;
 			}
+
+			if (lastGroundX < grounds[i].transform.position.x)
+			{
+				lastGroundX = grounds[i].transform.position.x;
+			}
 		}
 
 	}
@@ -35,9 +40,5 @@ public class BGCollector : MonoBehaviour
 
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
-
-	}
+	
 }
