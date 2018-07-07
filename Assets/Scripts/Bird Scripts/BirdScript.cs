@@ -81,7 +81,7 @@ public class BirdScript : MonoBehaviour {
 
 	void SetCamerasX()
 	{
-		CameraScript.o
+		CameraScript.offsetX = (Camera.main.transform.position.x - transform.position.x) - 1f;
 	}
 
 	public float GetPositionX()
