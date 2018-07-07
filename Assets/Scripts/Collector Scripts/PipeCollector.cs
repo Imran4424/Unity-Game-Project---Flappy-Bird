@@ -38,8 +38,14 @@ public class PipeCollector : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D target)
+	void OnTriggerEnter2D (Collider2D target)
 	{
-		
+		if (target.tag == "PipeHolder")
+		{
+			Vector3 temp = target.transform.position;
+
+			temp.x = lastPipeX + distance;
+			temp.y = Random.Range (pipeMin, pipeMax);
+		}
 	}
 }
