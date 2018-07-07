@@ -320,6 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399759801}
   - component: {fileID: 399759802}
+  - component: {fileID: 399759803}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -384,6 +385,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &399759803
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399759800}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &413147072
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +449,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &413147074
 Transform:
@@ -479,7 +505,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &448172751
 Transform:
@@ -535,7 +561,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &457830139
 Transform:
@@ -561,6 +587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508381158}
   - component: {fileID: 508381159}
+  - component: {fileID: 508381160}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -625,6 +652,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &508381160
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 508381157}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &553312423
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +902,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &761285478
 Transform:
@@ -975,6 +1027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830886581}
   - component: {fileID: 830886582}
+  - component: {fileID: 830886583}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -1039,6 +1092,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &830886583
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 830886580}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &879704244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 879704245}
   - component: {fileID: 879704246}
+  - component: {fileID: 879704247}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -1112,6 +1191,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &879704247
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879704244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &886943135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886943136}
   - component: {fileID: 886943137}
+  - component: {fileID: 886943138}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -1185,6 +1290,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &886943138
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886943135}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &900079383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900079384}
   - component: {fileID: 900079385}
+  - component: {fileID: 900079386}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -1258,6 +1389,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &900079386
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900079383}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &955708616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1651,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &977647368
 Transform:
@@ -1620,6 +1776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1009851907}
   - component: {fileID: 1009851908}
+  - component: {fileID: 1009851909}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -1684,6 +1841,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1009851909
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009851906}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1075486214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +2004,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &1089020853
 Transform:
@@ -2048,6 +2230,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1186667610}
+--- !u!1 &1295020208 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1895077234584998, guid: 5558f8e6cee87494daaf892187d3a673,
+    type: 2}
+  m_PrefabInternal: {fileID: 1970638144}
+--- !u!61 &1295020209
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1295020208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1320518730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320518731}
   - component: {fileID: 1320518732}
+  - component: {fileID: 1320518733}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -2121,6 +2334,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1320518733
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320518730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1332474180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2398,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &1332474182
 Transform:
@@ -2186,6 +2424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337506670}
   - component: {fileID: 1337506671}
+  - component: {fileID: 1337506672}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -2250,6 +2489,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1337506672
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1337506669}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1382562182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +2523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382562183}
   - component: {fileID: 1382562184}
+  - component: {fileID: 1382562185}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -2323,6 +2588,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1382562185
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382562182}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1452962297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,6 +2622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452962298}
   - component: {fileID: 1452962299}
+  - component: {fileID: 1452962300}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -2396,6 +2687,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1452962300
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452962297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1457942435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,6 +2820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469876286}
   - component: {fileID: 1469876287}
+  - component: {fileID: 1469876288}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -2568,6 +2885,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1469876288
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469876285}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1484886568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484886569}
   - component: {fileID: 1484886570}
+  - component: {fileID: 1484886571}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -2641,6 +2984,61 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1484886571
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484886568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
+--- !u!1 &1532492067 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1887193794827482, guid: 5558f8e6cee87494daaf892187d3a673,
+    type: 2}
+  m_PrefabInternal: {fileID: 1970638144}
+--- !u!61 &1532492068
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532492067}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1547673498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809420486}
   - component: {fileID: 1809420487}
+  - component: {fileID: 1809420488}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -3276,6 +3675,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1809420488
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809420485}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1811365909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,6 +3709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811365910}
   - component: {fileID: 1811365911}
+  - component: {fileID: 1811365912}
   m_Layer: 12
   m_Name: Pipe_Green reverse
   m_TagString: Pipe
@@ -3349,6 +3774,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1811365912
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811365909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1828004519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852301722}
   - component: {fileID: 1852301723}
+  - component: {fileID: 1852301724}
   m_Layer: 12
   m_Name: Pipe_Green
   m_TagString: Pipe
@@ -3517,6 +3968,31 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!61 &1852301724
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852301721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91, y: 6.21}
+    newSize: {x: 0.91, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1 &1894224098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,7 +4032,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 5}
+  m_Size: {x: 0.35, y: 4}
   m_EdgeRadius: 0
 --- !u!4 &1894224100
 Transform:
@@ -3699,6 +4175,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 61853306018674100, guid: 5558f8e6cee87494daaf892187d3a673,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5558f8e6cee87494daaf892187d3a673, type: 2}
   m_IsPrefabParent: 0
@@ -3751,6 +4232,11 @@ Prefab:
       propertyPath: audioSC
       value: 
       objectReference: {fileID: 1990537829}
+    - target: {fileID: 58219015739219334, guid: c340b1d51d1f6034cac2fe53c3d397e8,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c340b1d51d1f6034cac2fe53c3d397e8, type: 2}
   m_IsPrefabParent: 0
