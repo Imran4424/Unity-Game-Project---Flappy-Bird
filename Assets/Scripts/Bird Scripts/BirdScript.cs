@@ -28,6 +28,8 @@ public class BirdScript : MonoBehaviour {
 	[SerializeField]
 	private AudioClip flapClip, pointClip, diedClip;
 
+	public int score;
+
 	void Awake()
 	{
 		if (instance == null)
@@ -40,7 +42,7 @@ public class BirdScript : MonoBehaviour {
 		flapButton = GameObject.FindGameObjectWithTag("FlapButton").GetComponent<Button> ();
 		flapButton.onClick.AddListener(() => FlapTheBird());
 
-
+		score = 0;
 		SetCamerasX();
 	}
 
@@ -123,6 +125,7 @@ public class BirdScript : MonoBehaviour {
 	{
 		if (target.tag == "PipeHolder")
 		{
+			score++;
 			audioSC.PlayOneShot(pointClip);
 		}
 	}
