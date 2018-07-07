@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BGCollector : MonoBehaviour {
 
+	private GameObject[] backgrounds;
+	private GameObject[] grounds;
+
 	// Use this for initialization
 	void Start () {
 		
