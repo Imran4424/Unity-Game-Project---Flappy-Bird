@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PipeCollector : MonoBehaviour {
+public class PipeCollector : MonoBehaviour
+{
 
 	private GameObject[] pipeHolders;
 	private float distance = 3f;
@@ -13,18 +14,39 @@ public class PipeCollector : MonoBehaviour {
 	/// <summary>
 	/// Awake is called when the script instance is being loaded.
 	/// </summary>
-	void Awake()
+	void Awake ()
 	{
-		
+		pipeHolders = GameObject.FindGameObjectsWithTag ("PipeHolder");
+
+		for (int i = 0; i < pipeHolders.Length; i++)
+		{
+			Vector3 temp = pipeHolders[i].transform.position;
+
+			temp.y = Random.Range (pipeMin, pipeMax);
+
+			pipeHolders[i].transform.position = temp;
+		}
+
+		lastPipeX = pipeHolders[0].transform.position.x;
+
+		for (int i = 1; i < pipeHolders.Length; i++)
+		{
+			if (lastPipeX < pipeHolders[i].transform.position.x)
+			{
+				lastPipeX = pipeHolders[i].transform.position.x;
+			}
+		}
 	}
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+
 	}
 }
