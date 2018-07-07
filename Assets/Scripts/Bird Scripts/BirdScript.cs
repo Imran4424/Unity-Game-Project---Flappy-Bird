@@ -21,6 +21,8 @@ public class BirdScript : MonoBehaviour {
 
 	public bool isAlive;
 
+	private Button flapButton;
+
 	void Awake()
 	{
 		if (instance == null)
