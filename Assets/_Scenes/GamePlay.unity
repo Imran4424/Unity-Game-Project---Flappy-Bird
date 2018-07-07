@@ -1916,6 +1916,7 @@ GameObject:
   - component: {fileID: 1933776975}
   - component: {fileID: 1933776977}
   - component: {fileID: 1933776976}
+  - component: {fileID: 1933776978}
   m_Layer: 0
   m_Name: BG Collector
   m_TagString: Untagged
@@ -1981,6 +1982,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 20}
   m_EdgeRadius: 0
+--- !u!114 &1933776978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1933776974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbb9f5a6b24c9846a18d3456b62ca67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2042452838
 GameObject:
   m_ObjectHideFlags: 0
