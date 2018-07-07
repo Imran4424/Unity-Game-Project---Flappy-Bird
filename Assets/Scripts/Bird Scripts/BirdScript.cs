@@ -23,6 +23,11 @@ public class BirdScript : MonoBehaviour {
 
 	private Button flapButton;
 
+	[SerializeField]
+	private AudioSource audioSC;
+	[SerializeField]
+	private AudioClip flapClip, pointClip, diedClip;
+
 	void Awake()
 	{
 		if (instance == null)
@@ -63,9 +68,12 @@ public class BirdScript : MonoBehaviour {
 		if (didFlap)
 		{
 			didFlap = false;
+			audioSC.clip = flapClip;
+			audioSC.Play();
 
 			myRigidBody.velocity = new Vector2(0,bounceSpeed);
 			anim.SetTrigger("Flap");
+	
 		}
 
 		if (myRigidBody.velocity.y >= 0)

@@ -3198,6 +3198,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.16, y: 2.31}
   m_EdgeRadius: 0
+--- !u!50 &1789725316 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50713507995166944, guid: c340b1d51d1f6034cac2fe53c3d397e8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1990537828}
 --- !u!1 &1809420485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,9 +3741,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114293974105680162, guid: c340b1d51d1f6034cac2fe53c3d397e8,
+        type: 2}
+      propertyPath: myRigidBody
+      value: 
+      objectReference: {fileID: 1789725316}
+    - target: {fileID: 114293974105680162, guid: c340b1d51d1f6034cac2fe53c3d397e8,
+        type: 2}
+      propertyPath: audioSC
+      value: 
+      objectReference: {fileID: 1990537829}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c340b1d51d1f6034cac2fe53c3d397e8, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &1990537829 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82510885439324140, guid: c340b1d51d1f6034cac2fe53c3d397e8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1990537828}
 --- !u!1 &2042452838
 GameObject:
   m_ObjectHideFlags: 0
