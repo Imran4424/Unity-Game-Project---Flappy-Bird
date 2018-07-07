@@ -75,8 +75,8 @@ public class BirdScript : MonoBehaviour {
 		else
 		{
 			float angle = 0;
-			//angle = Mathf.Lerp(0, -45, -myRigidBody.velocity.y / 7);
-			angle = Mathf.Lerp(0, -55, -myRigidBody.velocity.y / 7);
+			angle = Mathf.Lerp(0, -45, -myRigidBody.velocity.y / 7);
+			//angle = Mathf.Lerp(0, -55, -myRigidBody.velocity.y / 7);
 			//angle = Mathf.Lerp(0, -90, -myRigidBody.velocity.y / 7);
 			transform.rotation = Quaternion.Euler(0,0,angle);
 		}
