@@ -7,7 +7,8 @@ public class CameraScript : MonoBehaviour {
 	public static float offsetX;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		
 	}
 	
