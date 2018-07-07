@@ -10,6 +10,14 @@ public class PipeCollector : MonoBehaviour {
 	private float pipeMin = -1.5f;
 	private float pipeMax = 2.4f;
 
+	/// <summary>
+	/// Awake is called when the script instance is being loaded.
+	/// </summary>
+	void Awake()
+	{
+		
+	}
+
 	// Use this for initialization
 	void Start () {
 		
