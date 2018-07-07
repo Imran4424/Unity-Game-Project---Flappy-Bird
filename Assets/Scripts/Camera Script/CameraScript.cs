@@ -14,7 +14,13 @@ public class CameraScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if (BirdScript.instance != null)
+		{
+			if (BirdScript.instance.isAlive)
+			{
+				MoveTheCamera();
+			}
+		}
 	}
 
 	void MoveTheCamera()
