@@ -79,6 +79,16 @@ public class BirdScript : MonoBehaviour {
 		}
 	}
 
+	void SetCamerasX()
+	{
+		CameraScript.o
+	}
+
+	public float GetPositionX()
+	{
+		return transform.position.x;
+	}
+
 	public void FlapTheBird()
 	{
 		didFlap = true;
