@@ -34,6 +34,7 @@ public class PipeCollector : MonoBehaviour
 			if (lastPipeX < pipeHolders[i].transform.position.x)
 			{
 				lastPipeX = pipeHolders[i].transform.position.x;
+				//Debug.Log (lastPipeX);
 			}
 		}
 	}
@@ -67,7 +68,10 @@ public class PipeCollector : MonoBehaviour
 
 			target.transform.position = temp;
 
+			//Debug.Log (lastPipeX);
+
 			lastPipeX = temp.x;
+			//Debug.Log (lastPipeX);
 		}
 	}
 }
