@@ -34,6 +34,9 @@ public class BirdScript : MonoBehaviour {
 
 		flapButton = GameObject.FindGameObjectWithTag("FlapButton").GetComponent<Button> ();
 		flapButton.onClick.AddListener(() => FlapTheBird());
+
+
+		SetCamerasX();
 	}
 
 	// Use this for initialization
