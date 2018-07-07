@@ -33,6 +33,7 @@ public class BirdScript : MonoBehaviour {
 		isAlive = true;
 
 		flapButton = GameObject.FindGameObjectWithTag("FlapButton").GetComponent<Button> ();
+		flapButton.onClick.AddListener(() => FlapTheBird());
 	}
 
 	// Use this for initialization
