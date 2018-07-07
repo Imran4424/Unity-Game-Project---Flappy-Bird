@@ -40,5 +40,30 @@ public class BGCollector : MonoBehaviour
 
 	}
 
-	
+	void OnTriggerEnter2D (Collider2D target)
+	{
+		if (target.tag == "Background")
+		{
+			Vector3 temp = target.transform.position;
+			float width = ((BoxCollider2D) target).size.x;
+
+			temp.x = lastBGX + width;
+
+			target.transform.position = temp;
+
+			lastBGX = temp.x;
+		}
+		else if (target.tag == "Ground")
+		{
+			Vector3 temp = target.transform.position;
+			float width = ((BoxCollider2D) target).size.x;
+
+			temp.x = lastGroundX + width;
+
+			target.transform.position = temp;
+
+			lastGroundX = temp.x;
+		}
+
+	}
 }
