@@ -12,7 +12,7 @@ public class BGCollector : MonoBehaviour {
 
 	void Awake()
 	{
-		backgrounds =
+		backgrounds = GameObject.FindGameObjectsWithTag("Background");
 	}
 
 	// Use this for initialization
