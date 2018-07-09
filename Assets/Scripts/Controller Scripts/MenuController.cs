@@ -81,6 +81,13 @@ public class MenuController : MonoBehaviour
 				GameController.instance.SetSelectedBird(1);
 				birds[GameController.instance.GetSelectedBird()].SetActive(true);
 			}
+			else if (GameController.instance.GetSelectedBird() == 1)
+			{
+				if (isRedBirdUnlocked)
+				{
+					
+				}
+			}
 		}
 	}
 }
