@@ -43,6 +43,10 @@ public class GameController : MonoBehaviour
 		}
 	}
 
+
+	/*
+	 The Game started for first time or not, this functon will check that 
+	*/
 	void IsTheGameStartedForTheFirstTime ()
 	{
 		if (!PlayerPrefs.HasKey ("IsTheGameStartedForTheFirstTime"))
