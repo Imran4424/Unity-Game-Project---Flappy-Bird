@@ -7,6 +7,14 @@ public class MenuController : MonoBehaviour
 
 	public static MenuController instance;
 
+	[SerializeField]
+	private GameObject[] birds;
+
+	[SerializeField]
+	private GameObject[] gameLevels;
+
+	private bool isRedBirdUnlocked;
+
 	// Use this for initialization
 	void Start () {
 		
