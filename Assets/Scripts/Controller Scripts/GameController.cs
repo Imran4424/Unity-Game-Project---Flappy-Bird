@@ -86,5 +86,8 @@ public class GameController : MonoBehaviour
 
 	// Unlocking green bird
 
-	public void
+	public void UnlockGreenBird()
+	{
+		
+	}
 }
