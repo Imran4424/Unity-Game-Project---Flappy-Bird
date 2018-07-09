@@ -111,5 +111,16 @@ public class MenuController : MonoBehaviour
 	}
 
 	// changing the levels
+
+	public void ChangeLevels()
+	{
+		if (GameController.instance.GetSelectedLevel() == 0)
+		{
+			if (isDarkLevelUnlocked)
+			{
+				gameLevels[0].SetActive(false);
+			}
+		}
+	}
 	
 }
