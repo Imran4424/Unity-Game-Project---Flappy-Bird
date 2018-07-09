@@ -95,6 +95,11 @@ public class GameController : MonoBehaviour
 		PlayerPrefs.SetInt(Selected_Level,SelectedLevel);
 	}
 
+	public int GetSelectedLevel()
+	{
+		return PlayerPrefs.GetInt(Selected_Level);
+	}
+
 	// Unlocking green bird
 
 	public void UnlockGreenBird ()
