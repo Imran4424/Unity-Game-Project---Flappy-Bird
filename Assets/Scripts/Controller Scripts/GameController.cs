@@ -90,9 +90,9 @@ public class GameController : MonoBehaviour
 
 	//working with levels
 
-	public void SetSelectedLevels(int )
+	public void SetSelectedLevels(int SelectedLevel)
 	{
-
+		PlayerPrefs.SetInt(Selected_Level,SelectedLevel);
 	}
 
 	// Unlocking green bird
