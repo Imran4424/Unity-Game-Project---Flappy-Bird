@@ -55,4 +55,9 @@ public class GameController : MonoBehaviour
 			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
 		}
 	}
+
+	public void SetHighScore(int score)
+	{
+		PlayerPrefs.SetInt(High_Score,score);
+	}
 }
