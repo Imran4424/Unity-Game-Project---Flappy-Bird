@@ -57,6 +57,7 @@ public class GameController : MonoBehaviour
 			PlayerPrefs.SetInt (Selected_Bird, 0);
 			PlayerPrefs.SetInt (Green_Bird, 0);
 			PlayerPrefs.SetInt (Red_Bird, 0);
+			PlayerPrefs.SetInt (Dark_Level,0);
 
 			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
 		}
