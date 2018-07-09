@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour
 
 	//  working with levels
 
-	public void SetSelectedLevels(int SelectedLevel)
+	public void SetSelectedLevel(int SelectedLevel)
 	{
 		PlayerPrefs.SetInt(Selected_Level,SelectedLevel);
 	}
