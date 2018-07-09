@@ -46,7 +46,7 @@ public class MenuController : MonoBehaviour
 	{
 		if (GameController.instance.IsDarkLevelUnlocked() == 1)
 		{
-			isDarkLevelUnlocked
+			isDarkLevelUnlocked = true;
 		}
 	}
 }
