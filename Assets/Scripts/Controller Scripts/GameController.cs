@@ -66,4 +66,9 @@ public class GameController : MonoBehaviour
 	{
 		PlayerPrefs.SetInt(High_Score,score);
 	}
+
+	public int GetHighScore()
+	{
+		return PlayerPrefs.GetInt(High_Score);
+	}
 }
