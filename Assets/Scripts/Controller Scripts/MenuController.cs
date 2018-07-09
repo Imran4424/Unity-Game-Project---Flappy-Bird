@@ -69,4 +69,9 @@ public class MenuController : MonoBehaviour
 			isDarkLevelUnlocked = true;
 		}
 	}
+
+	public void ChangeBirds()
+	{
+		
+	}
 }
