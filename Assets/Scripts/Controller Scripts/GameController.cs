@@ -114,6 +114,11 @@ public class GameController : MonoBehaviour
 
 	public void UnlockDarkLevel()
 	{
-		PlayerPrefs.SetInt(Dark_Level,0);
+		PlayerPrefs.SetInt (Dark_Level,0);
+	}
+
+	public int IsDarkLevelUnlocked()
+	{
+		return PlayerPrefs.GetInt(Dark_Level);
 	}
 }
