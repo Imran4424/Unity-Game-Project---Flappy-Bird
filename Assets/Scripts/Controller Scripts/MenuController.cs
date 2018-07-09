@@ -119,6 +119,9 @@ public class MenuController : MonoBehaviour
 			if (isDarkLevelUnlocked)
 			{
 				gameLevels[0].SetActive(false);
+
+				GameController.instance.SetSelectedLevel(1);
+				gameLevels[GameController.instance.GetSelectedLevel()].SetActive(true);
 			}
 		}
 	}
