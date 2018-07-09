@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-	//working with high score
+	//  working with high score
 
 	public void SetHighScore (int score)
 	{
@@ -88,7 +88,7 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Selected_Bird);
 	}
 
-	//working with levels
+	//  working with levels
 
 	public void SetSelectedLevels(int SelectedLevel)
 	{
