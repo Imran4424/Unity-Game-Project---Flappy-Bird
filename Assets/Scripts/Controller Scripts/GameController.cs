@@ -56,6 +56,8 @@ public class GameController : MonoBehaviour
 		}
 	}
 
+	//working with high score
+
 	public void SetHighScore(int score)
 	{
 		PlayerPrefs.SetInt(High_Score,score);
