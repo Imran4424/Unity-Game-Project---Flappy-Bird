@@ -78,4 +78,13 @@ public class GameController : MonoBehaviour
 	{
 		PlayerPrefs.SetInt(Selected_Bird,selectedBird);
 	}
+
+	public int GetSelectedBird()
+	{
+		return PlayerPrefs.GetInt(Selected_Bird);
+	}
+
+	// Unlocking green bird
+
+	public void
 }
