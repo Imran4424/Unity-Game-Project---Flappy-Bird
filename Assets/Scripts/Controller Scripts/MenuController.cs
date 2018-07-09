@@ -41,4 +41,9 @@ public class MenuController : MonoBehaviour
 			isRedBirdUnlocked = true;
 		}
 	}
+
+	void CheckIfLevelsAreUnlocked()
+	{
+		
+	}
 }
