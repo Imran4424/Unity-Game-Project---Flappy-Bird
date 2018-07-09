@@ -93,6 +93,6 @@ public class GameController : MonoBehaviour
 
 	public int IsGreenBirdUnlocked()
 	{
-		return PlayerPrefs.GetInt()
+		return PlayerPrefs.GetInt(Green_Bird);
 	}
 }
