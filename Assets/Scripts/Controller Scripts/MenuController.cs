@@ -70,22 +70,32 @@ public class MenuController : MonoBehaviour
 		}
 	}
 
-	public void ChangeBirds()
+	public void ChangeBirds ()
 	{
-		if (GameController.instance.GetSelectedBird() == 0)
+		if (GameController.instance.GetSelectedBird () == 0)
 		{
 			if (isGreenBirdUnlocked)
 			{
-				birds[0].SetActive(false);
+				birds[0].SetActive (false);
 
-				GameController.instance.SetSelectedBird(1);
-				birds[GameController.instance.GetSelectedBird()].SetActive(true);
+				GameController.instance.SetSelectedBird (1);
+				birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 			}
-			else if (GameController.instance.GetSelectedBird() == 1)
+			else if (GameController.instance.GetSelectedBird () == 1)
 			{
 				if (isRedBirdUnlocked)
 				{
-					
+					birds[1].SetActive (false);
+
+					GameController.instance.SetSelectedBird (2);
+					birds[GameController.instance.GetSelectedBird ()].SetActive (true);
+				}
+				else
+				{
+					birds[1].SetActive (false);
+
+					GameController.instance.SetSelectedBird (0);
+					birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 				}
 			}
 		}
