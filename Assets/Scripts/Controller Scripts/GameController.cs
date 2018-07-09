@@ -98,4 +98,6 @@ public class GameController : MonoBehaviour
 	{
 		return PlayerPrefs.GetInt(Green_Bird);
 	}
+
+	
 }
