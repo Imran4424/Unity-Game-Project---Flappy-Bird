@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
 	public static GameController instance;
 
@@ -11,46 +12,47 @@ public class GameController : MonoBehaviour {
 	public const string Green_Bird = "Green Bird";
 	public const string Red_Bird = "Red Bird";
 
-	void Awake()
+	void Awake ()
 	{
-		MakeSingleton();
+		MakeSingleton ();
+		IsTheGameStartedForTheFirstTime();
 	}
-
 
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () 
+	void Start ()
 	{
-		
+
 	}
 
-	void MakeSingleton()
+	// Update is called once per frame
+	void Update ()
+	{
+
+	}
+
+	void MakeSingleton ()
 	{
 		if (instance != null)
 		{
-			Destroy(gameObject);
+			Destroy (gameObject);
 		}
 		else
 		{
 			instance = this;
-			DontDestroyOnLoad(gameObject);
+			DontDestroyOnLoad (gameObject);
 		}
 	}
 
-	void IsTheGameStartedForTheFirstTime()
+	void IsTheGameStartedForTheFirstTime ()
 	{
-		if (!PlayerPrefs.HasKey("IsTheGameStartedForTheFirstTime"))
+		if (!PlayerPrefs.HasKey ("IsTheGameStartedForTheFirstTime"))
 		{
-			PlayerPrefs.SetInt(High_Score,0);
-			PlayerPrefs.SetInt(Selected_Bird,0);
-			PlayerPrefs.SetInt(Green_Bird,0);
-			PlayerPrefs.SetInt(Red_Bird,0);
+			PlayerPrefs.SetInt (High_Score, 0);
+			PlayerPrefs.SetInt (Selected_Bird, 0);
+			PlayerPrefs.SetInt (Green_Bird, 0);
+			PlayerPrefs.SetInt (Red_Bird, 0);
 
-			PlayerPrefs.SetInt("IsTheGameStartedForTheFirstTime",0);
+			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
 		}
 	}
 }
