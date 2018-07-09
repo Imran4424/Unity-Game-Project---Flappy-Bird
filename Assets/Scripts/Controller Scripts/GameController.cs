@@ -73,4 +73,9 @@ public class GameController : MonoBehaviour
 	}
 
 	// working with selected birds
+
+	public void SetSelectedBird(int selectedBird)
+	{
+		PlayerPrefs.SetInt(Selected_Bird,selectedBird);
+	}
 }
