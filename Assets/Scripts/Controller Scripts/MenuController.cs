@@ -13,7 +13,9 @@ public class MenuController : MonoBehaviour
 	[SerializeField]
 	private GameObject[] gameLevels;
 
+	private bool isGreenBirdUnlocked;
 	private bool isRedBirdUnlocked;
+	private bool isDarkLevelUnlocked;
 
 	// Use this for initialization
 	void Start () {
