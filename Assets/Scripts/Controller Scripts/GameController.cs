@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
 	public const string Green_Bird = "Green Bird";
 	public const string Red_Bird = "Red Bird";
 
+	public const string Dark_Level = "Dark Level";
+
 	void Awake ()
 	{
 		MakeSingleton ();
