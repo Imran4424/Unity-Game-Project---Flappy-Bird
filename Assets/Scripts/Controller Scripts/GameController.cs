@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
 	void Awake ()
 	{
 		MakeSingleton ();
-		IsTheGameStartedForTheFirstTime();
+		IsTheGameStartedForTheFirstTime ();
 	}
 
 	// Use this for initialization
@@ -45,7 +45,6 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-
 	/*
 	 The Game started for first time or not, this functon will check that 
 	*/
@@ -57,7 +56,7 @@ public class GameController : MonoBehaviour
 			PlayerPrefs.SetInt (Selected_Bird, 0);
 			PlayerPrefs.SetInt (Green_Bird, 0);
 			PlayerPrefs.SetInt (Red_Bird, 0);
-			PlayerPrefs.SetInt (Dark_Level,0);
+			PlayerPrefs.SetInt (Dark_Level, 0);
 
 			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
 		}
@@ -65,39 +64,50 @@ public class GameController : MonoBehaviour
 
 	//working with high score
 
-	public void SetHighScore(int score)
+	public void SetHighScore (int score)
 	{
-		PlayerPrefs.SetInt(High_Score,score);
+		PlayerPrefs.SetInt (High_Score, score);
 	}
 
-	public int GetHighScore()
+	public int GetHighScore ()
 	{
-		return PlayerPrefs.GetInt(High_Score);
+		return PlayerPrefs.GetInt (High_Score);
 	}
 
 	// working with selected birds
 
-	public void SetSelectedBird(int selectedBird)
+	public void SetSelectedBird (int selectedBird)
 	{
-		PlayerPrefs.SetInt(Selected_Bird,selectedBird);
+		PlayerPrefs.SetInt (Selected_Bird, selectedBird);
 	}
 
-	public int GetSelectedBird()
+	public int GetSelectedBird ()
 	{
-		return PlayerPrefs.GetInt(Selected_Bird);
+		return PlayerPrefs.GetInt (Selected_Bird);
 	}
 
 	// Unlocking green bird
 
-	public void UnlockGreenBird()
+	public void UnlockGreenBird ()
 	{
-		PlayerPrefs.SetInt(Green_Bird,1);
+		PlayerPrefs.SetInt (Green_Bird, 1);
 	}
 
-	public int IsGreenBirdUnlocked()
+	public int IsGreenBirdUnlocked ()
 	{
-		return PlayerPrefs.GetInt(Green_Bird);
+		return PlayerPrefs.GetInt (Green_Bird);
 	}
 
-	
+	// Unlocking green bird
+
+	public void UnlockRedBird ()
+	{
+		PlayerPrefs.SetInt (Green_Bird, 1);
+	}
+
+	public int IsGreenBirdUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Green_Bird);
+	}
+
 }
