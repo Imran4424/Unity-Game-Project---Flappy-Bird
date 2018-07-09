@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuController : MonoBehaviour 
+public class MenuController : MonoBehaviour
 {
 
 	public static MenuController instance;
@@ -17,27 +17,27 @@ public class MenuController : MonoBehaviour
 	private bool isRedBirdUnlocked;
 	private bool isDarkLevelUnlocked;
 
-	void Awake()
+	void Awake ()
 	{
-		MakeInstance();
+		MakeInstance ();
 	}
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		birds[GameController.instance.GetSelectedBird()].SetActive(true);
+		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
-		CheckIfBirdsAreUnlocked();
-		CheckIfLevelsAreUnlocked();
+		CheckIfBirdsAreUnlocked ();
+		CheckIfLevelsAreUnlocked ();
 	}
-	
+
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
-		
+
 	}
 
-	void MakeInstance()
+	void MakeInstance ()
 	{
 		if (instance == null)
 		{
@@ -47,14 +47,14 @@ public class MenuController : MonoBehaviour
 
 	// checking if the the birds are unlocked or not
 
-	void CheckIfBirdsAreUnlocked()
+	void CheckIfBirdsAreUnlocked ()
 	{
-		if (GameController.instance.IsGreenBirdUnlocked() == 1)
+		if (GameController.instance.IsGreenBirdUnlocked () == 1)
 		{
 			isGreenBirdUnlocked = true;
 		}
 
-		if (GameController.instance.IsRedBirdUnlocked() == 1)
+		if (GameController.instance.IsRedBirdUnlocked () == 1)
 		{
 			isRedBirdUnlocked = true;
 		}
@@ -62,9 +62,9 @@ public class MenuController : MonoBehaviour
 
 	// checking if levels are unlocked or not
 
-	void CheckIfLevelsAreUnlocked()
+	void CheckIfLevelsAreUnlocked ()
 	{
-		if (GameController.instance.IsDarkLevelUnlocked() == 1)
+		if (GameController.instance.IsDarkLevelUnlocked () == 1)
 		{
 			isDarkLevelUnlocked = true;
 		}
