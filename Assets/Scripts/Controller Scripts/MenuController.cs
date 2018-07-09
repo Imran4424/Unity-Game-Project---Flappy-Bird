@@ -98,9 +98,12 @@ public class MenuController : MonoBehaviour
 					birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 				}
 			}
-			else if (GameController.instance.GetSelectedBird() == 2)
+			else if (GameController.instance.GetSelectedBird () == 2)
 			{
-				
+				birds[2].SetActive (false);
+
+				GameController.instance.SetSelectedBird (0);
+				birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 			}
 		}
 	}
