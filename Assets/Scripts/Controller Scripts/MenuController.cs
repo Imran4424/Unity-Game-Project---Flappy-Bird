@@ -20,7 +20,8 @@ public class MenuController : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		
+		CheckIfBirdsAreUnlocked();
+		CheckIfLevelsAreUnlocked();
 	}
 	
 	// Update is called once per frame
