@@ -72,9 +72,12 @@ public class MenuController : MonoBehaviour
 
 	public void ChangeBirds()
 	{
-		if (true)
+		if (GameController.instance.GetSelectedBird() == 0)
 		{
-			
+			if (isGreenBirdUnlocked)
+			{
+				birds[0].SetActive(false);
+			}
 		}
 	}
 }
