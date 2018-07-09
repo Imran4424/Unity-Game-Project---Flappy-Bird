@@ -30,6 +30,14 @@ public class MenuController : MonoBehaviour
 		
 	}
 
+	void MakeInstance()
+	{
+		if (instance == null)
+		{
+			instance = this;
+		}
+	}
+
 	// checking if the the birds are unlocked or not
 
 	void CheckIfBirdsAreUnlocked()
@@ -46,7 +54,7 @@ public class MenuController : MonoBehaviour
 	}
 
 	// checking if levels are unlocked or not
-	
+
 	void CheckIfLevelsAreUnlocked()
 	{
 		if (GameController.instance.IsDarkLevelUnlocked() == 1)
