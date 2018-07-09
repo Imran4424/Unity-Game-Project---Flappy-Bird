@@ -71,4 +71,6 @@ public class GameController : MonoBehaviour
 	{
 		return PlayerPrefs.GetInt(High_Score);
 	}
+
+	// working with selected birds
 }
