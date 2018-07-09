@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour {
 
 	void Awake()
 	{
-		
+		MakeSingleton();
 	}
 
 
