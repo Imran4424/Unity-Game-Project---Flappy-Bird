@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
 	public const string Green_Bird = "Green Bird";
 	public const string Red_Bird = "Red Bird";
 
+	public const string Selected_Level = "Selected Level";
+
 	public const string Dark_Level = "Dark Level";
 
 	void Awake ()
@@ -86,6 +88,13 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Selected_Bird);
 	}
 
+	//working with levels
+
+	public void SetSelectedLevels(int )
+	{
+
+	}
+
 	// Unlocking green bird
 
 	public void UnlockGreenBird ()
@@ -114,7 +123,7 @@ public class GameController : MonoBehaviour
 
 	public void UnlockDarkLevel()
 	{
-		PlayerPrefs.SetInt (Dark_Level,0);
+		PlayerPrefs.SetInt (Dark_Level,1);
 	}
 
 	public int IsDarkLevelUnlocked()
