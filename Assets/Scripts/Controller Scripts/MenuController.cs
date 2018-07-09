@@ -70,6 +70,8 @@ public class MenuController : MonoBehaviour
 		}
 	}
 
+	// changing the birds
+
 	public void ChangeBirds ()
 	{
 		if (GameController.instance.GetSelectedBird () == 0)
@@ -107,4 +109,7 @@ public class MenuController : MonoBehaviour
 			}
 		}
 	}
+
+	// changing the levels
+	
 }
