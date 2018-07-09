@@ -11,6 +11,11 @@ public class GameController : MonoBehaviour {
 	public const string Green_Bird = "Green Bird";
 	public const string Red_Bird = "Red Bird";
 
+	void Awake()
+	{
+		
+	}
+
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +23,21 @@ public class GameController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
+	}
+
+	void MakeSingleton()
+	{
+		if (instance != null)
+		{
+			Destroy(gameObject);
+		}
+		else
+		{
+			instance = this;
+			DontDestroyOnLoad(gameObject);
+		}
 	}
 }
