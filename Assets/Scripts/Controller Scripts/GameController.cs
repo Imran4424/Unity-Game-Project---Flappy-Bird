@@ -43,6 +43,14 @@ public class GameController : MonoBehaviour {
 
 	void IsTheGameStartedForTheFirstTime()
 	{
-		
+		if (!PlayerPrefs.HasKey("IsTheGameStartedForTheFirstTime"))
+		{
+			PlayerPrefs.SetInt(High_Score,0);
+			PlayerPrefs.SetInt(Selected_Bird,0);
+			PlayerPrefs.SetInt(Green_Bird,0);
+			PlayerPrefs.SetInt(Red_Bird,0);
+
+			PlayerPrefs.SetInt("IsTheGameStartedForTheFirstTime",0);
+		}
 	}
 }
