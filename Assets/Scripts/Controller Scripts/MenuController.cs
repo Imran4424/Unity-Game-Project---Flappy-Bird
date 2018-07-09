@@ -17,6 +17,11 @@ public class MenuController : MonoBehaviour
 	private bool isRedBirdUnlocked;
 	private bool isDarkLevelUnlocked;
 
+	void Awake()
+	{
+		MakeInstance();
+	}
+
 	// Use this for initialization
 	void Start () 
 	{
