@@ -85,32 +85,33 @@ public class MenuController : MonoBehaviour
 				GameController.instance.SetSelectedBird (1);
 				birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 			}
-			else if (GameController.instance.GetSelectedBird () == 1)
+
+		}
+		else if (GameController.instance.GetSelectedBird () == 1)
+		{
+			Debug.Log ("i am in green bird");
+
+			if (isRedBirdUnlocked)
 			{
-				Debug.Log ("i am in green bird");
+				birds[1].SetActive (false);
 
-				if (isRedBirdUnlocked)
-				{
-					birds[1].SetActive (false);
-
-					GameController.instance.SetSelectedBird (2);
-					birds[GameController.instance.GetSelectedBird ()].SetActive (true);
-				}
-				else
-				{
-					birds[1].SetActive (false);
-
-					GameController.instance.SetSelectedBird (0);
-					birds[GameController.instance.GetSelectedBird ()].SetActive (true);
-				}
+				GameController.instance.SetSelectedBird (2);
+				birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 			}
-			else if (GameController.instance.GetSelectedBird () == 2)
+			else
 			{
-				birds[2].SetActive (false);
+				birds[1].SetActive (false);
 
 				GameController.instance.SetSelectedBird (0);
 				birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 			}
+		}
+		else if (GameController.instance.GetSelectedBird () == 2)
+		{
+			birds[2].SetActive (false);
+
+			GameController.instance.SetSelectedBird (0);
+			birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 		}
 	}
 
