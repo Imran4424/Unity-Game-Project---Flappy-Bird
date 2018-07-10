@@ -681,6 +681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0681c288ace24184c894ef4ae93290f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeCanvas: {fileID: 52651959}
+  fadeAnim: {fileID: 1705467954}
 --- !u!1001 &550422845
 Prefab:
   m_ObjectHideFlags: 0
