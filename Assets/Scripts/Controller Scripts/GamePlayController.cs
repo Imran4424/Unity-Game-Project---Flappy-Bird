@@ -126,6 +126,11 @@ public class GamePlayController : MonoBehaviour
 		{
 			medalImage.sprite = medals[2];
 
+			if (GameController.instance.IsGreenBirdUnlocked () == 0)
+			{
+				GameController.instance.UnlockGreenBird ();
+			}
+
 			if (GameController.instance.IsRedBirdUnlocked () == 0)
 			{
 				GameController.instance.UnlockRedBird ();
@@ -135,9 +140,19 @@ public class GamePlayController : MonoBehaviour
 		{
 			medalImage.sprite = medals[2];
 
-			if (GameController.instance.IsDarkLevelUnlocked() == 0)
+			if (GameController.instance.IsGreenBirdUnlocked () == 0)
 			{
-				GameController.instance.UnlockDarkLevel();
+				GameController.instance.UnlockGreenBird ();
+			}
+
+			if (GameController.instance.IsRedBirdUnlocked () == 0)
+			{
+				GameController.instance.UnlockRedBird ();
+			}
+
+			if (GameController.instance.IsDarkLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockDarkLevel ();
 			}
 		}
 	}
