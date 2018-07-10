@@ -52,8 +52,10 @@ public class GameController : MonoBehaviour
 	*/
 	void IsTheGameStartedForTheFirstTime ()
 	{
-		if (!PlayerPrefs.HasKey ("IsTheGameStartedForTheFirstTime"))
-		{
+		/* if (!PlayerPrefs.HasKey ("IsTheGameStartedForTheFirstTime"))
+		{ */
+			Debug.Log("I am here");
+
 			PlayerPrefs.SetInt (High_Score, 0);
 			PlayerPrefs.SetInt (Selected_Bird, 0);
 			PlayerPrefs.SetInt (Green_Bird, 1);
@@ -61,7 +63,7 @@ public class GameController : MonoBehaviour
 			PlayerPrefs.SetInt (Dark_Level, 1);
 
 			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
-		}
+		// }
 	}
 
 	//  working with high score
@@ -80,6 +82,8 @@ public class GameController : MonoBehaviour
 
 	public void SetSelectedBird (int selectedBird)
 	{
+		Debug.Log("i am green selected bird");
+
 		PlayerPrefs.SetInt (Selected_Bird, selectedBird);
 	}
 
