@@ -62,6 +62,7 @@ public class SceneFader : MonoBehaviour {
 		yield return new WaitForSeconds(.7f);
 
 		SceneManager.LoadScene(levelName,LoadSceneMode.Single);	
+		FadeOut();
 	}
 
 	IEnumerator FadeOutAnimation()
