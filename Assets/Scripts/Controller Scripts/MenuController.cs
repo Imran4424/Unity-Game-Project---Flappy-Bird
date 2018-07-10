@@ -112,18 +112,25 @@ public class MenuController : MonoBehaviour
 
 	// changing the levels
 
-	public void ChangeLevels()
+	public void ChangeLevels ()
 	{
-		if (GameController.instance.GetSelectedLevel() == 0)
+		if (GameController.instance.GetSelectedLevel () == 0)
 		{
 			if (isDarkLevelUnlocked)
 			{
-				gameLevels[0].SetActive(false);
+				gameLevels[0].SetActive (false);
 
-				GameController.instance.SetSelectedLevel(1);
-				gameLevels[GameController.instance.GetSelectedLevel()].SetActive(true);
+				GameController.instance.SetSelectedLevel (1);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 			}
 		}
+		else if (GameController.instance.GetSelectedLevel () == 1)
+		{
+			gameLevels[1].SetActive (false);
+
+			GameController.instance.SetSelectedLevel (0);
+			gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+		}
 	}
-	
+
 }
