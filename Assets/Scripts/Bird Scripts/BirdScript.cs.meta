@@ -3,7 +3,13 @@ guid: 1f4ce4db5fa7d4f4881ea050efc27a4d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - myRigidBody: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - audioSC: {instanceID: 0}
+  - flapClip: {fileID: 8300000, guid: 15636c40a57e67748940c1c5e1785153, type: 3}
+  - pointClip: {fileID: 8300000, guid: 7a78e5eb63e5da441afe09f6a5cb90a9, type: 3}
+  - diedClip: {fileID: 8300000, guid: 018fcea592dd2df4fa2351345f9c4551, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
