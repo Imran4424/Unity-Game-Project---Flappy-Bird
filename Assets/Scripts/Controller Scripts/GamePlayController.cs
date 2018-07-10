@@ -25,13 +25,22 @@ public class GamePlayController : MonoBehaviour {
 	[SerializeField]
 	private Image medalImage;
 
+	void Awake()
+	{
+		
+	}
+
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
+
+	
 }
