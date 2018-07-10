@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class MenuController : MonoBehaviour
 	private bool isGreenBirdUnlocked;
 	private bool isRedBirdUnlocked;
 	private bool isDarkLevelUnlocked;
+
+	// gem button and gem text
+
+	[SerializeField]
+	private Button gemButton;
+
+	[SerializeField]
+	private Text gemScoreText;
 
 	void Awake ()
 	{

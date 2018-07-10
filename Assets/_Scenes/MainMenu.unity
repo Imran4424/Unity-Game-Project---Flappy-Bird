@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 498801582}
   - component: {fileID: 498801581}
   m_Layer: 5
-  m_Name: Text
+  m_Name: gem text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1850,6 +1850,16 @@ Prefab:
       propertyPath: gameLevels.Array.data[1]
       value: 
       objectReference: {fileID: 699471009}
+    - target: {fileID: 114895486969830016, guid: 9d63c134c93afb546b8cec517074482e,
+        type: 2}
+      propertyPath: gemButton
+      value: 
+      objectReference: {fileID: 114752689}
+    - target: {fileID: 114895486969830016, guid: 9d63c134c93afb546b8cec517074482e,
+        type: 2}
+      propertyPath: gemScoreText
+      value: 
+      objectReference: {fileID: 498801581}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d63c134c93afb546b8cec517074482e, type: 2}
   m_IsPrefabParent: 0
