@@ -51,7 +51,7 @@ public class SceneFader : MonoBehaviour {
 
 	public void FadeOut()
 	{
-		StartCoroutine();
+		StartCoroutine(FadeOutAnimation());
 	}
 
 	IEnumerator FadeInAnimation(string levelName)
