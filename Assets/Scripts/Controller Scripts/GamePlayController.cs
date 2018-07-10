@@ -27,7 +27,7 @@ public class GamePlayController : MonoBehaviour {
 
 	void Awake()
 	{
-		
+		MakeInstance();
 	}
 
 	// Use this for initialization
