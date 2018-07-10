@@ -8,7 +8,13 @@ public class GamePlayController : MonoBehaviour {
 	public static GamePlayController instance;
 
 	[SerializeField]
-	private Text
+	private Text scoreText, endScore, bestScore, gemScoreText;
+
+	[SerializeField]
+	private Button pauseGameButton, restartGameButton;
+
+	[SerializeField]
+	private GameObject pausePanel, gameOverPanel;
 
 	// Use this for initialization
 	void Start () {
