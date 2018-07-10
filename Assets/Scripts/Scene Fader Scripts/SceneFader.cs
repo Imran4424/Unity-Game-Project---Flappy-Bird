@@ -41,14 +41,14 @@ public class SceneFader : MonoBehaviour {
 		}
 	}
 
-	IEnumerator FadeInAnimation(string levelname)
+	IEnumerator FadeInAnimation(string levelName)
 	{
 		fadeCanvas.SetActive(true);
 		fadeAnim.Play("FadeIn");
 		
 		yield return new WaitForSeconds(.7f);
 
-		SceneManager.LoadScene(levelname,LoadSceneMode.Single);	
+		SceneManager.LoadScene(levelName,LoadSceneMode.Single);	
 	}
 
 	IEnumerator FadeOutAnimation()
