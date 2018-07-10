@@ -85,6 +85,13 @@ public class GamePlayController : MonoBehaviour {
 	{
 		SceneFader.instance.FadeIn("MainMenu");
 	}
+
+	// working with score
+
+	public void setScore(int score)
+	{
+		scoreText.text = "" + score;
+	}
 }
 
 
