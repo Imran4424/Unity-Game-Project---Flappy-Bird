@@ -42,5 +42,11 @@ public class GamePlayController : MonoBehaviour {
 		
 	}
 
-	
+	void MakeInstance()
+	{
+		if (instance == null)
+		{
+			instance = this;
+		}
+	}
 }
