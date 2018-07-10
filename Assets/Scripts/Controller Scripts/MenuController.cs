@@ -76,6 +76,8 @@ public class MenuController : MonoBehaviour
 	{
 		if (GameController.instance.GetSelectedBird () == 0)
 		{
+			Debug.Log (GameController.instance.GetSelectedBird ());
+
 			if (isGreenBirdUnlocked)
 			{
 				birds[0].SetActive (false);
@@ -86,7 +88,6 @@ public class MenuController : MonoBehaviour
 			else if (GameController.instance.GetSelectedBird () == 1)
 			{
 				Debug.Log ("i am in green bird");
-				Debug.Log (GameController.instance.GetSelectedBird ());
 
 				if (isRedBirdUnlocked)
 				{
