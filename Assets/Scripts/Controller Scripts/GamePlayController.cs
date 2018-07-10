@@ -107,6 +107,15 @@ public class GamePlayController : MonoBehaviour {
 		}
 
 		bestScore.text = "" + GameController.instance.GetHighScore();
+
+		if (score <= 50)
+		{
+			medalImage.sprite = medals[0];
+		}
+		else if (score > 50 && score < 150)
+		{
+			medalImage.sprite = medals[1];
+		}
 	}
 }
 
