@@ -123,7 +123,7 @@ public class GamePlayController : MonoBehaviour {
 		}
 		else if (score > 200)
 		{
-			medalImage.sprite = medalImage[2];
+			medalImage.sprite = medals[2];
 		}
 	}
 }
