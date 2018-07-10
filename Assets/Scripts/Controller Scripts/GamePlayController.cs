@@ -64,7 +64,17 @@ public class GamePlayController : MonoBehaviour {
 				Time.timeScale = 0f;
 
 				resumeGameButton.onClick.RemoveAllListeners();
+				resumeGameButton.onClick.AddListener(() => ResumeGame());
 			}
 		}
 	}
+
+	// resume game
+
+	public void ResumeGame()
+	{
+
+	}
 }
+
+
