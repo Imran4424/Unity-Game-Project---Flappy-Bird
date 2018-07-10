@@ -50,4 +50,10 @@ public class SceneFader : MonoBehaviour {
 
 		SceneManager.LoadScene(levelname,LoadSceneMode.Single);	
 	}
+
+	IEnumerator FadeOutAnimation()
+	{
+		fadeAnim.Play("FadeOut");
+		yield return null;
+	}
 }
