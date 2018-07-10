@@ -159,6 +159,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ccf687d87eb64443932d54f45c06571, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &52821039 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1921592003815480, guid: 2ccf687d87eb64443932d54f45c06571,
+    type: 2}
+  m_PrefabInternal: {fileID: 52821038}
 --- !u!1 &80684579
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +485,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 135892909}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541907476}
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &135892909
@@ -1173,7 +1189,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 438230182}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541907476}
+        m_MethodName: GoToMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &438230182
@@ -1540,6 +1567,17 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1168ddf1edec4904890073009a50b666, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &509780976 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1199240878705126, guid: 1168ddf1edec4904890073009a50b666,
+    type: 2}
+  m_PrefabInternal: {fileID: 509780975}
+--- !u!114 &541907476 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+    type: 2}
+  m_PrefabInternal: {fileID: 553957066}
+  m_Script: {fileID: 11500000, guid: 41f8238230658ae45b5e4c75b5a3d18b, type: 3}
 --- !u!1 &553312423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1672,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: medals.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4422068408141778, guid: a5694b0df0ae22a479517406867fea6d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1711,6 +1754,44 @@ Prefab:
       propertyPath: saveMePanel
       value: 
       objectReference: {fileID: 2014778171}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: birds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1990537829}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: birds.Array.data[1]
+      value: 
+      objectReference: {fileID: 509780976}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: birds.Array.data[2]
+      value: 
+      objectReference: {fileID: 52821039}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: medals.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300040, guid: a7acfbdd6fd1c504ba093877794b42f6,
+        type: 3}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: medals.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300044, guid: a7acfbdd6fd1c504ba093877794b42f6,
+        type: 3}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: medals.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300042, guid: a7acfbdd6fd1c504ba093877794b42f6,
+        type: 3}
+    - target: {fileID: 114585522207415552, guid: a5694b0df0ae22a479517406867fea6d,
+        type: 2}
+      propertyPath: medalImage
+      value: 
+      objectReference: {fileID: 1541302250}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5694b0df0ae22a479517406867fea6d, type: 2}
   m_IsPrefabParent: 0
@@ -1789,7 +1870,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 566790072}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541907476}
+        m_MethodName: GoToMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &566790072
@@ -4618,7 +4710,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533732390}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541907476}
+        m_MethodName: PauseTheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1533732390
@@ -6242,6 +6345,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c340b1d51d1f6034cac2fe53c3d397e8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1990537829 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1324709035529192, guid: c340b1d51d1f6034cac2fe53c3d397e8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1990537828}
 --- !u!1 &2014778171
 GameObject:
   m_ObjectHideFlags: 0
