@@ -54,6 +54,7 @@ public class SceneFader : MonoBehaviour {
 	IEnumerator FadeOutAnimation()
 	{
 		fadeAnim.Play("FadeOut");
-		yield return null;
+		yield return new WaitForSeconds(1f);
+		fadeCanvas.SetActive(false);
 	}
 }
