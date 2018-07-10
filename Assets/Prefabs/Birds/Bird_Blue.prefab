@@ -191,10 +191,11 @@ MonoBehaviour:
   myRigidBody: {fileID: 50713507995166944}
   anim: {fileID: 95648176719982790}
   isAlive: 0
-  audio: {fileID: 82510885439324140}
+  audioSC: {fileID: 82510885439324140}
   flapClip: {fileID: 8300000, guid: 15636c40a57e67748940c1c5e1785153, type: 3}
   pointClip: {fileID: 8300000, guid: 7a78e5eb63e5da441afe09f6a5cb90a9, type: 3}
   diedClip: {fileID: 8300000, guid: 018fcea592dd2df4fa2351345f9c4551, type: 3}
+  score: 0
 --- !u!212 &212217706205077986
 SpriteRenderer:
   m_ObjectHideFlags: 1
