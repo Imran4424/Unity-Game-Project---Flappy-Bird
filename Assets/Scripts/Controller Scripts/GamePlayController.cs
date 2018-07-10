@@ -67,8 +67,8 @@ public class GamePlayController : MonoBehaviour
 
 				Time.timeScale = 0f;
 
-				resumeGameButton.onClick.RemoveAllListeners ();
-				resumeGameButton.onClick.AddListener (() => ResumeGame ());
+				//resumeGameButton.onClick.RemoveAllListeners ();
+				//resumeGameButton.onClick.AddListener (() => ResumeGame ());
 			}
 		}
 	}
@@ -93,6 +93,11 @@ public class GamePlayController : MonoBehaviour
 	public void GoToMenuButton ()
 	{
 		SceneFader.instance.FadeIn ("MainMenu");
+	}
+
+	public void GoMainMenu()
+	{
+		SceneManager.LoadScene("MainMenu",LoadSceneMode.Single);
 	}
 
 	// working with score
