@@ -48,6 +48,6 @@ public class SceneFader : MonoBehaviour {
 		
 		yield return new WaitForSeconds(.7f);
 
-		SceneManager.LoadScene(levelname,LoadSceneMode.Single);
+		SceneManager.LoadScene(levelname,LoadSceneMode.Single);	
 	}
 }
