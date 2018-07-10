@@ -82,7 +82,7 @@ public class GameController : MonoBehaviour
 
 	public void SetSelectedBird (int selectedBird)
 	{
-		Debug.Log("i am green selected bird");
+		//Debug.Log("i am green selected bird");
 
 		PlayerPrefs.SetInt (Selected_Bird, selectedBird);
 	}
