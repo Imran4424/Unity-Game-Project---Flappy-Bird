@@ -29,6 +29,10 @@ public class SceneFader : MonoBehaviour {
 
 	void MakeSingleton()
 	{
+		if (instance != null)
+		{
+			Destroy(gameObject);
+		}
 		
 	}
 }
