@@ -117,6 +117,8 @@ public class BirdScript : MonoBehaviour {
 				anim.SetTrigger("Bird Died");
 
 				audioSC.PlayOneShot(diedClip);
+
+				GamePlayController.instance.PlayerDied(score);
 			}
 		}
 	}
@@ -127,6 +129,8 @@ public class BirdScript : MonoBehaviour {
 		{
 			score++;
 			audioSC.PlayOneShot(pointClip);
+
+			GamePlayController.instance.setScore(score);
 		}
 	}
 }
