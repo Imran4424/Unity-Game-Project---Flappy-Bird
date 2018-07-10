@@ -11,7 +11,7 @@ public class GamePlayController : MonoBehaviour {
 	private Text scoreText, endScore, bestScore, gemScoreText;
 
 	[SerializeField]
-	private Button pauseGameButton, restartGameButton;
+	private Button pauseGameButton, resumeGameButton;
 
 	[SerializeField]
 	private GameObject pausePanel, gameOverPanel, saveMePanel;
