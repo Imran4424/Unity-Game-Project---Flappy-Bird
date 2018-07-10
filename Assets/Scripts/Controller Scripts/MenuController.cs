@@ -74,9 +74,10 @@ public class MenuController : MonoBehaviour
 
 	public void ChangeBirds ()
 	{
+		//Debug.Log (GameController.instance.GetSelectedBird ());
+
 		if (GameController.instance.GetSelectedBird () == 0)
 		{
-			Debug.Log (GameController.instance.GetSelectedBird ());
 
 			if (isGreenBirdUnlocked)
 			{
@@ -89,7 +90,7 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedBird () == 1)
 		{
-			Debug.Log ("i am in green bird");
+			//Debug.Log ("i am in green bird");
 
 			if (isRedBirdUnlocked)
 			{
