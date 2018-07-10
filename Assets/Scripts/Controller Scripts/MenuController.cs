@@ -85,7 +85,8 @@ public class MenuController : MonoBehaviour
 			}
 			else if (GameController.instance.GetSelectedBird () == 1)
 			{
-				Debug.Log("i am in green bird");
+				Debug.Log ("i am in green bird");
+				Debug.Log (GameController.instance.GetSelectedBird ());
 
 				if (isRedBirdUnlocked)
 				{
