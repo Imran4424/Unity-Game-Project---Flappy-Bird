@@ -16,6 +16,9 @@ public class GamePlayController : MonoBehaviour {
 	[SerializeField]
 	private GameObject pausePanel, gameOverPanel;
 
+	[SerializeField]
+	private GameObject[] birds;
+
 	// Use this for initialization
 	void Start () {
 		
