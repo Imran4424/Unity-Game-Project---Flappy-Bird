@@ -26,6 +26,7 @@ public class MenuController : MonoBehaviour
 	void Start ()
 	{
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
+		gameLevels[GameController.instance.GetSelectedLevel()].SetActive(true);
 
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
