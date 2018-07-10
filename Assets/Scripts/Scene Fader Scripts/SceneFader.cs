@@ -49,6 +49,11 @@ public class SceneFader : MonoBehaviour {
 		StartCoroutine(FadeInAnimation(levelName));
 	}
 
+	public void FadeOut()
+	{
+		
+	}
+
 	IEnumerator FadeInAnimation(string levelName)
 	{
 		fadeCanvas.SetActive(true);
