@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GamePlayController : MonoBehaviour {
+public class GamePlayController : MonoBehaviour
+{
 
 	public static GamePlayController instance;
 
@@ -25,27 +26,27 @@ public class GamePlayController : MonoBehaviour {
 	[SerializeField]
 	private Image medalImage;
 
-	void Awake()
+	void Awake ()
 	{
-		MakeInstance();
-		birds[GameController.instance.GetSelectedBird()].SetActive(true);
+		MakeInstance ();
+		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 1f;
 	}
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
+
 	}
 
-	void MakeInstance()
+	// Update is called once per frame
+	void Update ()
+	{
+
+	}
+
+	void MakeInstance ()
 	{
 		if (instance == null)
 		{
@@ -55,58 +56,58 @@ public class GamePlayController : MonoBehaviour {
 
 	// pause the game
 
-	public void PauseTheGame()
+	public void PauseTheGame ()
 	{
 		if (BirdScript.instance != null)
 		{
 			if (BirdScript.instance.isAlive)
 			{
-				pausePanel.SetActive(true);
+				pausePanel.SetActive (true);
 
 				Time.timeScale = 0f;
 
-				resumeGameButton.onClick.RemoveAllListeners();
-				resumeGameButton.onClick.AddListener(() => ResumeGame());
+				resumeGameButton.onClick.RemoveAllListeners ();
+				resumeGameButton.onClick.AddListener (() => ResumeGame ());
 			}
 		}
 	}
 
 	// resume game
 
-	public void ResumeGame()
+	public void ResumeGame ()
 	{
-		pausePanel.SetActive(true);
+		pausePanel.SetActive (true);
 		Time.timeScale = 1f;
 	}
 
 	// go to menu Button
 
-	public void GoToMenuButton()
+	public void GoToMenuButton ()
 	{
-		SceneFader.instance.FadeIn("MainMenu");
+		SceneFader.instance.FadeIn ("MainMenu");
 	}
 
 	// working with score
 
-	public void setScore(int score)
+	public void setScore (int score)
 	{
 		scoreText.text = "" + score;
 	}
 
 	// player died
 
-	public void PlayerDied(int score)
+	public void PlayerDied (int score)
 	{
-		gameOverPanel.SetActive(true);
+		gameOverPanel.SetActive (true);
 
 		endScore.text = "" + score;
 
-		if (score > GameController.instance.GetHighScore())
+		if (score > GameController.instance.GetHighScore ())
 		{
-			GameController.instance.SetHighScore(score);
+			GameController.instance.SetHighScore (score);
 		}
 
-		bestScore.text = "" + GameController.instance.GetHighScore();
+		bestScore.text = "" + GameController.instance.GetHighScore ();
 
 		if (score <= 50)
 		{
@@ -116,21 +117,28 @@ public class GamePlayController : MonoBehaviour {
 		{
 			medalImage.sprite = medals[1];
 
-			if (GameController.instance.IsGreenBirdUnlocked() == 0)
+			if (GameController.instance.IsGreenBirdUnlocked () == 0)
 			{
-				GameController.instance.UnlockGreenBird();
+				GameController.instance.UnlockGreenBird ();
 			}
 		}
-		else if (score > 200)
+		else if (score > 200 && score < 500)
 		{
 			medalImage.sprite = medals[2];
 
-			if (GameController.instance.IsRedBirdUnlocked() == 0)
+			if (GameController.instance.IsRedBirdUnlocked () == 0)
 			{
-				GameController.instance.UnlockRedBird();
+				GameController.instance.UnlockRedBird ();
+			}
+		}
+		else
+		{
+			medalImage.sprite = medals[2];
+
+			if (GameController.instance.IsDarkLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockDarkLevel();
 			}
 		}
 	}
 }
-
-
