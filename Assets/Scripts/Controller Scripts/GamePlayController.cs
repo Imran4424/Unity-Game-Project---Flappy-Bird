@@ -51,5 +51,18 @@ public class GamePlayController : MonoBehaviour {
 		}
 	}
 
-	
+	// pause the game
+
+	public void PauseTheGame()
+	{
+		if (BirdScript.instance != null)
+		{
+			if (BirdScript.instance.isAlive)
+			{
+				pausePanel.SetActive(true);
+
+				Time.timeScale = 0f;
+			}
+		}
+	}
 }
