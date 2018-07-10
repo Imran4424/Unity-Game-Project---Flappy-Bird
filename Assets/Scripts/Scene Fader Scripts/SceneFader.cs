@@ -13,6 +13,10 @@ public class SceneFader : MonoBehaviour {
 	[SerializeField]
 	private Animator fadeAnim;
 
+	void Awake()
+	{
+		MakeSingleton();
+	}
 
 	// Use this for initialization
 	void Start () 
