@@ -52,8 +52,8 @@ public class GameController : MonoBehaviour
 	*/
 	void IsTheGameStartedForTheFirstTime ()
 	{
-		/* if (!PlayerPrefs.HasKey ("IsTheGameStartedForTheFirstTime"))
-		{ */
+		if (!PlayerPrefs.HasKey ("IsTheGameStartedForTheFirstTime"))
+		{
 			Debug.Log("I am here");
 
 			PlayerPrefs.SetInt (High_Score, 0);
@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour
 			PlayerPrefs.SetInt (Dark_Level, 1);
 
 			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
-		// }
+		}
 	}
 
 	//  working with high score
