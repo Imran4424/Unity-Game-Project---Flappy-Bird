@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneFader : MonoBehaviour {
 
@@ -46,5 +47,7 @@ public class SceneFader : MonoBehaviour {
 		fadeAnim.Play("FadeIn");
 		
 		yield return new WaitForSeconds(.7f);
+
+		
 	}
 }
