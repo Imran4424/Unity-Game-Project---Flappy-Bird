@@ -39,4 +39,11 @@ public class SceneFader : MonoBehaviour {
 			DontDestroyOnLoad(gameObject);
 		}
 	}
+
+	IEnumerator FadeInAnimation(string levelname)
+	{
+		fadeCanvas.SetActive(true);
+		
+		yield return null;
+	}
 }
