@@ -73,7 +73,8 @@ public class GamePlayController : MonoBehaviour {
 
 	public void ResumeGame()
 	{
-
+		pausePanel.SetActive(true);
+		Time.timeScale = 1f;
 	}
 
 	// go to menu Button
