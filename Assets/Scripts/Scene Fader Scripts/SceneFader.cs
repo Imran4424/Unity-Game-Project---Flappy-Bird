@@ -43,7 +43,8 @@ public class SceneFader : MonoBehaviour {
 	IEnumerator FadeInAnimation(string levelname)
 	{
 		fadeCanvas.SetActive(true);
+		fadeAnim.Play("FadeIn");
 		
-		yield return null;
+		yield return new WaitForSeconds(.7f);
 	}
 }
