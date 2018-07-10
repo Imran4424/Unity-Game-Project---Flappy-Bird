@@ -37,7 +37,9 @@ public class MenuController : MonoBehaviour
 	void Start ()
 	{
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
-		gameLevels[GameController.instance.GetSelectedLevel()].SetActive(true);
+		gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+
+		gemScoreText.text = "" + GameController.instance.GetGemScore ();
 
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
@@ -85,9 +87,9 @@ public class MenuController : MonoBehaviour
 
 	// play game
 
-	public void PlayGame()
+	public void PlayGame ()
 	{
-		SceneFader.instance.FadeIn("GamePlay");
+		SceneFader.instance.FadeIn ("GamePlay");
 	}
 
 	// changing the birds
