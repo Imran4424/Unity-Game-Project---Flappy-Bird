@@ -58,6 +58,7 @@ public class GameController : MonoBehaviour
 			//Debug.Log("I am here");
 
 			PlayerPrefs.SetInt (High_Score, 0);
+			PlayerPrefs.SetInt(Gem_Score,10);
 			PlayerPrefs.SetInt (Selected_Bird, 0);
 			PlayerPrefs.SetInt (Green_Bird, 0);
 			PlayerPrefs.SetInt (Red_Bird, 0);
@@ -77,6 +78,18 @@ public class GameController : MonoBehaviour
 	public int GetHighScore ()
 	{
 		return PlayerPrefs.GetInt (High_Score);
+	}
+
+	// working with gem score
+
+	public void SetGemScore(int gemScore)
+	{
+		PlayerPrefs.SetInt(Gem_Score,gemScore);
+	}
+
+	public int GetGemScore()
+	{
+		return PlayerPrefs.GetInt(Gem_Score);
 	}
 
 	// working with selected birds
