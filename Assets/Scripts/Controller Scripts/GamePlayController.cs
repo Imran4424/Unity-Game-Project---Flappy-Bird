@@ -28,7 +28,7 @@ public class GamePlayController : MonoBehaviour {
 	void Awake()
 	{
 		MakeInstance();
-		Time.timeScale = 0f;
+		Time.timeScale = 1f;
 	}
 
 	// Use this for initialization
@@ -62,6 +62,8 @@ public class GamePlayController : MonoBehaviour {
 				pausePanel.SetActive(true);
 
 				Time.timeScale = 0f;
+
+				resumeGameButton.onClick.RemoveAllListeners();
 			}
 		}
 	}
