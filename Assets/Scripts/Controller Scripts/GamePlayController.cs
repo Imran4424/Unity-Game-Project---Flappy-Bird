@@ -75,6 +75,13 @@ public class GamePlayController : MonoBehaviour {
 	{
 
 	}
+
+	// go to menu Button
+
+	public void GoToMenuButton()
+	{
+		
+	}
 }
 
 
