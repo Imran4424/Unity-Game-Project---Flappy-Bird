@@ -14,7 +14,7 @@ public class GamePlayController : MonoBehaviour {
 	private Button pauseGameButton, restartGameButton;
 
 	[SerializeField]
-	private GameObject pausePanel, gameOverPanel;
+	private GameObject pausePanel, gameOverPanel, saveMePanel;
 
 	[SerializeField]
 	private GameObject[] birds;
