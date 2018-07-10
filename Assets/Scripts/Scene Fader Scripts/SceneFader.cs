@@ -33,6 +33,10 @@ public class SceneFader : MonoBehaviour {
 		{
 			Destroy(gameObject);
 		}
-		
+		else
+		{
+			instance = this;
+			DontDestroyOnLoad(gameObject);
+		}
 	}
 }
