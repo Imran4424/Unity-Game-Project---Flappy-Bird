@@ -92,13 +92,14 @@ public class GamePlayController : MonoBehaviour
 
 	public void GoToMenuButton ()
 	{
+		Time.timeScale = 1f;
 		SceneFader.instance.FadeIn ("MainMenu");
 	}
 
-	public void GoMainMenu()
+	/* public void ToMainMenu()
 	{
 		SceneManager.LoadScene("MainMenu",LoadSceneMode.Single);
-	}
+	} */
 
 	// working with score
 
