@@ -6,6 +6,13 @@ public class SceneFader : MonoBehaviour {
 
 	public static SceneFader instance;
 
+	[SerializeField]
+	private GameObject fadeCanvas;
+
+	[SerializeField]
+	private Animator fadeAnim;
+
+	
 	// Use this for initialization
 	void Start () {
 		
