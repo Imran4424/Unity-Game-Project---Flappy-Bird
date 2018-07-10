@@ -20,6 +20,8 @@ public class MenuController : MonoBehaviour
 	void Awake ()
 	{
 		MakeInstance ();
+
+		Time.timeScale = 1f;
 	}
 
 	// Use this for initialization
@@ -30,6 +32,7 @@ public class MenuController : MonoBehaviour
 
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
+
 	}
 
 	// Update is called once per frame
