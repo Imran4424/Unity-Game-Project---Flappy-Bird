@@ -92,6 +92,13 @@ public class GamePlayController : MonoBehaviour {
 	{
 		scoreText.text = "" + score;
 	}
+
+	// player died
+
+	public void PlayerDied()
+	{
+		gameOverPanel.SetActive(true);
+	}
 }
 
 
