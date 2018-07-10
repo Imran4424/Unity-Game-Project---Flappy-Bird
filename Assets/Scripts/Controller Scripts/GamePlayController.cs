@@ -75,6 +75,7 @@ public class GamePlayController : MonoBehaviour {
 	{
 		pausePanel.SetActive(true);
 		Time.timeScale = 1f;
+		
 	}
 
 	// go to menu Button
