@@ -80,7 +80,7 @@ public class GamePlayController : MonoBehaviour {
 
 	public void GoToMenuButton()
 	{
-		
+		SceneFader.instance.FadeIn("MainMenu");
 	}
 }
 
