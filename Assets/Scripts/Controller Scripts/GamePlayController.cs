@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GamePlayController : MonoBehaviour
@@ -78,6 +79,13 @@ public class GamePlayController : MonoBehaviour
 	{
 		pausePanel.SetActive (false);
 		Time.timeScale = 1f;
+	}
+
+	// restart the game
+
+	public void RestartGame ()
+	{
+		SceneFader.instance.FadeIn (SceneManager.GetActiveScene ().name);
 	}
 
 	// go to menu Button
