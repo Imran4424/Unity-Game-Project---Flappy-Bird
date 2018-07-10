@@ -71,6 +71,13 @@ public class MenuController : MonoBehaviour
 		}
 	}
 
+	// play game
+
+	public void PlayGame()
+	{
+		SceneFader.instance.FadeIn("GamePlay");
+	}
+
 	// changing the birds
 
 	public void ChangeBirds ()
