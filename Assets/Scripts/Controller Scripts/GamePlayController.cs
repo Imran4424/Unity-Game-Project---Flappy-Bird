@@ -124,6 +124,11 @@ public class GamePlayController : MonoBehaviour {
 		else if (score > 200)
 		{
 			medalImage.sprite = medals[2];
+
+			if (GameController.instance.IsRedBirdUnlocked() == 0)
+			{
+				GameController.instance.UnlockRedBird();
+			}
 		}
 	}
 }
