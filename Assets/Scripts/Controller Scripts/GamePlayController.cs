@@ -107,6 +107,10 @@ public class GamePlayController : MonoBehaviour
 		scoreText.text = "" + score;
 	}
 
+	// save me panel
+
+	
+
 	// player died
 
 	public void PlayerDied (int score)
