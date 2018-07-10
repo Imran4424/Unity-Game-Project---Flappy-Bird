@@ -255,6 +255,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!50 &52821041 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50290792123404372, guid: 2ccf687d87eb64443932d54f45c06571,
+    type: 2}
+  m_PrefabInternal: {fileID: 52821038}
+--- !u!95 &52821042 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95262803585092974, guid: 2ccf687d87eb64443932d54f45c06571,
+    type: 2}
+  m_PrefabInternal: {fileID: 52821038}
+--- !u!114 &52821043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52821039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4ce4db5fa7d4f4881ea050efc27a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigidBody: {fileID: 52821041}
+  anim: {fileID: 52821042}
+  isAlive: 0
+  audioSC: {fileID: 52821040}
+  flapClip: {fileID: 8300000, guid: 15636c40a57e67748940c1c5e1785153, type: 3}
+  pointClip: {fileID: 8300000, guid: 7a78e5eb63e5da441afe09f6a5cb90a9, type: 3}
+  diedClip: {fileID: 8300000, guid: 018fcea592dd2df4fa2351345f9c4551, type: 3}
+  score: 0
 --- !u!1 &80684579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,86 +1761,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!82 &509780978
-AudioSource:
+--- !u!50 &509780978 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50582066633018226, guid: 1168ddf1edec4904890073009a50b666,
+    type: 2}
+  m_PrefabInternal: {fileID: 509780975}
+--- !u!95 &509780979 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95113916559852556, guid: 1168ddf1edec4904890073009a50b666,
+    type: 2}
+  m_PrefabInternal: {fileID: 509780975}
+--- !u!114 &509780980
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 509780976}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4ce4db5fa7d4f4881ea050efc27a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigidBody: {fileID: 509780978}
+  anim: {fileID: 509780979}
+  isAlive: 0
+  audioSC: {fileID: 509780977}
+  flapClip: {fileID: 8300000, guid: 15636c40a57e67748940c1c5e1785153, type: 3}
+  pointClip: {fileID: 8300000, guid: 7a78e5eb63e5da441afe09f6a5cb90a9, type: 3}
+  diedClip: {fileID: 8300000, guid: 018fcea592dd2df4fa2351345f9c4551, type: 3}
+  score: 0
 --- !u!1 &553312423
 GameObject:
   m_ObjectHideFlags: 0
