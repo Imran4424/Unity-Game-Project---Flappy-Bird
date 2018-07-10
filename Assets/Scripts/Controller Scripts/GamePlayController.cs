@@ -19,6 +19,12 @@ public class GamePlayController : MonoBehaviour {
 	[SerializeField]
 	private GameObject[] birds;
 
+	[SerializeField]
+	private Sprite[] medals;
+
+	[SerializeField]
+	private Image medalImage;
+
 	// Use this for initialization
 	void Start () {
 		
