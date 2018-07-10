@@ -24,5 +24,8 @@ public class SceneFader : MonoBehaviour {
 	{
 		
 	}
+
+	// making singleton
+
 	
 }
