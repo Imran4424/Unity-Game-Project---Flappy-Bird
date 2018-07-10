@@ -28,6 +28,7 @@ public class GamePlayController : MonoBehaviour {
 	void Awake()
 	{
 		MakeInstance();
+		Time.timeScale = 0f;
 	}
 
 	// Use this for initialization
@@ -49,4 +50,6 @@ public class GamePlayController : MonoBehaviour {
 			instance = this;
 		}
 	}
+
+	
 }
