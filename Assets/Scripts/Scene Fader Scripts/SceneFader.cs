@@ -46,7 +46,7 @@ public class SceneFader : MonoBehaviour {
 
 	public void FadeIn(string levelName)
 	{
-		
+		StartCoroutine(FadeInAnimation(levelName));
 	}
 
 	IEnumerator FadeInAnimation(string levelName)
