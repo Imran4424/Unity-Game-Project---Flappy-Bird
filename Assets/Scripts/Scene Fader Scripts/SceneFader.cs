@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SceneFader : MonoBehaviour {
 
+	public static SceneFader instance;
+
 	// Use this for initialization
 	void Start () {
 		
