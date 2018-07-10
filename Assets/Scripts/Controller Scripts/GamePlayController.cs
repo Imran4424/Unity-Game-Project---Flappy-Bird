@@ -38,7 +38,7 @@ public class GamePlayController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
+		gemScoreText.text = "" + GameController.instance.GetGemScore ();
 	}
 
 	// Update is called once per frame
