@@ -60,6 +60,9 @@ MonoBehaviour:
   pausePanel: {fileID: 0}
   gameOverPanel: {fileID: 0}
   saveMePanel: {fileID: 0}
-  birds: []
+  birds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   medals: []
   medalImage: {fileID: 0}
