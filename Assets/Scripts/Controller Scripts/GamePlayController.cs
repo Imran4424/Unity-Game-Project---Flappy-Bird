@@ -116,6 +116,10 @@ public class GamePlayController : MonoBehaviour {
 		{
 			medalImage.sprite = medals[1];
 		}
+		else if (score > 150)
+		{
+			medalImage.sprite = medalImage[2];
+		}
 	}
 }
 
