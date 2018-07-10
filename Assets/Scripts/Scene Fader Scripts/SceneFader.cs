@@ -41,6 +41,14 @@ public class SceneFader : MonoBehaviour {
 		}
 	}
 
+
+	//working with animations
+
+	public void FadeIn(string levelName)
+	{
+		
+	}
+
 	IEnumerator FadeInAnimation(string levelName)
 	{
 		fadeCanvas.SetActive(true);
