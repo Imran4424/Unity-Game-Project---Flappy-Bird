@@ -28,6 +28,8 @@ public class GamePlayController : MonoBehaviour {
 	void Awake()
 	{
 		MakeInstance();
+		birds[GameController.instance.GetSelectedBird()].SetActive(true);
+
 		Time.timeScale = 1f;
 	}
 
