@@ -95,9 +95,18 @@ public class GamePlayController : MonoBehaviour {
 
 	// player died
 
-	public void PlayerDied()
+	public void PlayerDied(int score)
 	{
 		gameOverPanel.SetActive(true);
+
+		endScore.text = "" + score;
+
+		if (score > GameController.instance.GetHighScore())
+		{
+			GameController.instance.SetHighScore(score);
+		}
+
+		bestScore.text = "" + GameController.instance.GetHighScore();
 	}
 }
 
