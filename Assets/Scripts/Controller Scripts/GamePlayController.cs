@@ -124,8 +124,7 @@ public class GamePlayController : MonoBehaviour
 
 	private int saveMeScore;
 	private Vector3 spawnBirdHere;
-
-	private bool noNeed = false;
+	private bool noNeed;
 
 	public void SaveMeMethod (int score, Vector3 spawnBirdPos)
 	{
@@ -140,27 +139,22 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMe ()
 	{
-		if (true)
+		noNeed = true;
+
+		if (GameController.instance.GetGemScore () >= 2)
 		{
-			noNeed = true;
+
 			BirdScript.instance.transform.position = spawnBirdHere;
 			//StartCoroutine (waitForPlay ());
 
 			saveMePanel.SetActive (false);
 			BirdScript.instance.ResetPlayerState ();
 			BirdScript.instance.isAlive = true;
-			Time.timeScale = 0f;
 
-			for (int i = 0; i < 2000; i++)
-			{
-				
-			}
-
-			Time.timeScale = 1f;
 		}
 		else
 		{
-			
+			StartCoroutine(showGameOverPanel());
 		}
 
 	}
@@ -175,6 +169,14 @@ public class GamePlayController : MonoBehaviour
 			PlayerDied (saveMeScore);
 
 		}
+	}
+
+	IEnumerator showGameOverPanel ()
+	{
+		yield return new WaitForSeconds (3);
+		saveMePanel.SetActive (false);
+
+		PlayerDied (saveMeScore);
 	}
 
 	IEnumerator waitForPlay ()
