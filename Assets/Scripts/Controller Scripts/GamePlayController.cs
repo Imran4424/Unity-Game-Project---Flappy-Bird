@@ -13,7 +13,7 @@ public class GamePlayController : MonoBehaviour
 	private Text scoreText, endScore, bestScore, gemScoreText;
 
 	[SerializeField]
-	private Button pauseGameButton, resumeGameButton;
+	private Button pauseGameButton, resumeGameButton, saveMeButton;
 
 	[SerializeField]
 	private GameObject pausePanel, gameOverPanel, saveMePanel;
@@ -111,7 +111,7 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMe()
 	{
-		
+
 	}
 
 	// player died

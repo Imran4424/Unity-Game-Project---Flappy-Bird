@@ -120,7 +120,7 @@ public class BirdScript : MonoBehaviour {
 
 				// working with save me panel
 
-				GamePlayController.instance.
+				GamePlayController.instance.SaveMe();
 
 				GamePlayController.instance.PlayerDied(score);
 			}
