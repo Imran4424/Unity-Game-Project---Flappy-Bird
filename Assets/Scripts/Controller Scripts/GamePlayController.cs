@@ -111,23 +111,24 @@ public class GamePlayController : MonoBehaviour
 
 	private int saveMeScore;
 
-	public void SaveMeMethod(int score)
+	public void SaveMeMethod (int score)
 	{
 		saveMeScore = score;
-		saveMePanel.SetActive(true);
-		StartCoroutine(wait());
-		saveMePanel.SetActive(false);
+		saveMePanel.SetActive (true);
+		StartCoroutine (wait ());
+
 	}
 
-	public void SaveMe()
+	public void SaveMe ()
 	{
 
 	}
 
-	IEnumerator wait()
+	IEnumerator wait ()
 	{
-		
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds (3);
+		saveMePanel.SetActive (false);
+		PlayerDied(saveMeScore);
 	}
 
 	// player died

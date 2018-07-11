@@ -127,7 +127,7 @@ public class BirdScript : MonoBehaviour {
 
 				// working with gameplay player died option
 
-				GamePlayController.instance.PlayerDied(score);
+				//GamePlayController.instance.PlayerDied(score);
 			}
 		}
 	}
