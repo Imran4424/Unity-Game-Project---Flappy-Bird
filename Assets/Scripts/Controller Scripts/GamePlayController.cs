@@ -116,11 +116,12 @@ public class GamePlayController : MonoBehaviour
 		saveMeScore = score;
 		saveMePanel.SetActive(true);
 		StartCoroutine(wait());
+		saveMePanel.SetActive(false);
 	}
 
 	public void SaveMe()
 	{
-		
+
 	}
 
 	IEnumerator wait()
