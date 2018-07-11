@@ -109,6 +109,8 @@ public class GamePlayController : MonoBehaviour
 
 	// save me panel
 
+	private int saveMeScore;
+
 	public void SaveMeMethod(int score)
 	{
 		saveMePanel.SetActive(true);
