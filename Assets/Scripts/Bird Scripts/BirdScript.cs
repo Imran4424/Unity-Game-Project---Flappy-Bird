@@ -112,7 +112,7 @@ public class BirdScript : MonoBehaviour
 
 	public void ResetPlayerState ()
 	{
-		anim.ResetTrigger("Bird Died");
+		anim.ResetTrigger ("Bird Died");
 		isAlive = true;
 	}
 
@@ -136,11 +136,17 @@ public class BirdScript : MonoBehaviour
 				temp.x = temp.x + 1.5f;
 				temp.y = 0f;
 
-				GamePlayController.instance.SaveMeMethod (score, temp);
+				if (!GamePlayController.instance.isSaveMeUsed)
+				{
+					GamePlayController.instance.SaveMeMethod (score, temp);
+				}
+				else
+				{
+					// working with gameplay player died option
 
-				// working with gameplay player died option
+					GamePlayController.instance.PlayerDied (score);
+				}
 
-				//GamePlayController.instance.PlayerDied(score);
 			}
 		}
 	}
