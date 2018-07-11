@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/GamePlay.unity
     guid: 0796e86ef881c554ba02b20f7b5d6482
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/GamePlay Dark.unity
-    guid: a30f643957a66a145a765b9c3652e19a
+    guid: c52b2ef26de86b943aee222dd13e7a32
+  - enabled: 1
+    path: Assets/_Scenes/About.unity
+    guid: 138f7bc3705b2414095a73e2f7ff0493
