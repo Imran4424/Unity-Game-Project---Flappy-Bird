@@ -40,9 +40,9 @@ public class GamePlayController : MonoBehaviour
 	{
 		//working fine, no need to touch
 
-		int score = GameController.instance.GetGemScore ();
+		int gemScoreForText = GameController.instance.GetGemScore ();
 
-		gemScoreText.text = "" + score;
+		gemScoreText.text = "" + gemScoreForText;
 	}
 
 	// Use this for initialization
@@ -142,6 +142,7 @@ public class GamePlayController : MonoBehaviour
 	}
 
 	// player died
+	//working fine, no need to touch
 
 	public void PlayerDied (int score)
 	{
@@ -154,11 +155,7 @@ public class GamePlayController : MonoBehaviour
 			GameController.instance.SetHighScore (score);
 		}
 
-		int bestScoreForText = GameController.instance.GetHighScore ();
-
-		Debug.Log (bestScoreForText);
-
-		bestScore.text = "" + bestScoreForText;
+		bestScore.text = "" + GameController.instance.GetHighScore ();
 
 		if (score <= 50)
 		{
