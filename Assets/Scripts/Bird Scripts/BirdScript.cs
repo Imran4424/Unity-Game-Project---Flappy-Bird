@@ -125,6 +125,7 @@ public class BirdScript : MonoBehaviour {
 				Vector3 temp = target.transform.position;
 
 				temp.x = temp.x + 1f;
+				temp.y = 0f;
 
 				GamePlayController.instance.SaveMeMethod(score,temp);
 

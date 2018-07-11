@@ -32,6 +32,7 @@ public class GamePlayController : MonoBehaviour
 	void Awake ()
 	{
 		MakeInstance ();
+		numberOftimesSaveMeUsed = 0;
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 1f;
@@ -122,10 +123,12 @@ public class GamePlayController : MonoBehaviour
 	// save me panel
 
 	private int saveMeScore;
+	private Vector3 spawnBirdHere;
 
 	public void SaveMeMethod (int score, Vector3 spawnBirdPos)
 	{
 		saveMeScore = score;
+		spawnBirdHere = spawnBirdPos;
 		saveMePanel.SetActive (true);
 		StartCoroutine (wait ());
 
@@ -133,7 +136,10 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMe ()
 	{
+		Time.timeScale = 0f;
 
+		BirdScript.instance.transform.position = spawnBirdHere;
+		StartCoroutine(waitForPlay());
 	}
 
 	IEnumerator wait ()
@@ -141,6 +147,14 @@ public class GamePlayController : MonoBehaviour
 		yield return new WaitForSeconds (3);
 		saveMePanel.SetActive (false);
 		PlayerDied (saveMeScore);
+	}
+
+	IEnumerator waitForPlay ()
+	{
+		saveMePanel.SetActive (false);
+		yield return new WaitForSeconds (2);
+		BirdScript.instance.isAlive = true;
+		Time.timeScale = 1f;
 	}
 
 	// player died
