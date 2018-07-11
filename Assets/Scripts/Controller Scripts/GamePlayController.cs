@@ -27,12 +27,12 @@ public class GamePlayController : MonoBehaviour
 	[SerializeField]
 	private Image medalImage;
 
-	private int numberOftimesSaveMeUsed;
+	public bool isSaveMeUsed;
 
 	void Awake ()
 	{
 		MakeInstance ();
-		numberOftimesSaveMeUsed = 0;
+		isSaveMeUsed = false;
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 1f;
