@@ -71,35 +71,35 @@ public class PipeCollector : MonoBehaviour
 
 	public void ManipulatingDistance (int score)
 	{
-		if (score > 50 && score <= 100)
+		if (score >= 50 && score <= 100)
 		{
 			distance = 4.75f;
 		}
-		else if (score > 100 && score <= 150)
+		else if (score >= 100 && score <= 150)
 		{
 			distance = 4.5f;
 		}
-		else if (score > 150 && score <= 200)
+		else if (score >= 150 && score <= 200)
 		{
 			distance = 4.25f;
 		}
-		else if (score > 200 && score <= 250)
+		else if (score >= 200 && score <= 250)
 		{
 			distance = 4f;
 		}
-		else if (score > 250 && score <= 300)
+		else if (score >= 250 && score <= 300)
 		{
 			distance = 3.75f;
 		}
-		else if (score > 350 && score <= 400)
+		else if (score >= 350 && score <= 400)
 		{
 			distance = 3.5f;
 		}
-		else if (score > 400 && score <= 550)
+		else if (score >= 400 && score <= 550)
 		{
 			distance = 3.25f;
 		}
-		else if (score <550)
+		else if (score <= 550)
 		{
 			distance = 3f;
 		}
