@@ -109,7 +109,7 @@ public class GamePlayController : MonoBehaviour
 
 	// save me panel
 
-	public void SaveMe()
+	public void SaveMe(int score)
 	{
 
 	}
