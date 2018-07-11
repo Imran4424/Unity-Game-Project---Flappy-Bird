@@ -55,6 +55,10 @@
      <Compile Include="Assets\Scripts\Camera Script\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Collector Scripts\BGCollector.cs" />
      <Compile Include="Assets\Scripts\Collector Scripts\PipeCollector.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\GamePlayController.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\MenuController.cs" />
+     <Compile Include="Assets\Scripts\Scene Fader Scripts\SceneFader.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
