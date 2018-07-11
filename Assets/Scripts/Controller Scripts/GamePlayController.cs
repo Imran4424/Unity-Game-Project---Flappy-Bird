@@ -154,6 +154,7 @@ public class GamePlayController : MonoBehaviour
 		saveMePanel.SetActive (false);
 		yield return new WaitForSeconds (2);
 		BirdScript.instance.isAlive = true;
+		BirdScript.instance.ResetPlayerState();
 		Time.timeScale = 1f;
 	}
 
