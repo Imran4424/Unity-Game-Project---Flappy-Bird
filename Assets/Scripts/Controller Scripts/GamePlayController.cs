@@ -30,18 +30,29 @@ public class GamePlayController : MonoBehaviour
 	void Awake ()
 	{
 		MakeInstance ();
+		GemScore ();
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 1f;
 
 		//GameController.instance.SetHighScore(0);
-		GameController.instance.SetGemScore(0);
+		GameController.instance.SetGemScore (0);
+
+	}
+
+	void GemScore ()
+	{
+		int score = GameController.instance.GetGemScore ();
+
+		Debug.Log (score);
+
+		gemScoreText.text = "" + score;
 	}
 
 	// Use this for initialization
 	void Start ()
 	{
-		gemScoreText.text = "" + GameController.instance.GetGemScore ();
+
 	}
 
 	// Update is called once per frame
@@ -131,7 +142,7 @@ public class GamePlayController : MonoBehaviour
 	{
 		yield return new WaitForSeconds (3);
 		saveMePanel.SetActive (false);
-		PlayerDied(saveMeScore);
+		PlayerDied (saveMeScore);
 	}
 
 	// player died
@@ -147,12 +158,16 @@ public class GamePlayController : MonoBehaviour
 			GameController.instance.SetHighScore (score);
 		}
 
-		bestScore.text = "" + GameController.instance.GetHighScore ();
+		int bestScoreForText = GameController.instance.GetHighScore ();
 
-		if (score <= 50)
-		{
-			medalImage.sprite = medals[0];
-		}
+		Debug.Log(bestScoreForText);
+
+		bestScore.text = "" + bestScoreForText;
+
+			if (score <= 50)
+			{
+				medalImage.sprite = medals[0];
+			}
 		else if (score > 50 && score < 200)
 		{
 			medalImage.sprite = medals[1];
