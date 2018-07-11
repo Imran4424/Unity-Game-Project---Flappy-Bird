@@ -100,6 +100,13 @@ public class MenuController : MonoBehaviour
 
 	}
 
+	// about menu
+
+	public void GoToAbout()
+	{
+		SceneFader.instance.FadeIn("About");
+	}
+
 	// changing the birds
 
 	public void ChangeBirds ()
