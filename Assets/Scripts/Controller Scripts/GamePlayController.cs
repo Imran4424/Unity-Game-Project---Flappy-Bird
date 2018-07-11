@@ -109,7 +109,7 @@ public class GamePlayController : MonoBehaviour
 
 	// save me panel
 
-	public void SaveMe(int score)
+	public void SaveMeMethod(int score)
 	{
 		saveMePanel.SetActive(true);
 		StartCoroutine(wait());
