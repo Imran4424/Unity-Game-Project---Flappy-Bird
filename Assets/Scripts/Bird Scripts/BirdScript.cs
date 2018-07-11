@@ -113,8 +113,6 @@ public class BirdScript : MonoBehaviour
 	public void ResetPlayerState ()
 	{
 		anim.ResetTrigger ("Brid Died");
-
-		Time.timeScale = 1f;
 	}
 
 	// on collison player died method

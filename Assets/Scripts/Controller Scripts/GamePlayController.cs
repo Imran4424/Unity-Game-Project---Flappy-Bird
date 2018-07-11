@@ -136,10 +136,8 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMe ()
 	{
-		Time.timeScale = 0f;
-
 		BirdScript.instance.transform.position = spawnBirdHere;
-		StartCoroutine(waitForPlay());
+		StartCoroutine (waitForPlay ());
 	}
 
 	IEnumerator wait ()
@@ -151,10 +149,12 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator waitForPlay ()
 	{
+		Time.timeScale = 0f;
+
 		saveMePanel.SetActive (false);
 		yield return new WaitForSeconds (2);
 		BirdScript.instance.isAlive = true;
-		BirdScript.instance.ResetPlayerState();
+		BirdScript.instance.ResetPlayerState ();
 		Time.timeScale = 1f;
 	}
 
