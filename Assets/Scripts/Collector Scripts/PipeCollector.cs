@@ -61,7 +61,10 @@ public class PipeCollector : MonoBehaviour
 
 	void MakeInstance()
 	{
-		
+		if (instance == null)
+		{
+			instance = this;
+		}
 	}
 
 	void OnTriggerEnter2D (Collider2D target)
