@@ -118,6 +118,11 @@ public class GamePlayController : MonoBehaviour
 		StartCoroutine(wait());
 	}
 
+	public void SaveMe()
+	{
+		
+	}
+
 	IEnumerator wait()
 	{
 		
