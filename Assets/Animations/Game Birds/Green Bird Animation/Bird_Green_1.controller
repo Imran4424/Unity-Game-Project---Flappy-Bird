@@ -13,13 +13,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Bird Died
-    m_Type: 9
+    m_Controller: {fileID: 0}
+  - m_Name: BirdDied
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -41,7 +41,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Bird Died
+    m_ConditionEvent: BirdDied
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102748708989746214}
@@ -88,8 +88,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Bird Died
+  - m_ConditionMode: 2
+    m_ConditionEvent: BirdDied
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102983940714314762}
@@ -113,7 +113,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Bird Died
+    m_ConditionEvent: BirdDied
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102748708989746214}
@@ -136,8 +136,8 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Bird Died
+  - m_ConditionMode: 2
+    m_ConditionEvent: BirdDied
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102622674317624398}
@@ -274,7 +274,7 @@ AnimatorStateMachine:
     m_Position: {x: 252, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102748708989746214}
-    m_Position: {x: 528, y: 120, z: 0}
+    m_Position: {x: 576, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

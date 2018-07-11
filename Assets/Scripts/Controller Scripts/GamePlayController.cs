@@ -146,12 +146,11 @@ public class GamePlayController : MonoBehaviour
 			GameController.instance.SetGemScore(GameController.instance.GetGemScore() - 2);
 			GemScore();
 
-			BirdScript.instance.ResetPlayerState ();
 			BirdScript.instance.transform.position = spawnBirdHere;
+			BirdScript.instance.ResetPlayerState ();
 			//StartCoroutine (waitForPlay ());
 
 			saveMePanel.SetActive (false);
-			BirdScript.instance.isAlive = true;
 
 		}
 		else
@@ -163,7 +162,7 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator wait ()
 	{
-		yield return new WaitForSeconds (4);
+		yield return new WaitForSeconds (3);
 		saveMePanel.SetActive (false);
 
 		if (!noNeed)
@@ -175,7 +174,7 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator showGameOverPanel ()
 	{
-		yield return new WaitForSeconds (3);
+		yield return new WaitForSeconds (1);
 		saveMePanel.SetActive (false);
 
 		PlayerDied (saveMeScore);

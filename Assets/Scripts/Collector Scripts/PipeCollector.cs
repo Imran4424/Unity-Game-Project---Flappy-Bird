@@ -5,8 +5,10 @@ using UnityEngine;
 public class PipeCollector : MonoBehaviour
 {
 
+	public static PipeCollector instance;
+
 	private GameObject[] pipeHolders;
-	private float distance = 3f;
+	private float distance = 5f;
 	private float lastPipeX;
 	private float pipeMin = -1.5f;
 	private float pipeMax = 2.4f;
@@ -55,6 +57,11 @@ public class PipeCollector : MonoBehaviour
 	void Update ()
 	{
 
+	}
+
+	void MakeInstance()
+	{
+		
 	}
 
 	void OnTriggerEnter2D (Collider2D target)

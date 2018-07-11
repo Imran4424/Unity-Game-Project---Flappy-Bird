@@ -112,7 +112,7 @@ public class BirdScript : MonoBehaviour
 
 	public void ResetPlayerState ()
 	{
-		anim.ResetTrigger ("Bird Died");
+		anim.SetBool ("BirdDied", false);
 		isAlive = true;
 	}
 
@@ -125,7 +125,9 @@ public class BirdScript : MonoBehaviour
 			if (isAlive)
 			{
 				isAlive = false;
-				anim.SetTrigger ("Bird Died");
+				//anim.SetTrigger ("Bird Died");
+
+				anim.SetBool ("BirdDied", true);
 
 				audioSC.PlayOneShot (diedClip);
 
@@ -134,7 +136,7 @@ public class BirdScript : MonoBehaviour
 				Vector3 temp = target.transform.position;
 
 				temp.x = temp.x + 1.5f;
-				temp.y = 0f;
+				temp.y = 1.5f;
 
 				if (!GamePlayController.instance.isSaveMeUsed)
 				{
