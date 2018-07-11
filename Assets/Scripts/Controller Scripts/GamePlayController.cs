@@ -129,6 +129,8 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMeMethod (int score, Vector3 spawnBirdPos)
 	{
+		isSaveMeUsed = true;
+
 		saveMeScore = score;
 		spawnBirdHere = spawnBirdPos;
 		saveMePanel.SetActive (true);
