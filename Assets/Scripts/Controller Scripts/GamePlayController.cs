@@ -33,6 +33,8 @@ public class GamePlayController : MonoBehaviour
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 1f;
+
+		//GameController.instance.SetHighScore(0);
 	}
 
 	// Use this for initialization
