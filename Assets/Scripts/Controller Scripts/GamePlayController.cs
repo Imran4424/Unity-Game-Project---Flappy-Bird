@@ -111,7 +111,13 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMe(int score)
 	{
+		saveMePanel.SetActive(true);
+	}
 
+	IEnumerator wait()
+	{
+		
+		yield return new WaitForSeconds(3);
 	}
 
 	// player died
