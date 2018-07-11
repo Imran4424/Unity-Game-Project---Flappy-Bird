@@ -109,7 +109,10 @@ public class GamePlayController : MonoBehaviour
 
 	// save me panel
 
-	
+	public void SaveMe()
+	{
+		
+	}
 
 	// player died
 
