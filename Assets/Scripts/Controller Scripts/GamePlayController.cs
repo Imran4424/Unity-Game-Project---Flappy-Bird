@@ -35,6 +35,7 @@ public class GamePlayController : MonoBehaviour
 		Time.timeScale = 1f;
 
 		//GameController.instance.SetHighScore(0);
+		GameController.instance.SetGemScore(0);
 	}
 
 	// Use this for initialization
