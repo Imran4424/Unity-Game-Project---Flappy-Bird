@@ -118,6 +118,10 @@ public class BirdScript : MonoBehaviour {
 
 				audioSC.PlayOneShot(diedClip);
 
+				// working with save me panel
+
+				GamePlayController.instance.
+
 				GamePlayController.instance.PlayerDied(score);
 			}
 		}
