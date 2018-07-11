@@ -113,6 +113,7 @@ public class BirdScript : MonoBehaviour
 	public void ResetPlayerState ()
 	{
 		anim.ResetTrigger ("Brid Died");
+		isAlive = true;
 	}
 
 	// on collison player died method
