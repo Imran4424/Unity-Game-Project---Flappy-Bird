@@ -107,6 +107,8 @@ public class BirdScript : MonoBehaviour {
 		didFlap = true;
 	}
 
+	// on collison player died method
+
 	void OnCollisionEnter2D(Collision2D target)
 	{
 		if (target.gameObject.tag == "Ground" || target.gameObject.tag == "Pipe")
@@ -122,10 +124,15 @@ public class BirdScript : MonoBehaviour {
 
 				GamePlayController.instance.SaveMeMethod(score);
 
+
+				// working with gameplay player died option
+
 				GamePlayController.instance.PlayerDied(score);
 			}
 		}
 	}
+
+	// on trigger player score method
 
 	void OnTriggerEnter2D(Collider2D target)
 	{
