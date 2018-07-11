@@ -27,6 +27,8 @@ public class GamePlayController : MonoBehaviour
 	[SerializeField]
 	private Image medalImage;
 
+	private int numberOftimesSaveMeUsed;
+
 	void Awake ()
 	{
 		MakeInstance ();
