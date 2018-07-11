@@ -146,11 +146,11 @@ public class GamePlayController : MonoBehaviour
 			GameController.instance.SetGemScore(GameController.instance.GetGemScore() - 2);
 			GemScore();
 
+			BirdScript.instance.ResetPlayerState ();
 			BirdScript.instance.transform.position = spawnBirdHere;
 			//StartCoroutine (waitForPlay ());
 
 			saveMePanel.SetActive (false);
-			BirdScript.instance.ResetPlayerState ();
 			BirdScript.instance.isAlive = true;
 
 		}
