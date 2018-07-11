@@ -142,20 +142,20 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator wait ()
 	{
-		yield return new WaitForSeconds (3);
+		yield return new WaitForSeconds (4f);
 		saveMePanel.SetActive (false);
 		PlayerDied (saveMeScore);
 	}
 
 	IEnumerator waitForPlay ()
 	{
-		Time.timeScale = 0f;
+		//Time.timeScale = 0f;
 
 		saveMePanel.SetActive (false);
-		yield return new WaitForSeconds (2);
 		BirdScript.instance.isAlive = true;
+		yield return new WaitForSeconds (2f);
+		//Time.timeScale = 1f;
 		BirdScript.instance.ResetPlayerState ();
-		Time.timeScale = 1f;
 	}
 
 	// player died
