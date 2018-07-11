@@ -143,6 +143,8 @@ public class GamePlayController : MonoBehaviour
 
 		if (GameController.instance.GetGemScore () >= 2)
 		{
+			GameController.instance.SetGemScore(GameController.instance.GetGemScore() - 2);
+			GemScore();
 
 			BirdScript.instance.transform.position = spawnBirdHere;
 			//StartCoroutine (waitForPlay ());
