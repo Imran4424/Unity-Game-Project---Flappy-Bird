@@ -163,6 +163,39 @@ public class BirdScript : MonoBehaviour
 			audioSC.PlayOneShot (pointClip);
 
 			GamePlayController.instance.setScore (score);
+
+			if (score == 50)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 100)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 150)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 200)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 250)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 350)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 400)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score == 550)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
 		}
 	}
 }

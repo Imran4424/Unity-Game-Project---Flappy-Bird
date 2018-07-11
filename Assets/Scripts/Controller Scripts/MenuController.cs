@@ -89,7 +89,15 @@ public class MenuController : MonoBehaviour
 
 	public void PlayGame ()
 	{
-		SceneFader.instance.FadeIn ("GamePlay");
+		if (GameController.instance.GetSelectedLevel () == 0)
+		{
+			SceneFader.instance.FadeIn ("GamePlay");
+		}
+		else if (GameController.instance.GetSelectedLevel () == 1)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Dark");
+		}
+
 	}
 
 	// changing the birds

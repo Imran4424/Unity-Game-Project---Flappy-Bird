@@ -209,7 +209,7 @@ public class GamePlayController : MonoBehaviour
 		{
 			medalImage.sprite = medals[0];
 		}
-		else if (score > 50 && score < 200)
+		else if (score > 50 && score < 150)
 		{
 			medalImage.sprite = medals[1];
 
@@ -218,7 +218,7 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockGreenBird ();
 			}
 		}
-		else if (score > 200 && score < 500)
+		else if (score > 150 && score < 300)
 		{
 			medalImage.sprite = medals[2];
 
