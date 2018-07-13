@@ -188,7 +188,20 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedLevel () == 1)
 		{
-			
+			if (isEveningLevelUnlocked)
+			{
+				birds[1].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (2);
+				birds[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				birds[1].SetActive (false);
+
+				GameController.instance.SetSelectedBird (0);
+				birds[GameController.instance.GetSelectedBird ()].SetActive (true);
+			}
 		}
 	}
 
