@@ -146,7 +146,7 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Red_Bird);
 	}
 
-	// Unlocking  Level
+	// Unlocking Forest Level
 
 	public void UnlockForestLevel ()
 	{
