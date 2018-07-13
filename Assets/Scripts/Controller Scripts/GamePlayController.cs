@@ -270,9 +270,38 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockForestLevel ();
 			}
 
-			if (GameController.instance.IsEveningLevelUnlocked() == 0)
+			if (GameController.instance.IsEveningLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockEveningLevel();
+				GameController.instance.UnlockEveningLevel ();
+			}
+		}
+		else if (score > 500)
+		{
+			medalImage.sprite = medals[2];
+
+			if (GameController.instance.IsGreenBirdUnlocked () == 0)
+			{
+				GameController.instance.UnlockGreenBird ();
+			}
+
+			if (GameController.instance.IsRedBirdUnlocked () == 0)
+			{
+				GameController.instance.UnlockRedBird ();
+			}
+
+			if (GameController.instance.IsForestLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockForestLevel ();
+			}
+
+			if (GameController.instance.IsEveningLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockEveningLevel ();
+			}
+
+			if (GameController.instance.IsDarkLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockDarkLevel();
 			}
 		}
 	}
