@@ -781,7 +781,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8b21fa5ceebb2364da8d94e5d2c5031c, type: 3}
-    m_FontSize: 30
+    m_FontSize: 25
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
@@ -793,8 +793,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Tap to Play\nUnlock Birds - 51 : Green Bird \n            151 : Red Bird\nUnlock
-    levels - 301 : Night Level\nChange Birds - Tap The Bird\nChange Levels - Tap the
-    Level\n\nUse Gem for second life\nEarn Gem - Touch the Gem in MainMenu"
+    levels - 201 : Forest Level\nUnlock levels - 351 : Forest Level\nUnlock levels
+    - 501 : Dark Level\nChange Birds - Tap The Bird\nChange Levels - Tap the Level\n\nUse
+    Gem for second life\nEarn Gem - Touch the Gem in MainMenu"
 --- !u!222 &863913850
 CanvasRenderer:
   m_ObjectHideFlags: 0
