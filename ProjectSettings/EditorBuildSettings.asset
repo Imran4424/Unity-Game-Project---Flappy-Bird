@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/About.unity
     guid: 138f7bc3705b2414095a73e2f7ff0493
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Forest.unity
+    guid: 01ed71b7013f4d54e9e7db1d1d516f5b
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Evening.unity
+    guid: f4b05f8f557bf4f4e9bc060c1a625bfa
