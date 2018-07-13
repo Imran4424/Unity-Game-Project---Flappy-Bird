@@ -16,6 +16,8 @@ public class MenuController : MonoBehaviour
 
 	private bool isGreenBirdUnlocked;
 	private bool isRedBirdUnlocked;
+	private bool isForestLevelUnlocked;
+	private bool isEveningLevelUnlocked;
 	private bool isDarkLevelUnlocked;
 
 	// gem button and gem text
@@ -81,12 +83,12 @@ public class MenuController : MonoBehaviour
 	{
 		if (GameController.instance.IsForestLevelUnlocked () == 1)
 		{
-			isDarkLevelUnlocked = true;
+			isForestLevelUnlocked = true;
 		}
 
 		if (GameController.instance.IsEveningLevelUnlocked () == 1)
 		{
-			isDarkLevelUnlocked = true;
+			isEveningLevelUnlocked = true;
 		}
 
 		if (GameController.instance.IsDarkLevelUnlocked () == 1)
