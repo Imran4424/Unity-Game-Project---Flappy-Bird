@@ -143,8 +143,8 @@ public class GamePlayController : MonoBehaviour
 
 		if (GameController.instance.GetGemScore () >= 2)
 		{
-			GameController.instance.SetGemScore(GameController.instance.GetGemScore() - 2);
-			GemScore();
+			GameController.instance.SetGemScore (GameController.instance.GetGemScore () - 2);
+			GemScore ();
 
 			BirdScript.instance.transform.position = spawnBirdHere;
 			BirdScript.instance.ResetPlayerState ();
@@ -155,7 +155,7 @@ public class GamePlayController : MonoBehaviour
 		}
 		else
 		{
-			StartCoroutine(showGameOverPanel());
+			StartCoroutine (showGameOverPanel ());
 		}
 
 	}
@@ -209,7 +209,7 @@ public class GamePlayController : MonoBehaviour
 		{
 			medalImage.sprite = medals[0];
 		}
-		else if (score > 50 && score < 150)
+		else if (score > 50 && score <= 150)
 		{
 			medalImage.sprite = medals[1];
 
@@ -218,7 +218,7 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockGreenBird ();
 			}
 		}
-		else if (score > 150 && score < 300)
+		else if (score > 150 && score < 200)
 		{
 			medalImage.sprite = medals[2];
 
@@ -232,7 +232,7 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockRedBird ();
 			}
 		}
-		else
+		else if (score > 200 && score <= 300)
 		{
 			medalImage.sprite = medals[2];
 
@@ -246,9 +246,9 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockRedBird ();
 			}
 
-			if (GameController.instance.IsDarkLevelUnlocked () == 0)
+			if (GameController.instance.IsForestLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockDarkLevel ();
+				GameController.instance.UnlockForestLevel ();
 			}
 		}
 	}
