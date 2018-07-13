@@ -203,6 +203,30 @@ public class MenuController : MonoBehaviour
 				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 			}
 		}
+		else if (GameController.instance.GetSelectedLevel () == 2)
+		{
+			if (isDarkLevelUnlocked)
+			{
+				gameLevels[2].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (3);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[2].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+		}
+		else if (GameController.instance.GetSelectedLevel () == 3)
+		{
+			gameLevels[3].SetActive (false);
+
+			GameController.instance.SetSelectedLevel (0);
+			gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+		}
 	}
 
 }
