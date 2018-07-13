@@ -192,7 +192,15 @@ public class BirdScript : MonoBehaviour
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 400 && score <= 405)
+			else if (score > 500 && score <= 505)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 600 && score <= 605)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 700 && score <= 705)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
