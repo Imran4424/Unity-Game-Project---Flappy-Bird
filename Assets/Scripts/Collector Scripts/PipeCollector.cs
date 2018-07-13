@@ -28,9 +28,25 @@ public class PipeCollector : MonoBehaviour
 
 			float currentPipeY = Random.Range (pipeMin, pipeMax);
 
-			if ((Mathf.Abs (lastPipeY) - Mathf.Abs (currentPipeY)) < 0.8f)
+			if ((Mathf.Abs (lastPipeY) - Mathf.Abs (currentPipeY)) < 0.7f)
 			{
-				currentPipeY = currentPipeY + 0.5f;
+				if (currentPipeY > 0f && lastPipeY > 0f && (currentPipeY + 0.5f) > pipeMax)
+				{
+					currentPipeY = currentPipeY - 1f;
+				}
+				else if (currentPipeY < 0f && lastPipeY < 0f && (currentPipeY - 0.5f) > pipeMin)
+				{
+					currentPipeY = currentPipeY + 1f;
+				}
+				else if (currentPipeY > lastPipeY)
+				{
+					currentPipeY += 0.5f;
+				}
+				else if (currentPipeY < lastPipeY)
+				{
+					currentPipeY -= 0.5f;
+				}
+
 			}
 
 			temp.y = currentPipeY;
@@ -133,7 +149,15 @@ public class PipeCollector : MonoBehaviour
 
 			if ((Mathf.Abs (lastPipeY) - Mathf.Abs (currentPipeY)) < 0.8f)
 			{
-				currentPipeY = currentPipeY + 0.5f;
+				if (currentPipeY + 0.5f > pipeMax && currentPipeY < lastPipeY)
+				{
+					currentPipeY = currentPipeY - 0.5f;
+				}
+				else
+				{
+					currentPipeY = currentPipeY + 0.5f;
+				}
+
 			}
 
 			temp.y = currentPipeY;
