@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
 			//Debug.Log("I am here");
 
 			PlayerPrefs.SetInt (High_Score, 0);
-			PlayerPrefs.SetInt(Gem_Score,10);
+			PlayerPrefs.SetInt (Gem_Score, 10);
 			PlayerPrefs.SetInt (Selected_Bird, 0);
 			PlayerPrefs.SetInt (Green_Bird, 0);
 			PlayerPrefs.SetInt (Red_Bird, 0);
@@ -86,14 +86,14 @@ public class GameController : MonoBehaviour
 
 	// working with gem score
 
-	public void SetGemScore(int gemScore)
+	public void SetGemScore (int gemScore)
 	{
-		PlayerPrefs.SetInt(Gem_Score,gemScore);
+		PlayerPrefs.SetInt (Gem_Score, gemScore);
 	}
 
-	public int GetGemScore()
+	public int GetGemScore ()
 	{
-		return PlayerPrefs.GetInt(Gem_Score);
+		return PlayerPrefs.GetInt (Gem_Score);
 	}
 
 	// working with selected birds
@@ -112,14 +112,14 @@ public class GameController : MonoBehaviour
 
 	//  working with levels
 
-	public void SetSelectedLevel(int SelectedLevel)
+	public void SetSelectedLevel (int SelectedLevel)
 	{
-		PlayerPrefs.SetInt(Selected_Level,SelectedLevel);
+		PlayerPrefs.SetInt (Selected_Level, SelectedLevel);
 	}
 
-	public int GetSelectedLevel()
+	public int GetSelectedLevel ()
 	{
-		return PlayerPrefs.GetInt(Selected_Level);
+		return PlayerPrefs.GetInt (Selected_Level);
 	}
 
 	// Unlocking green bird
@@ -146,15 +146,39 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Red_Bird);
 	}
 
-	// Unlocking Dark Level
+	// Unlocking  Level
 
-	public void UnlockDarkLevel()
+	public void UnlockForestLevel ()
 	{
-		PlayerPrefs.SetInt (Dark_Level,1);
+		PlayerPrefs.SetInt (Dark_Level, 1);
 	}
 
-	public int IsDarkLevelUnlocked()
+	public int IsForestLevelUnlocked ()
 	{
-		return PlayerPrefs.GetInt(Dark_Level);
+		return PlayerPrefs.GetInt (Dark_Level);
+	}
+
+	// Unlocking Dark Level
+
+	public void UnlockDarkLevel ()
+	{
+		PlayerPrefs.SetInt (Dark_Level, 1);
+	}
+
+	public int IsDarkLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Dark_Level);
+	}
+
+	// Unlocking Dark Level
+
+	public void UnlockDarkLevel ()
+	{
+		PlayerPrefs.SetInt (Dark_Level, 1);
+	}
+
+	public int IsDarkLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Dark_Level);
 	}
 }
