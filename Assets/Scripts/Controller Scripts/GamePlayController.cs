@@ -218,7 +218,7 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockGreenBird ();
 			}
 		}
-		else if (score > 150 && score < 200)
+		else if (score > 150 && score <= 200)
 		{
 			medalImage.sprite = medals[2];
 
