@@ -111,7 +111,7 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedLevel () == 2)
 		{
-			SceneFader.instance.FadeIn ("GamePlay Dark");
+			SceneFader.instance.FadeIn ("GamePlay Evening");
 		}
 		else if (GameController.instance.GetSelectedLevel () == 3)
 		{
