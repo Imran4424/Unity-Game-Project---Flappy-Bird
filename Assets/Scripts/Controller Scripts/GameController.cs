@@ -24,8 +24,6 @@ public class GameController : MonoBehaviour
 		MakeSingleton ();
 		IsTheGameStartedForTheFirstTime ();
 
-		UnlockForestLevel();
-		UnlockEveningLevel();
 	}
 
 	// Use this for initialization
