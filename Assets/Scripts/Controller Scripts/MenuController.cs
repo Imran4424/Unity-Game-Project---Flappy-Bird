@@ -178,7 +178,7 @@ public class MenuController : MonoBehaviour
 	{
 		if (GameController.instance.GetSelectedLevel () == 0)
 		{
-			if (isDarkLevelUnlocked)
+			if (isForestLevelUnlocked)
 			{
 				gameLevels[0].SetActive (false);
 
@@ -188,10 +188,7 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedLevel () == 1)
 		{
-			gameLevels[1].SetActive (false);
-
-			GameController.instance.SetSelectedLevel (0);
-			gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			
 		}
 	}
 
