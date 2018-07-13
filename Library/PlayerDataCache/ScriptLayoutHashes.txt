@@ -1,6 +1,6 @@
-Android
+WindowsStandalone
 PlayerPath?
-E:/Outputs/Flappy Bird/Android/FlappyTheBird.apk
+E:/Outputs/Flappy Bird/Windows/FlappyTheBird.exe
 SceneListBegin?
 Assets/_Scenes/MainMenu.unity
 Assets/_Scenes/GamePlay.unity
