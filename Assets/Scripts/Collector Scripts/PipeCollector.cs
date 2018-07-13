@@ -46,6 +46,10 @@ public class PipeCollector : MonoBehaviour
 				{
 					currentPipeY -= 0.5f;
 				}
+				else
+				{
+					currentPipeY += 0.5f;
+				}
 
 			}
 
