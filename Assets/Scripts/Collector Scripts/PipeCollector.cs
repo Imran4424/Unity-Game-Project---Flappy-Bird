@@ -9,7 +9,7 @@ public class PipeCollector : MonoBehaviour
 
 	private GameObject[] pipeHolders;
 	private float distance = 5f;
-	private float lastPipeX;
+	private float lastPipeX, lastPipeY;
 	private float pipeMin = -1.5f;
 	private float pipeMax = 2.4f;
 
@@ -26,7 +26,14 @@ public class PipeCollector : MonoBehaviour
 		{
 			Vector3 temp = pipeHolders[i].transform.position;
 
-			temp.y = Random.Range (pipeMin, pipeMax);
+			float currentPipeY = Random.Range (pipeMin, pipeMax);
+
+			while ((Mathf.Abs (lastPipeY) - Mathf.Abs (currentPipeY)) < 1f)
+			{
+				currentPipeY = Random.Range (pipeMin, pipeMax);
+			}
+
+			temp.y = currentPipeY;
 
 			pipeHolders[i].transform.position = temp;
 		}
@@ -38,6 +45,7 @@ public class PipeCollector : MonoBehaviour
 			if (lastPipeX < pipeHolders[i].transform.position.x)
 			{
 				lastPipeX = pipeHolders[i].transform.position.x;
+				lastPipeY = pipeHolders[i].transform.position.y;
 				//Debug.Log (lastPipeX);
 			}
 		}
@@ -95,13 +103,21 @@ public class PipeCollector : MonoBehaviour
 		{
 			distance = 3.5f;
 		}
-		else if (score > 400 && score <= 550)
+		else if (score > 400 && score <= 500)
 		{
 			distance = 3.25f;
 		}
-		else if (score > 550)
+		else if (score > 500 && score <= 600)
 		{
 			distance = 3f;
+		}
+		else if (score > 600 && score <= 700)
+		{
+			distance = 2.75f;
+		}
+		else if (score > 700)
+		{
+			distance = 2.5f;
 		}
 	}
 
@@ -112,13 +128,22 @@ public class PipeCollector : MonoBehaviour
 			Vector3 temp = target.transform.position;
 
 			temp.x = lastPipeX + distance;
-			temp.y = Random.Range (pipeMin, pipeMax);
+
+			float currentPipeY = Random.Range (pipeMin, pipeMax);
+
+			while ((Mathf.Abs (lastPipeY) - Mathf.Abs (currentPipeY)) < 1f)
+			{
+				currentPipeY = Random.Range (pipeMin, pipeMax);
+			}
+
+			temp.y = currentPipeY;
 
 			target.transform.position = temp;
 
 			//Debug.Log (lastPipeX);
 
 			lastPipeX = temp.x;
+			lastPipeY = temp.y;
 			//Debug.Log (lastPipeX);
 		}
 	}

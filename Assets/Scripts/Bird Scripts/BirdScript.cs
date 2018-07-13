@@ -164,31 +164,31 @@ public class BirdScript : MonoBehaviour
 
 			GamePlayController.instance.setScore (score);
 
-			if (score > 50 && score <= 100)
+			if (score > 50 && score <= 55)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 100 && score <= 150)
+			else if (score > 100 && score <= 105)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 150 && score <= 200)
+			else if (score > 150 && score <= 155)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 200 && score <= 250)
+			else if (score > 200 && score <= 205)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 250 && score <= 300)
+			else if (score > 250 && score <= 255)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 350 && score <= 400)
+			else if (score > 350 && score <= 355)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 400 && score <= 550)
+			else if (score > 400 && score <= 405)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
