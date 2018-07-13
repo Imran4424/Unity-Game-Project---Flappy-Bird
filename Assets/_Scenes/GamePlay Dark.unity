@@ -6220,6 +6220,18 @@ Prefab:
       propertyPath: m_Size.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 212446929731613792, guid: 5558f8e6cee87494daaf892187d3a673,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: a7acfbdd6fd1c504ba093877794b42f6,
+        type: 3}
+    - target: {fileID: 212726065296871912, guid: 5558f8e6cee87494daaf892187d3a673,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: a7acfbdd6fd1c504ba093877794b42f6,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5558f8e6cee87494daaf892187d3a673, type: 2}
   m_IsPrefabParent: 0
@@ -6300,7 +6312,7 @@ RectTransform:
   m_Children:
   - {fileID: 1861702566}
   m_Father: {fileID: 2081984823}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6471,8 +6483,8 @@ RectTransform:
   - {fileID: 335104989}
   - {fileID: 1533732388}
   - {fileID: 1320132294}
-  - {fileID: 162659119}
   - {fileID: 1999034630}
+  - {fileID: 162659119}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
