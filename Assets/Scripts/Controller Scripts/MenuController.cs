@@ -79,6 +79,16 @@ public class MenuController : MonoBehaviour
 
 	void CheckIfLevelsAreUnlocked ()
 	{
+		if (GameController.instance.IsForestLevelUnlocked () == 1)
+		{
+			isDarkLevelUnlocked = true;
+		}
+
+		if (GameController.instance.IsEveningLevelUnlocked () == 1)
+		{
+			isDarkLevelUnlocked = true;
+		}
+
 		if (GameController.instance.IsDarkLevelUnlocked () == 1)
 		{
 			isDarkLevelUnlocked = true;
@@ -102,16 +112,16 @@ public class MenuController : MonoBehaviour
 
 	// Quit The Game
 
-	public void QuitTheGame()
+	public void QuitTheGame ()
 	{
-		Application.Quit();
+		Application.Quit ();
 	}
 
 	// about menu
 
-	public void GoToAbout()
+	public void GoToAbout ()
 	{
-		SceneFader.instance.FadeIn("About");
+		SceneFader.instance.FadeIn ("About");
 	}
 
 	// changing the birds
