@@ -100,6 +100,13 @@ public class MenuController : MonoBehaviour
 
 	}
 
+	// Quit The Game
+
+	public void QuitTheGame()
+	{
+		Application.Quit();
+	}
+
 	// about menu
 
 	public void GoToAbout()
