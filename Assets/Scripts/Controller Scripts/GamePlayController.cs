@@ -148,10 +148,12 @@ public class GamePlayController : MonoBehaviour
 
 			BirdScript.instance.transform.position = spawnBirdHere;
 			BirdScript.instance.ResetPlayerState ();
-			//StartCoroutine (waitForPlay ());
 
 			saveMePanel.SetActive (false);
 
+			Time.timeScale = 0.000001f;
+
+			StartCoroutine (waitForPlay ());
 		}
 		else
 		{
@@ -182,10 +184,13 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator waitForPlay ()
 	{
-		//Time.timeScale = 0f;
+		float pauseEndTime = Time.realtimeSinceStartup + 3f;
+		while (Time.realtimeSinceStartup < pauseEndTime)
+		{
+			yield return 0;
+		}
 
-		yield return new WaitForSeconds (2);
-		//Time.timeScale = 1f;
+		Time.timeScale = 1f;
 
 	}
 
@@ -301,7 +306,7 @@ public class GamePlayController : MonoBehaviour
 
 			if (GameController.instance.IsDarkLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockDarkLevel();
+				GameController.instance.UnlockDarkLevel ();
 			}
 		}
 	}
