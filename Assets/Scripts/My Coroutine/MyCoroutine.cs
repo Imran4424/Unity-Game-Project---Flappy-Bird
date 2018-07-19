@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MyCoroutine : MonoBehaviour {
 
-	public static IEnumerator WaitForReadSeconds(float time)
+	public static IEnumerator WaitForRealSeconds(float time)
 	{
 		float starts = Time.realtimeSinceStartup;
 
