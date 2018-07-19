@@ -35,7 +35,7 @@ public class GamePlayController : MonoBehaviour
 		isSaveMeUsed = false;
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
-		Time.timeScale = 1f;
+		Time.timeScale = 0f;
 
 	}
 
@@ -92,7 +92,7 @@ public class GamePlayController : MonoBehaviour
 	public void ResumeGame ()
 	{
 		pausePanel.SetActive (false);
-		Time.timeScale = 0f;
+		Time.timeScale = 1f;
 	}
 
 	// restart the game
