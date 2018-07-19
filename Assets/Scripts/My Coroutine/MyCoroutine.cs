@@ -4,5 +4,14 @@ using UnityEngine;
 
 public class MyCoroutine : MonoBehaviour {
 
-	
+	public static IEnumerator WaitForReadSeconds(float time)
+	{
+		float starts = Time.realtimeSinceStartup;
+
+		while (Time.realtimeSinceStartup < (starts + time))
+		{
+			yield return null;
+		}
+		yield return null;
+	}
 }
