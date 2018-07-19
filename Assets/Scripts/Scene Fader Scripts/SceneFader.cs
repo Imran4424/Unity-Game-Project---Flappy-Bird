@@ -63,7 +63,7 @@ public class SceneFader : MonoBehaviour {
 		fadeCanvas.SetActive(true);
 		fadeAnim.Play("FadeIn");
 		
-		yield return new WaitForSeconds(.5f);
+		yield return StartCoroutine(MyCoroutine.WaitForRealSeconds(0.7f));
 
 		SceneManager.LoadScene(levelName,LoadSceneMode.Single);	
 		FadeOut();
