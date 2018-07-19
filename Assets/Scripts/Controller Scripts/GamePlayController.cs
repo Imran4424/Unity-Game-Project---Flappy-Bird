@@ -53,7 +53,6 @@ public class GamePlayController : MonoBehaviour
 	{
 		GemScore ();
 
-		Time.timeScale = 0f;
 	}
 
 	// Update is called once per frame
