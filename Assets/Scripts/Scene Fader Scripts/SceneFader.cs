@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneFader : MonoBehaviour {
+public class SceneFader : MonoBehaviour
+{
 
 	public static SceneFader instance;
 
@@ -13,66 +14,65 @@ public class SceneFader : MonoBehaviour {
 	[SerializeField]
 	private Animator fadeAnim;
 
-	void Awake()
+	void Awake ()
 	{
-		MakeSingleton();
+		MakeSingleton ();
 	}
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		
+
 	}
-	
+
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
-		
+
 	}
 
 	// making singleton
 
-	void MakeSingleton()
+	void MakeSingleton ()
 	{
 		if (instance != null)
 		{
-			Destroy(gameObject);
+			Destroy (gameObject);
 		}
 		else
 		{
 			instance = this;
-			DontDestroyOnLoad(gameObject);
+			DontDestroyOnLoad (gameObject);
 		}
 	}
 
-
 	//working with animations
 
-	public void FadeIn(string levelName)
+	public void FadeIn (string levelName)
 	{
-		StartCoroutine(FadeInAnimation(levelName));
+		StartCoroutine (FadeInAnimation (levelName));
 	}
 
-	public void FadeOut()
+	public void FadeOut ()
 	{
-		StartCoroutine(FadeOutAnimation());
+		StartCoroutine (FadeOutAnimation ());
 	}
 
-	IEnumerator FadeInAnimation(string levelName)
+	IEnumerator FadeInAnimation (string levelName)
 	{
-		fadeCanvas.SetActive(true);
-		fadeAnim.Play("FadeIn");
-		
-		yield return StartCoroutine(MyCoroutine.WaitForRealSeconds(0.7f));
+		fadeCanvas.SetActive (true);
+		fadeAnim.Play ("FadeIn");
 
-		SceneManager.LoadScene(levelName,LoadSceneMode.Single);	
-		FadeOut();
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (0.5f));
+
+		SceneManager.LoadScene (levelName, LoadSceneMode.Single);
+		FadeOut ();
 	}
 
-	IEnumerator FadeOutAnimation()
+	IEnumerator FadeOutAnimation ()
 	{
-		fadeAnim.Play("FadeOut");
-		yield return new WaitForSeconds(1f);
-		fadeCanvas.SetActive(false);
+		fadeAnim.Play ("FadeOut");
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (0.5f));
+		fadeCanvas.SetActive (false);
 	}
 }
