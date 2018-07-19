@@ -508,7 +508,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c7692f2a91643e646b9f15ae34331eb1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 68e7620e41884144d8a7f7f4d87d421d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -737,10 +737,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1959566277
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6d1270197c4ba22449fa5326a901755f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9a67ae67be84fb47bc225bedd64f09d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1157,7 +1157,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c7692f2a91643e646b9f15ae34331eb1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 68e7620e41884144d8a7f7f4d87d421d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2041,7 +2041,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c7692f2a91643e646b9f15ae34331eb1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 68e7620e41884144d8a7f7f4d87d421d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

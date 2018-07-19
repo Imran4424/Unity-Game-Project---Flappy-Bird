@@ -45,6 +45,8 @@ public class BirdScript : MonoBehaviour
 
 		score = 0;
 		SetCamerasX ();
+
+		Time.timeScale = 0f;
 	}
 
 	// Use this for initialization
@@ -106,6 +108,11 @@ public class BirdScript : MonoBehaviour
 	public void FlapTheBird ()
 	{
 		didFlap = true;
+
+		if (Time.timeScale == 0f)
+		{
+			Time.timeScale = 1f;
+		}
 	}
 
 	// unsetting the died anim trigger
