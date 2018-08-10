@@ -38,7 +38,7 @@ public class GamePlayController : MonoBehaviour
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 0f;
-		GameStarted = false;
+		GameStarted = true;
 	}
 
 	void GemScore ()
