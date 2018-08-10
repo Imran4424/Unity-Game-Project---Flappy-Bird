@@ -70,7 +70,7 @@ public class BirdScript : MonoBehaviour
 			transform.position = temp;
 		}
 
-		if (didFlap)
+		if (didFlap && isAlive)
 		{
 			didFlap = false;
 			audioSC.clip = flapClip;
@@ -107,9 +107,10 @@ public class BirdScript : MonoBehaviour
 
 	public void FlapTheBird ()
 	{
+
 		didFlap = true;
 
-		if (Time.timeScale == 0f && GamePlayController.instance.gameStarted )
+		if (Time.timeScale == 0f && GamePlayController.instance.gameStarted)
 		{
 			Time.timeScale = 1f;
 
