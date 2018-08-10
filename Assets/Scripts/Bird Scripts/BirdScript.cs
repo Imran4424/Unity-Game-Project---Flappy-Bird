@@ -109,9 +109,11 @@ public class BirdScript : MonoBehaviour
 	{
 		didFlap = true;
 
-		if (Time.timeScale == 0f)
+		if (Time.timeScale == 0f && GamePlayController.instance.gameStarted )
 		{
 			Time.timeScale = 1f;
+
+			GamePlayController.instance.gameStarted = false;
 		}
 	}
 
