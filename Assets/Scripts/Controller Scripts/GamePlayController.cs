@@ -29,7 +29,7 @@ public class GamePlayController : MonoBehaviour
 
 	public bool isSaveMeUsed;
 
-	public bool GameStarted;
+	public bool gameStarted;
 
 	void Awake ()
 	{
@@ -38,7 +38,7 @@ public class GamePlayController : MonoBehaviour
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 0f;
-		GameStarted = true;
+		gameStarted = true;
 	}
 
 	void GemScore ()
