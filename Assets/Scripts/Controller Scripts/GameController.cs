@@ -20,14 +20,15 @@ public class GameController : MonoBehaviour
 	*/
 
 	public const string Forest_Level = "Forest Level";
-	public const string Evening_Level = "Evening Level";
-	public const string Dark_Level = "Dark Level";
 	public const string Birds_Level = "Birds Level";
 	public const string Mountains_Level = "Mountains Level";
 	public const string Lake_Level = "Lake Level";
 	public const string Spring_Level = "Spring Level";
 	public const string Farm_Level = "Farm Level";
 	public const string Winter_Level = "Winter Level";
+	public const string Evening_Level = "Evening Level";
+	public const string Dark_Level = "Dark Level";
+	public const string Rainy_Level = "Rainy Level";
 
 	void Awake ()
 	{
