@@ -273,4 +273,6 @@ public class GameController : MonoBehaviour
 	{
 		return PlayerPrefs.GetInt (Dark_Level);
 	}
+
+	
 }
