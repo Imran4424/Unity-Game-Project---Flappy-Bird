@@ -254,12 +254,12 @@ public class GameController : MonoBehaviour
 
 	public void UnlockEveningLevel ()
 	{
-		PlayerPrefs.SetInt (Dark_Level, 1);
+		PlayerPrefs.SetInt (Evening_Level, 1);
 	}
 
 	public int IsEveningLevelUnlocked ()
 	{
-		return PlayerPrefs.GetInt (Dark_Level);
+		return PlayerPrefs.GetInt (Evening_Level);
 	}
 
 	// Dark Level
