@@ -182,24 +182,24 @@ public class GameController : MonoBehaviour
 
 	public void UnlockBirdsLevel ()
 	{
-		PlayerPrefs.SetInt (Dark_Level, 1);
+		PlayerPrefs.SetInt (Birds_Level, 1);
 	}
 
 	public int IsBirdsLevelUnlocked ()
 	{
-		return PlayerPrefs.GetInt (Dark_Level);
+		return PlayerPrefs.GetInt (Birds_Level);
 	}
 
-	// Birds Level
+	// Mountains Level
 
-	public void UnlockBirdsLevel ()
+	public void UnlockMountainsLevel ()
 	{
-		PlayerPrefs.SetInt (Dark_Level, 1);
+		PlayerPrefs.SetInt (Mountains_Level, 1);
 	}
 
-	public int IsBirdsLevelUnlocked ()
+	public int IsMountainsLevelUnlocked ()
 	{
-		return PlayerPrefs.GetInt (Dark_Level);
+		return PlayerPrefs.GetInt (Mountains_Level);
 	}
 
 	// Unlocking Evening Level
