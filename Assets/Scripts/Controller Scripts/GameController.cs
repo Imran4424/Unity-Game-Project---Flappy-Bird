@@ -226,7 +226,29 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Spring_Level);
 	}
 
-	
+	// Farm Level
+
+	public void UnlockFarmLevel ()
+	{
+		PlayerPrefs.SetInt (Farm_Level, 1);
+	}
+
+	public int IsFarmLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Farm_Level);
+	}
+
+	// Winter Level
+
+	public void UnlockWinterLevel ()
+	{
+		PlayerPrefs.SetInt (Winter_Level, 1);
+	}
+
+	public int IsWinterLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Winter_Level);
+	}
 
 	// Unlocking Evening Level
 
