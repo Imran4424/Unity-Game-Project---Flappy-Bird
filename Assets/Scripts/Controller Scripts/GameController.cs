@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour
 
 		UnlockDarkLevel();
 		UnlockEveningLevel();
-		UnlockForestLevel();
+		
 		UnlockRedBird();
 		UnlockRedBird();
 	}
@@ -174,14 +174,18 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Red_Bird);
 	}
 
-	// Unlocking Forest Level
+	/*
+		Unlocking the levels
+	*/
 
-	public void UnlockForestLevel ()
+	// Birds Level
+
+	public void UnlockBirdsLevel ()
 	{
 		PlayerPrefs.SetInt (Dark_Level, 1);
 	}
 
-	public int IsForestLevelUnlocked ()
+	public int IsBirdsLevelUnlocked ()
 	{
 		return PlayerPrefs.GetInt (Dark_Level);
 	}
