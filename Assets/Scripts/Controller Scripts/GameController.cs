@@ -85,6 +85,12 @@ public class GameController : MonoBehaviour
 			PlayerPrefs.SetInt (Birds_Level, 0);
 			PlayerPrefs.SetInt (Mountains_Level, 0);
 			PlayerPrefs.SetInt (Lake_Level, 0);
+			PlayerPrefs.SetInt (Spring_Level, 0);
+			PlayerPrefs.SetInt (Farm_Level, 0);
+			PlayerPrefs.SetInt (Winter_Level, 0);
+			PlayerPrefs.SetInt (Evening_Level, 0);
+			PlayerPrefs.SetInt (Dark_Level, 0);
+			PlayerPrefs.SetInt (Rainy_Level, 0);
 
 			PlayerPrefs.SetInt ("IsTheGameStartedForTheFirstTime", 0);
 		}
