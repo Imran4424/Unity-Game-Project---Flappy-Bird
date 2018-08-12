@@ -88,35 +88,49 @@ public class MenuController : MonoBehaviour
 
 	void CheckIfLevelsAreUnlocked ()
 	{
+		// Birds
+
 		if (GameController.instance.IsBirdsLevelUnlocked () == 1)
 		{
 			isBirdsLevelUnlocked = true;
 		}
+
+		// Mountains
 
 		if (GameController.instance.IsMountainsLevelUnlocked () == 1)
 		{
 			isMountainsLevelUnlocked = true;
 		}
 
+		// Lake
+
 		if (GameController.instance.IsLakeLevelUnlocked () == 1)
 		{
 			isLakeLevelUnlocked = true;
 		}
+
+		// Spring
 
 		if (GameController.instance.IsSpringLevelUnlocked () == 1)
 		{
 			isSpringLevelUnlocked = true;
 		}
 
+		// Farm
+
 		if (GameController.instance.IsFarmLevelUnlocked () == 1)
 		{
 			isFarmLevelUnlocked = true;
 		}
 
+		// Evening
+
 		if (GameController.instance.IsEveningLevelUnlocked () == 1)
 		{
 			isEveningLevelUnlocked = true;
 		}
+
+		// Dark
 
 		if (GameController.instance.IsDarkLevelUnlocked () == 1)
 		{
