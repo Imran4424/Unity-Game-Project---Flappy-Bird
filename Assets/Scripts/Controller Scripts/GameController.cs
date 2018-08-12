@@ -274,5 +274,15 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Dark_Level);
 	}
 
-	
+	// Mountains Level
+
+	public void UnlockMountainsLevel ()
+	{
+		PlayerPrefs.SetInt (Mountains_Level, 1);
+	}
+
+	public int IsMountainsLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Mountains_Level);
+	}
 }
