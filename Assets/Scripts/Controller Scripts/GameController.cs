@@ -214,17 +214,19 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Lake_Level);
 	}
 
-	// Mountains Level
+	// Spring Level
 
-	public void UnlockMountainsLevel ()
+	public void UnlockSpringLevel ()
 	{
-		PlayerPrefs.SetInt (Mountains_Level, 1);
+		PlayerPrefs.SetInt (Spring_Level, 1);
 	}
 
-	public int IsMountainsLevelUnlocked ()
+	public int IsSpringLevelUnlocked ()
 	{
-		return PlayerPrefs.GetInt (Mountains_Level);
+		return PlayerPrefs.GetInt (Spring_Level);
 	}
+
+	
 
 	// Unlocking Evening Level
 
