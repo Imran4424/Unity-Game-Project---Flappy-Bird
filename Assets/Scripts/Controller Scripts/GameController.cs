@@ -202,6 +202,30 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Mountains_Level);
 	}
 
+	// Lake Level
+
+	public void UnlockLakeLevel ()
+	{
+		PlayerPrefs.SetInt (Lake_Level, 1);
+	}
+
+	public int IsLakeLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Lake_Level);
+	}
+
+	// Mountains Level
+
+	public void UnlockMountainsLevel ()
+	{
+		PlayerPrefs.SetInt (Mountains_Level, 1);
+	}
+
+	public int IsMountainsLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Mountains_Level);
+	}
+
 	// Unlocking Evening Level
 
 	public void UnlockEveningLevel ()
