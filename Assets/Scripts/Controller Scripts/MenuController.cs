@@ -17,7 +17,8 @@ public class MenuController : MonoBehaviour
 	private bool isGreenBirdUnlocked;
 	private bool isRedBirdUnlocked;
 	
-	
+
+	private bool isBirdsLevelUnlocked;
 	private bool isEveningLevelUnlocked;
 	private bool isDarkLevelUnlocked;
 
