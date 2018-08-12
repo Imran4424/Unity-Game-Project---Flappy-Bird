@@ -250,7 +250,7 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Winter_Level);
 	}
 
-	// Unlocking Evening Level
+	// Evening Level
 
 	public void UnlockEveningLevel ()
 	{
