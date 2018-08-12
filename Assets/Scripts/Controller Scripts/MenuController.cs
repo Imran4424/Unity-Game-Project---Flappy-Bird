@@ -89,9 +89,9 @@ public class MenuController : MonoBehaviour
 
 	void CheckIfLevelsAreUnlocked ()
 	{
-		if (GameController.instance.IsForestLevelUnlocked () == 1)
+		if (GameController.instance.IsBirdsLevelUnlocked () == 1)
 		{
-			isForestLevelUnlocked = true;
+			isBirdsLevelUnlocked = true;
 		}
 
 		if (GameController.instance.IsEveningLevelUnlocked () == 1)
