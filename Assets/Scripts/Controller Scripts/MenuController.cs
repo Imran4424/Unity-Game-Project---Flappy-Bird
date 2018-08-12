@@ -19,8 +19,14 @@ public class MenuController : MonoBehaviour
 	
 
 	private bool isBirdsLevelUnlocked;
+	private bool isMountainsLevelUnlocked;
+	private bool isLakeLevelUnlocked;
+	private bool isSpringLevelUnlocked;
+	private bool isFarmLevelUnlocked;
+	private bool isWinterLevelUnlocked;
 	private bool isEveningLevelUnlocked;
 	private bool isDarkLevelUnlocked;
+	private bool isRainyLevelUnlocked;
 
 	// gem button and gem text
 
