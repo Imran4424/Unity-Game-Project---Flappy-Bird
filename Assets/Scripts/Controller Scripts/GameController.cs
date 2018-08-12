@@ -35,11 +35,11 @@ public class GameController : MonoBehaviour
 		MakeSingleton ();
 		IsTheGameStartedForTheFirstTime ();
 
-		UnlockDarkLevel();
-		UnlockEveningLevel();
-		
-		UnlockRedBird();
-		UnlockRedBird();
+		UnlockDarkLevel ();
+		UnlockEveningLevel ();
+
+		UnlockRedBird ();
+		UnlockRedBird ();
 	}
 
 	// Use this for initialization
@@ -124,7 +124,7 @@ public class GameController : MonoBehaviour
 
 	public void SetSelectedBird (int selectedBird)
 	{
-	
+
 		PlayerPrefs.SetInt (Selected_Bird, selectedBird);
 	}
 
@@ -177,6 +177,18 @@ public class GameController : MonoBehaviour
 	/*
 		Unlocking the levels
 	*/
+
+	// Birds Level
+
+	public void UnlockBirdsLevel ()
+	{
+		PlayerPrefs.SetInt (Dark_Level, 1);
+	}
+
+	public int IsBirdsLevelUnlocked ()
+	{
+		return PlayerPrefs.GetInt (Dark_Level);
+	}
 
 	// Birds Level
 
