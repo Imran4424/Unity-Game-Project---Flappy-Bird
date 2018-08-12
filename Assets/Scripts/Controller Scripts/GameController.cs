@@ -274,15 +274,15 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Dark_Level);
 	}
 
-	// Mountains Level
+	// Rainy Level
 
-	public void UnlockMountainsLevel ()
+	public void UnlockRainyLevel ()
 	{
-		PlayerPrefs.SetInt (Mountains_Level, 1);
+		PlayerPrefs.SetInt (Rainy_Level, 1);
 	}
 
-	public int IsMountainsLevelUnlocked ()
+	public int IsRainyLevelUnlocked ()
 	{
-		return PlayerPrefs.GetInt (Mountains_Level);
+		return PlayerPrefs.GetInt (Rainy_Level);
 	}
 }
