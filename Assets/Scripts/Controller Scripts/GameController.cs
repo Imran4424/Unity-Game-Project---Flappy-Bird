@@ -124,8 +124,7 @@ public class GameController : MonoBehaviour
 
 	public void SetSelectedBird (int selectedBird)
 	{
-		//Debug.Log("i am green selected bird");
-
+	
 		PlayerPrefs.SetInt (Selected_Bird, selectedBird);
 	}
 
@@ -134,7 +133,9 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Selected_Bird);
 	}
 
-	//  working with levels
+	/*
+		Working with selected levels
+	*/
 
 	public void SetSelectedLevel (int SelectedLevel)
 	{
@@ -146,7 +147,10 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Selected_Level);
 	}
 
-	// Unlocking green bird
+	/*
+		Unlocking the bird
+	*/
+	// Green Bird
 
 	public void UnlockGreenBird ()
 	{
@@ -158,7 +162,7 @@ public class GameController : MonoBehaviour
 		return PlayerPrefs.GetInt (Green_Bird);
 	}
 
-	// Unlocking Red bird
+	// Red bird
 
 	public void UnlockRedBird ()
 	{
