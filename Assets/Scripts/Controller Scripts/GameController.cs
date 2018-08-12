@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
 	public const string Evening_Level = "Evening Level";
 	public const string Dark_Level = "Dark Level";
 	public const string Birds_Level = "Birds Level";
+	public const string Mountains_Level = "Mountains Level";
 
 	void Awake ()
 	{
