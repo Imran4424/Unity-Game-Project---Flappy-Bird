@@ -108,6 +108,11 @@ public class MenuController : MonoBehaviour
 			isSpringLevelUnlocked = true;
 		}
 
+		if (GameController.instance.IsFarmLevelUnlocked () == 1)
+		{
+			isFarmLevelUnlocked = true;
+		}
+
 		if (GameController.instance.IsEveningLevelUnlocked () == 1)
 		{
 			isEveningLevelUnlocked = true;
