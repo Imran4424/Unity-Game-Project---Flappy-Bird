@@ -16,7 +16,6 @@ public class MenuController : MonoBehaviour
 
 	private bool isGreenBirdUnlocked;
 	private bool isRedBirdUnlocked;
-	
 
 	private bool isBirdsLevelUnlocked;
 	private bool isMountainsLevelUnlocked;
@@ -92,6 +91,21 @@ public class MenuController : MonoBehaviour
 		if (GameController.instance.IsBirdsLevelUnlocked () == 1)
 		{
 			isBirdsLevelUnlocked = true;
+		}
+
+		if (GameController.instance.IsMountainsLevelUnlocked () == 1)
+		{
+			isMountainsLevelUnlocked = true;
+		}
+
+		if (GameController.instance.IsLakeLevelUnlocked () == 1)
+		{
+			isLakeLevelUnlocked = true;
+		}
+
+		if (GameController.instance.IsSpringLevelUnlocked () == 1)
+		{
+			isSpringLevelUnlocked = true;
 		}
 
 		if (GameController.instance.IsEveningLevelUnlocked () == 1)
