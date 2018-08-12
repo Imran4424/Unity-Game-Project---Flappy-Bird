@@ -25,6 +25,9 @@ public class GameController : MonoBehaviour
 	public const string Birds_Level = "Birds Level";
 	public const string Mountains_Level = "Mountains Level";
 	public const string Lake_Level = "Lake Level";
+	public const string Spring_Level = "Spring Level";
+	public const string Lake_Level = "Lake Level";
+	public const string Lake_Level = "Lake Level";
 
 	void Awake ()
 	{
