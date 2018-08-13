@@ -357,6 +357,57 @@ public class MenuController : MonoBehaviour
 				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 			}
 		}
+		else if (GameController.instance.GetSelectedLevel () == 6)
+		{
+			if (isEveningLevelUnlocked)
+			{
+				gameLevels[6].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (7);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[6].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+		}
+		else if (GameController.instance.GetSelectedLevel () == 7)
+		{
+			if (isDarkLevelUnlocked)
+			{
+				gameLevels[7].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (8);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[7].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+		}
+		else if (GameController.instance.GetSelectedLevel () == 3)
+		{
+			if (isSpringLevelUnlocked)
+			{
+				gameLevels[3].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (4);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[3].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+		}
 	}
 
 }
