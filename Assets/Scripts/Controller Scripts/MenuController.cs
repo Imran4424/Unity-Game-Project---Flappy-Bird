@@ -196,7 +196,7 @@ public class MenuController : MonoBehaviour
 		{
 			SceneFader.instance.FadeIn ("GamePlay Rainy");
 		}
-		
+
 	}
 
 	// Quit The Game
@@ -233,7 +233,6 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedBird () == 1)
 		{
-			
 
 			if (isRedBirdUnlocked)
 			{
@@ -309,10 +308,54 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedLevel () == 3)
 		{
-			gameLevels[3].SetActive (false);
+			if (isSpringLevelUnlocked)
+			{
+				gameLevels[3].SetActive (false);
 
-			GameController.instance.SetSelectedLevel (0);
-			gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+				GameController.instance.SetSelectedLevel (4);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[3].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+		}
+		else if (GameController.instance.GetSelectedLevel () == 4)
+		{
+			if (isFarmLevelUnlocked)
+			{
+				gameLevels[4].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (5);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[4].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+		}
+		else if (GameController.instance.GetSelectedLevel () == 5)
+		{
+			if (isWinterLevelUnlocked)
+			{
+				gameLevels[5].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (6);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
+			else
+			{
+				gameLevels[5].SetActive (false);
+
+				GameController.instance.SetSelectedLevel (0);
+				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
+			}
 		}
 	}
 
