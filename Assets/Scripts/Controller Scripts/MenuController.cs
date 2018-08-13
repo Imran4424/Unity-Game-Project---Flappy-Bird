@@ -391,22 +391,29 @@ public class MenuController : MonoBehaviour
 				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 			}
 		}
-		else if (GameController.instance.GetSelectedLevel () == 3)
+		else if (GameController.instance.GetSelectedLevel () == 8)
 		{
-			if (isSpringLevelUnlocked)
+			if (isRainyLevelUnlocked)
 			{
-				gameLevels[3].SetActive (false);
+				gameLevels[8].SetActive (false);
 
-				GameController.instance.SetSelectedLevel (4);
+				GameController.instance.SetSelectedLevel (9);
 				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 			}
 			else
 			{
-				gameLevels[3].SetActive (false);
+				gameLevels[8].SetActive (false);
 
 				GameController.instance.SetSelectedLevel (0);
 				gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 			}
+		}
+		else if (GameController.instance.GetSelectedLevel () == 9)
+		{
+			gameLevels[9].SetActive (false);
+
+			GameController.instance.SetSelectedLevel (0);
+			gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 		}
 	}
 
