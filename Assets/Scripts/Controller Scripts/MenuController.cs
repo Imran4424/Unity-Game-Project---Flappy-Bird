@@ -265,7 +265,7 @@ public class MenuController : MonoBehaviour
 	{
 		if (GameController.instance.GetSelectedLevel () == 0)
 		{
-			if (isForestLevelUnlocked)
+			if (isBirdsLevelUnlocked)
 			{
 				gameLevels[0].SetActive (false);
 
@@ -275,7 +275,7 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedLevel () == 1)
 		{
-			if (isEveningLevelUnlocked)
+			if (isMountainsLevelUnlocked)
 			{
 				gameLevels[1].SetActive (false);
 
@@ -292,7 +292,7 @@ public class MenuController : MonoBehaviour
 		}
 		else if (GameController.instance.GetSelectedLevel () == 2)
 		{
-			if (isDarkLevelUnlocked)
+			if (isLakeLevelUnlocked)
 			{
 				gameLevels[2].SetActive (false);
 
