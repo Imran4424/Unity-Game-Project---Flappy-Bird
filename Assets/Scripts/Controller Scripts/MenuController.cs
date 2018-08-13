@@ -123,6 +123,13 @@ public class MenuController : MonoBehaviour
 			isFarmLevelUnlocked = true;
 		}
 
+		// Winter
+
+		if (GameController.instance.IsWinterLevelUnlocked () == 1)
+		{
+			isWinterLevelUnlocked = true;
+		}
+
 		// Evening
 
 		if (GameController.instance.IsEveningLevelUnlocked () == 1)
@@ -135,6 +142,13 @@ public class MenuController : MonoBehaviour
 		if (GameController.instance.IsDarkLevelUnlocked () == 1)
 		{
 			isDarkLevelUnlocked = true;
+		}
+
+		// Rainy
+
+		if (GameController.instance.IsRainyLevelUnlocked() == 1)
+		{
+			isFarmLevelUnlocked = true;
 		}
 	}
 
