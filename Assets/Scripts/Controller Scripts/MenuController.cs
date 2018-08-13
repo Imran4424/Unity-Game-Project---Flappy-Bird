@@ -148,7 +148,7 @@ public class MenuController : MonoBehaviour
 
 		if (GameController.instance.IsRainyLevelUnlocked() == 1)
 		{
-			isFarmLevelUnlocked = true;
+			isRainyLevelUnlocked = true;
 		}
 	}
 
