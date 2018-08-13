@@ -172,7 +172,31 @@ public class MenuController : MonoBehaviour
 		{
 			SceneFader.instance.FadeIn ("GamePlay Lake");
 		}
-
+		else if (GameController.instance.GetSelectedLevel () == 4)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Spring");
+		}
+		else if (GameController.instance.GetSelectedLevel () == 5)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Farm");
+		}
+		else if (GameController.instance.GetSelectedLevel () == 6)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Winter");
+		}
+		else if (GameController.instance.GetSelectedLevel () == 7)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Evening");
+		}
+		else if (GameController.instance.GetSelectedLevel () == 8)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Dark");
+		}
+		else if (GameController.instance.GetSelectedLevel () == 9)
+		{
+			SceneFader.instance.FadeIn ("GamePlay Rainy");
+		}
+		
 	}
 
 	// Quit The Game
