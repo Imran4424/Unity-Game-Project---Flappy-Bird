@@ -146,7 +146,7 @@ public class MenuController : MonoBehaviour
 
 		// Rainy
 
-		if (GameController.instance.IsRainyLevelUnlocked() == 1)
+		if (GameController.instance.IsRainyLevelUnlocked () == 1)
 		{
 			isRainyLevelUnlocked = true;
 		}
@@ -158,19 +158,19 @@ public class MenuController : MonoBehaviour
 	{
 		if (GameController.instance.GetSelectedLevel () == 0)
 		{
-			SceneFader.instance.FadeIn ("GamePlay");
+			SceneFader.instance.FadeIn ("GamePlay Forest");
 		}
 		else if (GameController.instance.GetSelectedLevel () == 1)
 		{
-			SceneFader.instance.FadeIn ("GamePlay Forest");
+			SceneFader.instance.FadeIn ("GamePlay Birds");
 		}
 		else if (GameController.instance.GetSelectedLevel () == 2)
 		{
-			SceneFader.instance.FadeIn ("GamePlay Evening");
+			SceneFader.instance.FadeIn ("GamePlay Mountains");
 		}
 		else if (GameController.instance.GetSelectedLevel () == 3)
 		{
-			SceneFader.instance.FadeIn ("GamePlay Dark");
+			SceneFader.instance.FadeIn ("GamePlay Lake");
 		}
 
 	}
