@@ -498,6 +498,11 @@ public class GamePlayController : MonoBehaviour
 			{
 				GameController.instance.UnlockEveningLevel ();
 			}
+
+			if (GameController.instance.IsDarkLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockDarkLevel();
+			}
 		}
 		else if (score >= 500 && score < 600)
 		{
