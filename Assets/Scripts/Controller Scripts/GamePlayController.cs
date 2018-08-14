@@ -279,12 +279,12 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockMountainsLevel ();
 			}
 
-			if (GameController.instance.IsLakeLevelUnlocked() == 0)
+			if (GameController.instance.IsLakeLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockLakeLevel();
+				GameController.instance.UnlockLakeLevel ();
 			}
 		}
-		else if (score > 350 && score <= 500)
+		else if (score >= 300 && score < 400)
 		{
 			medalImage.sprite = medals[2];
 
@@ -298,15 +298,22 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockRedBird ();
 			}
 
-			if (GameController.instance.IsForestLevelUnlocked () == 0)
+			if (GameController.instance.IsBirdsLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockForestLevel ();
+				GameController.instance.UnlockBirdsLevel ();
 			}
 
-			if (GameController.instance.IsEveningLevelUnlocked () == 0)
+			if (GameController.instance.IsMountainsLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockEveningLevel ();
+				GameController.instance.UnlockMountainsLevel ();
 			}
+
+			if (GameController.instance.IsLakeLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockLakeLevel ();
+			}
+
+			
 		}
 		else if (score > 500)
 		{
