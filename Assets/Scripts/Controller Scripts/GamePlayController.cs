@@ -499,12 +499,12 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockEveningLevel ();
 			}
 
-			if (GameController.instance.IsDarkLevelUnlocked() == 0)
+			if (GameController.instance.IsDarkLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockDarkLevel();
+				GameController.instance.UnlockDarkLevel ();
 			}
 		}
-		else if (score >= 500 && score < 600)
+		else if (score >= 800)
 		{
 			medalImage.sprite = medals[2];
 
@@ -546,6 +546,21 @@ public class GamePlayController : MonoBehaviour
 			if (GameController.instance.IsWinterLevelUnlocked () == 0)
 			{
 				GameController.instance.UnlockWinterLevel ();
+			}
+
+			if (GameController.instance.IsEveningLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockEveningLevel ();
+			}
+
+			if (GameController.instance.IsDarkLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockDarkLevel ();
+			}
+
+			if (GameController.instance.IsRainyLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockRainyLevel();
 			}
 		}
 	}
