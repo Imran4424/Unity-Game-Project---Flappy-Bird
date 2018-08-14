@@ -351,6 +351,50 @@ public class GamePlayController : MonoBehaviour
 			{
 				GameController.instance.UnlockSpringLevel ();
 			}
+
+			if (GameController.instance.IsFarmLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockFarmLevel ();
+			}
+		}
+		else if (score >= 500 && score < 600)
+		{
+			medalImage.sprite = medals[2];
+
+			if (GameController.instance.IsGreenBirdUnlocked () == 0)
+			{
+				GameController.instance.UnlockGreenBird ();
+			}
+
+			if (GameController.instance.IsRedBirdUnlocked () == 0)
+			{
+				GameController.instance.UnlockRedBird ();
+			}
+
+			if (GameController.instance.IsBirdsLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockBirdsLevel ();
+			}
+
+			if (GameController.instance.IsMountainsLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockMountainsLevel ();
+			}
+
+			if (GameController.instance.IsLakeLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockLakeLevel ();
+			}
+
+			if (GameController.instance.IsSpringLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockSpringLevel ();
+			}
+
+			if (GameController.instance.IsFarmLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockFarmLevel ();
+			}
 		}
 	}
 }
