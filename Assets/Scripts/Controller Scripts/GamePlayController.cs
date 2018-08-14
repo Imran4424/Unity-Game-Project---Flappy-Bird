@@ -395,6 +395,11 @@ public class GamePlayController : MonoBehaviour
 			{
 				GameController.instance.UnlockFarmLevel ();
 			}
+
+			if (GameController.instance.IsWinterLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockWinterLevel();				
+			}
 		}
 	}
 }
