@@ -213,11 +213,11 @@ public class GamePlayController : MonoBehaviour
 
 		bestScore.text = "" + GameController.instance.GetHighScore ();
 
-		if (score <= 50)
+		if (score < 50)
 		{
 			medalImage.sprite = medals[0];
 		}
-		else if (score > 50 && score <= 150)
+		else if (score >= 50 && score < 150)
 		{
 			medalImage.sprite = medals[1];
 
@@ -231,7 +231,7 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockBirdsLevel();
 			}
 		}
-		else if (score > 150 && score <= 200)
+		else if (score >= 150 && score < 200)
 		{
 			medalImage.sprite = medals[2];
 
