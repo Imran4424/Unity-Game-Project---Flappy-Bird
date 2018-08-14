@@ -278,6 +278,11 @@ public class GamePlayController : MonoBehaviour
 			{
 				GameController.instance.UnlockMountainsLevel ();
 			}
+
+			if (GameController.instance.IsLakeLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockLakeLevel();
+			}
 		}
 		else if (score > 350 && score <= 500)
 		{
