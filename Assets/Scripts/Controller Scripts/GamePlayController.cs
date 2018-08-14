@@ -313,7 +313,10 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockLakeLevel ();
 			}
 
-			
+			if (GameController.instance.IsSpringLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockSpringLevel();				
+			}
 		}
 		else if (score > 500)
 		{
