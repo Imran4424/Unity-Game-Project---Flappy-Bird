@@ -225,6 +225,11 @@ public class GamePlayController : MonoBehaviour
 			{
 				GameController.instance.UnlockGreenBird ();
 			}
+
+			if(GameController.instance.IsBirdsLevelUnlocked() == 0)
+			{
+				GameController.instance.UnlockBirdsLevel();
+			}
 		}
 		else if (score > 150 && score <= 200)
 		{
