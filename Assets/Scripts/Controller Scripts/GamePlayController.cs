@@ -450,7 +450,7 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockEveningLevel ();
 			}
 		}
-		else if (score >= 500 && score < 600)
+		else if (score >= 700 && score < 800)
 		{
 			medalImage.sprite = medals[2];
 
@@ -492,6 +492,11 @@ public class GamePlayController : MonoBehaviour
 			if (GameController.instance.IsWinterLevelUnlocked () == 0)
 			{
 				GameController.instance.UnlockWinterLevel ();
+			}
+
+			if (GameController.instance.IsEveningLevelUnlocked () == 0)
+			{
+				GameController.instance.UnlockEveningLevel ();
 			}
 		}
 		else if (score >= 500 && score < 600)
