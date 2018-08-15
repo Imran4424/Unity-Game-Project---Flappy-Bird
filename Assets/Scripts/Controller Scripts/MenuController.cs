@@ -69,6 +69,18 @@ public class MenuController : MonoBehaviour
 		}
 	}
 
+	// log in google play
+
+	public void ConnectOnGooglePlayGames()
+	{
+		LeaderBoardController.instance.ConnectGooglePlayGames();
+	}
+
+	public void OpenLeaderBoard()
+	{
+		LeaderBoardController.instance.OpenLeaderBoard();
+	}
+
 	// checking if the the birds are unlocked or not
 
 	void CheckIfBirdsAreUnlocked ()
