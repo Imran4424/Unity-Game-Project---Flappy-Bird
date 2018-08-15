@@ -39,6 +39,13 @@ public class LeaderBoardController : MonoBehaviour
 	void Start ()
 	{
 		PlayGamesPlatform.Activate ();
+
+		SceneManager.sceneLoaded += this.OnLoadCallBack;
+	}
+
+	void OnLoadCallBack(Scene scene, LoadSceneMode sceneMode)
+	{
+		ReportScoreLocal(GameController.instance.GetHighScore());
 	}
 
 	
