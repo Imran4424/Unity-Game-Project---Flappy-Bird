@@ -20,4 +20,18 @@ public class LeaderBoardController : MonoBehaviour
 	{
 
 	}
+
+	// making C# script singleton
+	void MakeSingleton()
+	{
+		if (instance != null)
+		{
+			Destroy(gameObject);
+		}
+		else
+		{
+			instance = this;
+			DontDestroyOnLoad(gameObject);
+		}
+	}
 }
