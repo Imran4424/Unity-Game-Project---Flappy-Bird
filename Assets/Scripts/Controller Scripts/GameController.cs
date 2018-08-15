@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour
 		MakeSingleton ();
 		IsTheGameStartedForTheFirstTime ();
 
-		UnlockGreenBird();
+		/* UnlockGreenBird();
 		UnlockRedBird();
 
 		UnlockBirdsLevel();
@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
 		UnlockWinterLevel();
 		UnlockEveningLevel();
 		UnlockDarkLevel();
-		UnlockRainyLevel();
+		UnlockRainyLevel(); */
 	}
 
 	// Use this for initialization
