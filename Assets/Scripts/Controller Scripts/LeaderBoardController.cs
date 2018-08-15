@@ -4,6 +4,7 @@ using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.SceneManagement;
 
 public class LeaderBoardController : MonoBehaviour
 {
@@ -40,12 +41,7 @@ public class LeaderBoardController : MonoBehaviour
 		PlayGamesPlatform.Activate ();
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
-
-	}
-
+	
 	// making C# script singleton
 	void MakeSingleton ()
 	{
