@@ -11,6 +11,7 @@ public class LeaderBoardController : MonoBehaviour
 	public static LeaderBoardController instance;
 
 	public const string leaderBoardId = "CgkIlY-bvcoNEAIQAQ";
+	//public const string achievementId = "CgkIlY-bvcoNEAIQAQ";
 
 	void Awake ()
 	{
@@ -73,11 +74,18 @@ public class LeaderBoardController : MonoBehaviour
 		}
 	}
 
-	void ReportScore(int score)
+	void ReportScoreLocal (int score)
 	{
 		if (Social.localUser.authenticated)
 		{
-						
+			Social.ReportScore(score, leaderBoardId, (bool success) => {
+
+			});
 		}
+	}
+
+	void ReportProgressLocal()
+	{
+		
 	}
 }
