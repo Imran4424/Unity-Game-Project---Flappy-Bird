@@ -84,7 +84,7 @@ public class LeaderBoardController : MonoBehaviour
 		}
 	}
 
-	void ReportProgressLocal()
+	void ReportProgressLocal(int score)
 	{
 		
 	}
