@@ -46,6 +46,22 @@ public class LeaderBoardController : MonoBehaviour
 
 	public void ConnectGooglePlayGames()
 	{
-		
+		if (Social.localUser.authenticated)
+		{
+			
+		}
+		else
+		{
+			Social.localUser.Authenticate((bool success) => {
+				if (success)
+				{
+					Debug.Log("successfully Log In");
+				}
+				else
+				{
+					Debug.Log("Log In Failed");
+				}
+			});
+		}
 	}
 }
