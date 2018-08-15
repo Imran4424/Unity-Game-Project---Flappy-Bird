@@ -12,9 +12,22 @@ public class LeaderBoardController : MonoBehaviour
 
 	public const string leaderBoardId = "CgkIlY-bvcoNEAIQAQ";
 
-	//
+	// Achievements ID
 	public const string score5 = "CgkIlY-bvcoNEAIQAg";
-	public const string passTheScore30 = "CgkIlY-bvcoNEAIQAg";
+	public const string passTheScore30 = "CgkIlY-bvcoNEAIQAw";
+	public const string unlockTheGreenBird = "CgkIlY-bvcoNEAIQBQ";
+	public const string unlockTheDawnLevel = "CgkIlY-bvcoNEAIQBg";
+	public const string becomeAcenturian = "CgkIlY-bvcoNEAIQBw";
+	public const string unlockTheRedBird = "CgkIlY-bvcoNEAIQCA";
+	public const string unlockTheMountainsLevel = "CgkIlY-bvcoNEAIQCQ";
+	public const string unlockTheLakeLevel = "CgkIlY-bvcoNEAIQCg";
+	public const string unlockTheSpringLevel = "CgkIlY-bvcoNEAIQCw";
+	public const string unlockTheFarmLevel = "CgkIlY-bvcoNEAIQDA";
+	public const string unlockTheWinterLevel = "CgkIlY-bvcoNEAIQDQ";
+	public const string unlockTheEveningLevel = "CgkIlY-bvcoNEAIQDg";
+	public const string unlockTheDarkLevel = "CgkIlY-bvcoNEAIQDw";
+	public const string unlockTheRainyLevel = "CgkIlY-bvcoNEAIQEA";
+	public const string becomeTheUltimateFlappy = "CgkIlY-bvcoNEAIQEQ";
 
 	void Awake ()
 	{
@@ -51,7 +64,7 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		if (Social.localUser.authenticated)
 		{
-			PlayGamesPlatform.Instance.ShowAchievementsUI();
+			PlayGamesPlatform.Instance.ShowAchievementsUI ();
 		}
 		else
 		{
@@ -88,7 +101,7 @@ public class LeaderBoardController : MonoBehaviour
 		}
 	}
 
-	void ReportProgressLocal (double score)
+	void ReportProgressLocal (int score)
 	{
 		if (Social.localUser.authenticated)
 		{
