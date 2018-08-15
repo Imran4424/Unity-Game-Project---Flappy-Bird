@@ -50,6 +50,7 @@ public class LeaderBoardController : MonoBehaviour
 	void OnLoadCallBack (Scene scene, LoadSceneMode sceneMode)
 	{
 		ReportScoreLocal (GameController.instance.GetHighScore ());
+		ReportProgressLocal(GameController.instance.GetHighScore());
 	}
 
 	void OnDisable ()

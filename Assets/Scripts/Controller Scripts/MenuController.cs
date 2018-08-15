@@ -76,7 +76,7 @@ public class MenuController : MonoBehaviour
 		LeaderBoardController.instance.ConnectGooglePlayGames();
 	}
 
-	public void OpenLeaderBoard()
+	public void OpenLeaderBoardUI()
 	{
 		LeaderBoardController.instance.OpenLeaderBoard();
 	}
