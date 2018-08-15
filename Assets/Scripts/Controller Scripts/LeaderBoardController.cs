@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SocialPlatforms;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
-
+using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class LeaderBoardController : MonoBehaviour
 {
@@ -13,15 +12,15 @@ public class LeaderBoardController : MonoBehaviour
 
 	public const string leaderBoardId = "CgkIlY-bvcoNEAIQAQ";
 
-	void Awake()
+	void Awake ()
 	{
-		MakeSingleton();
+		MakeSingleton ();
 	}
 
 	// Use this for initialization
 	void Start ()
 	{
-		PlayGamesPlatform.Activate();
+		PlayGamesPlatform.Activate ();
 	}
 
 	// Update is called once per frame
@@ -31,40 +30,48 @@ public class LeaderBoardController : MonoBehaviour
 	}
 
 	// making C# script singleton
-	void MakeSingleton()
+	void MakeSingleton ()
 	{
 		if (instance != null)
 		{
-			Destroy(gameObject);
+			Destroy (gameObject);
 		}
 		else
 		{
 			instance = this;
-			DontDestroyOnLoad(gameObject);
+			DontDestroyOnLoad (gameObject);
 		}
 	}
 
-	public void ConnectGooglePlayGames()
+	public void ConnectGooglePlayGames ()
 	{
 		if (Social.localUser.authenticated)
 		{
-			
+
 		}
 		else
 		{
-			Social.localUser.Authenticate((bool success) => {
+			Social.localUser.Authenticate ((bool success) =>
+			{
 				if (success)
 				{
-					Debug.Log("successfully Log In");
+					Debug.Log ("successfully Log In");
 				}
 				else
 				{
-					Debug.Log("Log In Failed");
+					Debug.Log ("Log In Failed");
 				}
 			});
 		}
 	}
 
+	public void OpenLeaderBoard ()
+	{
+		if (Social.localUser.authenticated)
+		{
+			PlayGamesPlatform.Instance.ShowLeaderboardUI (leaderBoardId);
+		}
+	}
 
 	
 }
