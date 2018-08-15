@@ -73,5 +73,11 @@ public class LeaderBoardController : MonoBehaviour
 		}
 	}
 
-	
+	void ReportScore(int score)
+	{
+		if (Social.localUser.authenticated)
+		{
+						
+		}
+	}
 }
