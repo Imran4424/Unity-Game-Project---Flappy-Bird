@@ -105,7 +105,516 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		if (Social.localUser.authenticated)
 		{
-			
+			if (score >= 5 && score < 30)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 30 && score < 50)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 50 && score < 100)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 100 && score < 150)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 150 && score < 200)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+			}
+			else if (score >= 200 && score < 300)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 300 && score < 400)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheSpringLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 400 && score < 500)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheSpringLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheFarmLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 500 && score < 600)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheSpringLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheFarmLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheWinterLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 600 && score < 700)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheSpringLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheFarmLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheWinterLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheEveningLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 700 && score < 800)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheSpringLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheFarmLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheWinterLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheEveningLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDarkLevel, (double) score, (bool success) =>
+				{
+
+				});
+			}
+			else if (score >= 800)
+			{
+				Social.ReportProgress (score5, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (passTheScore30, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheGreenBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDawnLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeAcenturian, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRedBird, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheMountainsLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheLakeLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheSpringLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheFarmLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheWinterLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheEveningLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheDarkLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (unlockTheRainyLevel, (double) score, (bool success) =>
+				{
+
+				});
+
+				Social.ReportProgress (becomeTheUltimateFlappy, (double) score, (bool success) =>
+				{
+
+				});
+			}
 		}
 	}
 }
