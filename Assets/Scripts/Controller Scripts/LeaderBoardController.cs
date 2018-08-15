@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms;
 
 public class LeaderBoardController : MonoBehaviour
 {
@@ -40,15 +40,23 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		PlayGamesPlatform.Activate ();
 
+	}
+
+	void OnEnable ()
+	{
 		SceneManager.sceneLoaded += this.OnLoadCallBack;
 	}
 
-	void OnLoadCallBack(Scene scene, LoadSceneMode sceneMode)
+	void OnLoadCallBack (Scene scene, LoadSceneMode sceneMode)
 	{
-		ReportScoreLocal(GameController.instance.GetHighScore());
+		ReportScoreLocal (GameController.instance.GetHighScore ());
 	}
 
-	
+	void OnDisable ()
+	{
+		SceneManager.sceneLoaded -= this.OnLoadCallBack;
+	}
+
 	// making C# script singleton
 	void MakeSingleton ()
 	{
