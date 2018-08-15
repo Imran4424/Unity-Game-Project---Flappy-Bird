@@ -1,20 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SocialPlatforms;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
+using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
-
-public class PlayServicesController : MonoBehaviour {
+public class PlayServicesController : MonoBehaviour
+{
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+
 	}
 }
