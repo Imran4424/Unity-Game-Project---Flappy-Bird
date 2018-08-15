@@ -11,7 +11,10 @@ public class LeaderBoardController : MonoBehaviour
 	public static LeaderBoardController instance;
 
 	public const string leaderBoardId = "CgkIlY-bvcoNEAIQAQ";
-	//public const string achievementId = "CgkIlY-bvcoNEAIQAQ";
+
+	//
+	public const string score5 = "CgkIlY-bvcoNEAIQAg";
+	public const string passTheScore30 = "CgkIlY-bvcoNEAIQAg";
 
 	void Awake ()
 	{
@@ -48,7 +51,7 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		if (Social.localUser.authenticated)
 		{
-
+			PlayGamesPlatform.Instance.ShowAchievementsUI();
 		}
 		else
 		{
@@ -78,14 +81,18 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		if (Social.localUser.authenticated)
 		{
-			Social.ReportScore(score, leaderBoardId, (bool success) => {
+			Social.ReportScore (score, leaderBoardId, (bool success) =>
+			{
 
 			});
 		}
 	}
 
-	void ReportProgressLocal(int score)
+	void ReportProgressLocal (double score)
 	{
-		
+		if (Social.localUser.authenticated)
+		{
+			
+		}
 	}
 }
