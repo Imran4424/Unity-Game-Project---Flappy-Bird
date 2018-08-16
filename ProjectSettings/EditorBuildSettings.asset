@@ -9,17 +9,35 @@ EditorBuildSettings:
     path: Assets/_Scenes/MainMenu.unity
     guid: d3556445c2b32bf47b7335cfa733f687
   - enabled: 1
-    path: Assets/_Scenes/GamePlay.unity
-    guid: 0796e86ef881c554ba02b20f7b5d6482
-  - enabled: 1
-    path: Assets/_Scenes/GamePlay Dark.unity
-    guid: c52b2ef26de86b943aee222dd13e7a32
-  - enabled: 1
     path: Assets/_Scenes/About.unity
     guid: 138f7bc3705b2414095a73e2f7ff0493
   - enabled: 1
     path: Assets/_Scenes/GamePlay Forest.unity
     guid: 01ed71b7013f4d54e9e7db1d1d516f5b
   - enabled: 1
+    path: Assets/_Scenes/GamePlay Birds.unity
+    guid: a59e0695dddea4449a6d4b548b510d4e
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Mountains.unity
+    guid: 6630b9debc170384fad8b195007ae7a4
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Lake.unity
+    guid: 0fdd2b44558ea034ca223c16e7c9e377
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Spring.unity
+    guid: 186bbb281a427444c9499f60301f8862
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Farm.unity
+    guid: 5dd1d80d85dde6340b5b21fceff3b193
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Winter.unity
+    guid: c4d17be787283b747a614cae08ccaa45
+  - enabled: 1
     path: Assets/_Scenes/GamePlay Evening.unity
     guid: f4b05f8f557bf4f4e9bc060c1a625bfa
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Dark.unity
+    guid: c52b2ef26de86b943aee222dd13e7a32
+  - enabled: 1
+    path: Assets/_Scenes/GamePlay Rainy.unity
+    guid: 21d3362206804bb4d90d65ee1bc32a91

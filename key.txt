@@ -1,0 +1,15 @@
+Alias name: flappy the bird
+Creation date: Aug 15, 2018
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: O=Luminous Inc, CN=SHAH MD IMRAN HOSSAIN
+Issuer: O=Luminous Inc, CN=SHAH MD IMRAN HOSSAIN
+Serial number: 3ad4984f
+Valid from: Wed Aug 15 08:53:35 BDT 2018 until: Mon Jul 27 08:53:35 BDT 2093
+Certificate fingerprints:
+         MD5:  8C:E8:B9:92:C7:6A:C2:39:C5:4A:73:44:4F:82:1F:E6
+         SHA1: FC:8D:8A:09:73:C5:39:7E:CF:2B:B6:3C:A6:03:E3:17:CB:6F:36:98
+         SHA256: D4:85:48:13:F0:68:B7:05:02:E2:E7:69:4F:58:AF:67:C7:C8:EC:8A:B7:76:42:12:D6:12:81:4C:38:D8:F5:F0
+         Signature algorithm name: SHA1withRSA
+         Version: 3

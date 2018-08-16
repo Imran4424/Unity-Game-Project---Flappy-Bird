@@ -65,7 +65,8 @@
      <None Include="Assets\GooglePlayGames\Editor\template-AndroidManifest.txt" />
      <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPlugin_v0.9.50.txt" />
      <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
-     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.61.0.txt" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.79.0.txt" />
+     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
      <None Include="Assets\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support\maven-metadata.xml" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -280,17 +281,8 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Google.IOSResolver_v1.2.61.0">
- <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.61.0.dll</HintPath>
- </Reference>
- <Reference Include="Google.JarResolver_v1.2.61.0">
- <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.61.0.dll</HintPath>
- </Reference>
  <Reference Include="Google.VersionHandler">
  <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
- </Reference>
- <Reference Include="Google.VersionHandlerImpl_v1.2.61.0">
- <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.61.0.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Imu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -309,6 +301,15 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Imu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver_v1.2.79.0">
+ <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.79.0.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver_v1.2.79.0">
+ <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.79.0.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl_v1.2.79.0">
+ <HintPath>E:/Unity/Flappy Bird/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.79.0.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

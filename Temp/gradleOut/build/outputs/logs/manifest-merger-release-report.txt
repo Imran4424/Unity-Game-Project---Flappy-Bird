@@ -1,0 +1,250 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:117-153
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:178-203
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:70-116
+	android:versionCode
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:154-177
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:2:204-244
+uses-sdk
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:3:3-72
+MERGED from [:com.android.support.support-compat-25.2.0:] C:\Users\Imu\.android\build-cache\95e1b7e7809757485306fc3cc8288ee01e09ef70\output\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.android.support.support-core-ui-25.2.0:] C:\Users\Imu\.android\build-cache\44e694ebd8012de568255068fa06001851552c7e\output\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.android.support.support-core-utils-25.2.0:] C:\Users\Imu\.android\build-cache\90296e2266d77d435a47bd1c7e6ec76e645ef714\output\AndroidManifest.xml:21:5-23:61
+MERGED from [:com.android.support.support-fragment-25.2.0:] C:\Users\Imu\.android\build-cache\33e70b4c1c09891522e810848b0a78d39a331ef0\output\AndroidManifest.xml:21:5-23:60
+MERGED from [:com.android.support.support-media-compat-25.2.0:] C:\Users\Imu\.android\build-cache\c28838a01d8c18bf133416007e7fce4c56029030\output\AndroidManifest.xml:21:5-23:63
+MERGED from [:com.android.support.support-v4-25.2.0:] C:\Users\Imu\.android\build-cache\7d10a04be3fb53450231cadd6ecaee910bfd5b30\output\AndroidManifest.xml:21:5-23:54
+MERGED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:17:5-43
+MERGED from [:com.google.android.gms.play-services-auth-api-phone-11.6.2:] C:\Users\Imu\.android\build-cache\6a4f19c2f61b4a3ae62858638773db179e364534\output\AndroidManifest.xml:3:3-41
+MERGED from [:com.google.android.gms.play-services-auth-api-phone-license-11.6.2:] C:\Users\Imu\.android\build-cache\de1a7231d0825e944cd293a5dce1dbea7f81608e\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-auth-base-11.6.2:] C:\Users\Imu\.android\build-cache\e9cf1d656fb593fce3dd9f004ebd5e8d4bc237a7\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-auth-base-license-11.6.2:] C:\Users\Imu\.android\build-cache\54e5039d3eb8077997b96cc5b4d2ccdd2a6a6340\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-base-11.6.2:] C:\Users\Imu\.android\build-cache\0b0cdb6560a46292fa6c8dbd01f088d530bc925e\output\AndroidManifest.xml:17:5-43
+MERGED from [:com.google.android.gms.play-services-base-license-11.6.2:] C:\Users\Imu\.android\build-cache\2ccffc4742c6f19e57842ab88a2841a09aa64e24\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-basement-11.6.2:] C:\Users\Imu\.android\build-cache\769eae364431263d69535561e6c66d065b429b68\output\AndroidManifest.xml:17:5-43
+MERGED from [:com.google.android.gms.play-services-basement-license-11.6.2:] C:\Users\Imu\.android\build-cache\37b2ce71f42b15a2777bae0bd2ae54a406e0cfad\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-drive-11.6.2:] C:\Users\Imu\.android\build-cache\cfea16ab222a18eb6ee456c79adf8839ed246482\output\AndroidManifest.xml:17:5-43
+MERGED from [:com.google.android.gms.play-services-drive-license-11.6.2:] C:\Users\Imu\.android\build-cache\35ea195befb44104d2069fe66754d5c9fb1a6a58\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-games-11.6.2:] C:\Users\Imu\.android\build-cache\18f8a24a255eda7cf514853a10dbdbc6ec33dc40\output\AndroidManifest.xml:17:5-43
+MERGED from [:com.google.android.gms.play-services-games-license-11.6.2:] C:\Users\Imu\.android\build-cache\efa48d7bd6241b9f0460c99bca9cdda716a2a9eb\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-nearby-11.6.2:] C:\Users\Imu\.android\build-cache\5995e3460ea7697d071bdeee9f76c661d6eae92f\output\AndroidManifest.xml:3:5-43
+MERGED from [:com.google.android.gms.play-services-nearby-license-11.6.2:] C:\Users\Imu\.android\build-cache\03edb38cce4f9bdf3b3f38eaa2500c069e454ecd\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-tasks-11.6.2:] C:\Users\Imu\.android\build-cache\f6b9cbdc7233ed51ed744a532af5eaa3c53c7835\output\AndroidManifest.xml:3:5-43
+MERGED from [:com.google.android.gms.play-services-tasks-license-11.6.2:] C:\Users\Imu\.android\build-cache\346aa7e4b2cc8fdc548f3a2e0da01b5b964eb624\output\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.50:] C:\Users\Imu\.android\build-cache\e883ae9823b939ade7a600065f9482c96840aa84\output\AndroidManifest.xml:7:5-44
+MERGED from [gradleOut:GooglePlayGamesManifest.plugin:unspecified] E:\Unity\Flappy Bird\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\bundles\default\AndroidManifest.xml:11:5-13:41
+	tools:overrideLibrary
+		ADDED from [:com.android.support.support-compat-25.2.0:] C:\Users\Imu\.android\build-cache\95e1b7e7809757485306fc3cc8288ee01e09ef70\output\AndroidManifest.xml:23:9-55
+	android:targetSdkVersion
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:3:40-69
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:3:13-39
+supports-screens
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:4:3-163
+	android:largeScreens
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:4:47-74
+	android:smallScreens
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:4:104-131
+	android:normalScreens
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:4:75-103
+	android:xlargeScreens
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:4:132-160
+	android:anyDensity
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:4:21-46
+application
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:5:3-23:17
+MERGED from [:com.android.support.support-compat-25.2.0:] C:\Users\Imu\.android\build-cache\95e1b7e7809757485306fc3cc8288ee01e09ef70\output\AndroidManifest.xml:25:5-20
+MERGED from [:com.android.support.support-core-ui-25.2.0:] C:\Users\Imu\.android\build-cache\44e694ebd8012de568255068fa06001851552c7e\output\AndroidManifest.xml:25:5-20
+MERGED from [:com.android.support.support-core-utils-25.2.0:] C:\Users\Imu\.android\build-cache\90296e2266d77d435a47bd1c7e6ec76e645ef714\output\AndroidManifest.xml:25:5-20
+MERGED from [:com.android.support.support-fragment-25.2.0:] C:\Users\Imu\.android\build-cache\33e70b4c1c09891522e810848b0a78d39a331ef0\output\AndroidManifest.xml:25:5-20
+MERGED from [:com.android.support.support-media-compat-25.2.0:] C:\Users\Imu\.android\build-cache\c28838a01d8c18bf133416007e7fce4c56029030\output\AndroidManifest.xml:25:5-20
+MERGED from [:com.android.support.support-v4-25.2.0:] C:\Users\Imu\.android\build-cache\7d10a04be3fb53450231cadd6ecaee910bfd5b30\output\AndroidManifest.xml:25:5-20
+MERGED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:19:5-25:19
+MERGED from [:com.google.android.gms.play-services-auth-api-phone-license-11.6.2:] C:\Users\Imu\.android\build-cache\de1a7231d0825e944cd293a5dce1dbea7f81608e\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-auth-base-license-11.6.2:] C:\Users\Imu\.android\build-cache\54e5039d3eb8077997b96cc5b4d2ccdd2a6a6340\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-base-11.6.2:] C:\Users\Imu\.android\build-cache\0b0cdb6560a46292fa6c8dbd01f088d530bc925e\output\AndroidManifest.xml:18:5-20:19
+MERGED from [:com.google.android.gms.play-services-base-license-11.6.2:] C:\Users\Imu\.android\build-cache\2ccffc4742c6f19e57842ab88a2841a09aa64e24\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-basement-11.6.2:] C:\Users\Imu\.android\build-cache\769eae364431263d69535561e6c66d065b429b68\output\AndroidManifest.xml:19:5-21:19
+MERGED from [:com.google.android.gms.play-services-basement-license-11.6.2:] C:\Users\Imu\.android\build-cache\37b2ce71f42b15a2777bae0bd2ae54a406e0cfad\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-drive-11.6.2:] C:\Users\Imu\.android\build-cache\cfea16ab222a18eb6ee456c79adf8839ed246482\output\AndroidManifest.xml:18:5-19
+MERGED from [:com.google.android.gms.play-services-drive-license-11.6.2:] C:\Users\Imu\.android\build-cache\35ea195befb44104d2069fe66754d5c9fb1a6a58\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-games-11.6.2:] C:\Users\Imu\.android\build-cache\18f8a24a255eda7cf514853a10dbdbc6ec33dc40\output\AndroidManifest.xml:18:5-19
+MERGED from [:com.google.android.gms.play-services-games-license-11.6.2:] C:\Users\Imu\.android\build-cache\efa48d7bd6241b9f0460c99bca9cdda716a2a9eb\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-nearby-11.6.2:] C:\Users\Imu\.android\build-cache\5995e3460ea7697d071bdeee9f76c661d6eae92f\output\AndroidManifest.xml:5:5-19
+MERGED from [:com.google.android.gms.play-services-nearby-license-11.6.2:] C:\Users\Imu\.android\build-cache\03edb38cce4f9bdf3b3f38eaa2500c069e454ecd\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-11.6.2:] C:\Users\Imu\.android\build-cache\f6b9cbdc7233ed51ed744a532af5eaa3c53c7835\output\AndroidManifest.xml:4:5-19
+MERGED from [:com.google.android.gms.play-services-tasks-license-11.6.2:] C:\Users\Imu\.android\build-cache\346aa7e4b2cc8fdc548f3a2e0da01b5b964eb624\output\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.50:] C:\Users\Imu\.android\build-cache\e883ae9823b939ade7a600065f9482c96840aa84\output\AndroidManifest.xml:9:5-20
+MERGED from [gradleOut:GooglePlayGamesManifest.plugin:unspecified] E:\Unity\Flappy Bird\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\bundles\default\AndroidManifest.xml:15:5-30:19
+	android:label
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:5:50-82
+	android:icon
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:5:16-49
+	android:banner
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:5:147-184
+	android:theme
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:5:83-124
+	android:isGame
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:5:125-146
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:5-13:16
+	android:screenOrientation
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:102-145
+	android:label
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:69-101
+	android:hardwareAccelerated
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:360-395
+	android:launchMode
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:146-177
+	android:configChanges
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:178-359
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:6:15-68
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+android.intent.category.LEANBACK_LAUNCHER
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:7:7-11:23
+action#android.intent.action.MAIN
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:8:9-61
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:8:17-58
+category#android.intent.category.LAUNCHER
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:9:9-69
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:9:19-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:10:9-78
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:10:19-75
+meta-data#unityplayer.UnityActivity
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:12:7-82
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:12:59-79
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:12:18-58
+meta-data#com.google.android.gms.games.APP_ID
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:15:5-100
+MERGED from [gradleOut:GooglePlayGamesManifest.plugin:unspecified] E:\Unity\Flappy Bird\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\bundles\default\AndroidManifest.xml:18:9-20:46
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:15:67-97
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:15:16-66
+meta-data#com.google.android.gms.games.unityVersion
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:17:5-100
+MERGED from [gradleOut:GooglePlayGamesManifest.plugin:unspecified] E:\Unity\Flappy Bird\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\bundles\default\AndroidManifest.xml:23:9-25:40
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:17:73-97
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:17:16-72
+activity#com.google.games.bridge.NativeBridgeActivity
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:18:5-148
+MERGED from [gradleOut:GooglePlayGamesManifest.plugin:unspecified] E:\Unity\Flappy Bird\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\bundles\default\AndroidManifest.xml:27:9-29:86
+	android:theme
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:18:75-145
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:18:15-74
+meta-data#unity.build-id
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:19:5-101
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:19:46-98
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:19:16-45
+meta-data#unity.splash-mode
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:20:5-69
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:20:49-66
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:20:16-48
+meta-data#unity.splash-enable
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:21:5-74
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:21:51-71
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:21:16-50
+meta-data#android.max_aspect
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:22:5-72
+	android:value
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:22:50-69
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:22:16-49
+uses-feature#0x00020000
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:24:3-52
+	android:glEsVersion
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:24:17-49
+uses-feature#android.hardware.gamepad
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:25:3-84
+	android:required
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:25:57-81
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:25:17-56
+uses-permission#android.permission.INTERNET
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:26:3-65
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:26:20-62
+uses-feature#android.hardware.touchscreen
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:27:3-88
+	android:required
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:27:61-85
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:27:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:28:3-99
+	android:required
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:28:72-96
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:28:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:29:3-108
+	android:required
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:29:81-105
+	android:name
+		ADDED from E:\Unity\Flappy Bird\Temp\gradleOut\src\main\AndroidManifest.xml:29:17-80
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [:com.google.android.gms.play-services-auth-11.6.2:] C:\Users\Imu\.android\build-cache\d6f2b1320b57a2933f4d7f1c446ee83fb804d58f\output\AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [:com.google.android.gms.play-services-base-11.6.2:] C:\Users\Imu\.android\build-cache\0b0cdb6560a46292fa6c8dbd01f088d530bc925e\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-base-11.6.2:] C:\Users\Imu\.android\build-cache\0b0cdb6560a46292fa6c8dbd01f088d530bc925e\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-base-11.6.2:] C:\Users\Imu\.android\build-cache\0b0cdb6560a46292fa6c8dbd01f088d530bc925e\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [:com.google.android.gms.play-services-base-11.6.2:] C:\Users\Imu\.android\build-cache\0b0cdb6560a46292fa6c8dbd01f088d530bc925e\output\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [:com.google.android.gms.play-services-basement-11.6.2:] C:\Users\Imu\.android\build-cache\769eae364431263d69535561e6c66d065b429b68\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [:com.google.android.gms.play-services-basement-11.6.2:] C:\Users\Imu\.android\build-cache\769eae364431263d69535561e6c66d065b429b68\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [:com.google.android.gms.play-services-basement-11.6.2:] C:\Users\Imu\.android\build-cache\769eae364431263d69535561e6c66d065b429b68\output\AndroidManifest.xml:20:20-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:com.google.android.gms.play-services-nearby-11.6.2:] C:\Users\Imu\.android\build-cache\5995e3460ea7697d071bdeee9f76c661d6eae92f\output\AndroidManifest.xml:4:5-78
+	android:name
+		ADDED from [:com.google.android.gms.play-services-nearby-11.6.2:] C:\Users\Imu\.android\build-cache\5995e3460ea7697d071bdeee9f76c661d6eae92f\output\AndroidManifest.xml:4:22-76
