@@ -11,9 +11,9 @@ public class BannerAdController : MonoBehaviour
 
 	private BannerView bannerView;
 
-	void Awake()
+	void Awake ()
 	{
-		MakeSingleton();
+		MakeSingleton ();
 	}
 
 	// Use this for initialization
@@ -43,6 +43,21 @@ public class BannerAdController : MonoBehaviour
 			instance = this;
 			DontDestroyOnLoad (gameObject);
 		}
+	}
+
+	private void showBannerAd (string adUnitId)
+	{
+		//Create a custom ad size at the bottom of the screen
+
+		AdSize adSize = new AdSize (250, 50);
+		bannerView = new BannerView (adUnitId, adSize, AdPosition.Bottom);
+
+		// Create an empty ad request.
+		AdRequest request = new AdRequest.Builder ().Build ();
+
+		// Load the banner with the request.
+		bannerView.LoadAd (request);
+
 	}
 
 }
