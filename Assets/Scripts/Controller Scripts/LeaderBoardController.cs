@@ -8,7 +8,6 @@ using UnityEngine.SocialPlatforms;
 
 public class LeaderBoardController : MonoBehaviour
 {
-
 	public static LeaderBoardController instance;
 
 	public const string leaderBoardId = "CgkIlY-bvcoNEAIQAQ";
