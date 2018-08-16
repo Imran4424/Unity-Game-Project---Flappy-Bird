@@ -9,6 +9,8 @@ public class BannerAdController : MonoBehaviour
 {
 	public static BannerAdController instance;
 
+	private BannerView bannerView;
+
 	// Use this for initialization
 	void Start () 
 	{
