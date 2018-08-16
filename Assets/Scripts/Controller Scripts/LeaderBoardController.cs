@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GooglePlayGames;
+using Google;
 using GooglePlayGames.BasicApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
+
 
 public class LeaderBoardController : MonoBehaviour
 {
@@ -49,7 +51,7 @@ public class LeaderBoardController : MonoBehaviour
 	void OnLoadCallBack (Scene scene, LoadSceneMode sceneMode)
 	{
 		ReportScoreLocal (GameController.instance.GetHighScore ());
-		ReportProgressLocal(GameController.instance.GetHighScore());
+		ReportProgressLocal (GameController.instance.GetHighScore ());
 	}
 
 	void OnDisable ()
@@ -81,7 +83,7 @@ public class LeaderBoardController : MonoBehaviour
 		{
 			Social.localUser.Authenticate ((bool success) =>
 			{
-				
+
 			});
 		}
 	}
