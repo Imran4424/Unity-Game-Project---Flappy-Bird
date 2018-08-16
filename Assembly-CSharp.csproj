@@ -278,11 +278,13 @@
      <Compile Include="Assets\Scripts\Collector Scripts\BGCollector.cs" />
      <Compile Include="Assets\Scripts\Collector Scripts\PipeCollector.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\AboutController.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\BannerAdController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\GamePlayController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\LeaderBoardController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\Controller Scripts\QuitController.cs" />
+     <Compile Include="Assets\Scripts\Controller Scripts\RewardAdController.cs" />
      <Compile Include="Assets\Scripts\My Coroutine\MyCoroutine.cs" />
      <Compile Include="Assets\Scripts\Scene Fader Scripts\SceneFader.cs" />
      <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
