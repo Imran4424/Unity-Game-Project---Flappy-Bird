@@ -81,14 +81,7 @@ public class LeaderBoardController : MonoBehaviour
 		{
 			Social.localUser.Authenticate ((bool success) =>
 			{
-				if (success)
-				{
-					Debug.Log ("successfully Log In");
-				}
-				else
-				{
-					Debug.Log ("Log In Failed");
-				}
+				
 			});
 		}
 	}
