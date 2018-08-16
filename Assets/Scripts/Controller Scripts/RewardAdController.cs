@@ -114,21 +114,14 @@ public class RewardAdController : MonoBehaviour
 
 	public void HandleRewardBasedVideoRewarded (object sender, Reward args)
 	{
-		/* string type = args.Type;
-		double amount = args.Amount;
-		MonoBehaviour.print (
-			"HandleRewardBasedVideoRewarded event received for " +
-			amount.ToString () + " " + type); */
+		
 
-		//reward the user
-
-		int gem_score = MainMenuController.instance.GetGemScore ();
+		int gem_score = GameController.instance.GetGemScore();
 
 		gem_score++;
 
-		MainMenuController.instance.SetGemScore (gem_score);
+		GameController.instance.SetGemScore(gem_score);
 
-		MainMenuController.instance.TextSetGemScore ();
 	}
 
 	public void HandleRewardBasedVideoLeftApplication (object sender, EventArgs args)
