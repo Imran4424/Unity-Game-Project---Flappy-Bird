@@ -11,6 +11,11 @@ public class BannerAdController : MonoBehaviour
 
 	private BannerView bannerView;
 
+	void Awake()
+	{
+		MakeSingleton();
+	}
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -23,9 +28,21 @@ public class BannerAdController : MonoBehaviour
 		//this.showBannerAd (adUnitId);
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
+	/*
+	 * It's singleton pattern in C# scripts
+	 */
 
+	void MakeSingleton ()
+	{
+		if (instance != null)
+		{
+			Destroy (gameObject);
+		}
+		else
+		{
+			instance = this;
+			DontDestroyOnLoad (gameObject);
+		}
 	}
+
 }
