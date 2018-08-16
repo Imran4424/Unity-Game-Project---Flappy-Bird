@@ -14,11 +14,11 @@ public class BannerAdController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		string appId = "ca-app-pub-8350504222422488~7708154151";
+		string appId = "ca-app-pub-8350504222422488~9384849244";
 
 		MobileAds.Initialize (appId);
 
-		string adUnitId = "ca-app-pub-8350504222422488/6121177109";
+		string adUnitId = "ca-app-pub-8350504222422488/8846627340";
 
 		//this.showBannerAd (adUnitId);
 	}
