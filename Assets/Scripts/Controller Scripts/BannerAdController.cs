@@ -5,7 +5,9 @@ using GoogleMobileAds.Api;
 using GoogleMobileAds.Android;
 using UnityEngine;
 
-public class BannerAdController : MonoBehaviour {
+public class BannerAdController : MonoBehaviour 
+{
+	public static BannerAdController instance;
 
 	// Use this for initialization
 	void Start () 
