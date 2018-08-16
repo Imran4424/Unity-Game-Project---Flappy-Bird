@@ -69,7 +69,7 @@ public class LeaderBoardController : MonoBehaviour
 		else
 		{
 			instance = this;
-			DontDestroyOnLoad (gameObject);
+			DontDestroyOnLoad (instance);
 		}
 	}
 
