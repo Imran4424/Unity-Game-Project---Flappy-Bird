@@ -70,7 +70,7 @@ public class GameController : MonoBehaviour
 		else
 		{
 			instance = this;
-			DontDestroyOnLoad (gameObject);
+			DontDestroyOnLoad (instance);
 		}
 	}
 
