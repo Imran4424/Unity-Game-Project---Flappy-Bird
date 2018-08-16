@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using GoogleMobileAds;
 using GoogleMobileAds.Android;
@@ -74,5 +75,64 @@ public class RewardAdController : MonoBehaviour
 
 		// Load the rewarded video ad with the request.
 		this.rewardVideoAd.LoadAd (request, adUnitId);
+	}
+
+	/*
+		Event Handlers
+	*/
+
+	public void HandleRewardBasedVideoLoaded (object sender, EventArgs args)
+	{
+		MonoBehaviour.print ("HandleRewardBasedVideoLoaded event received");
+	}
+
+	public void HandleRewardBasedVideoFailedToLoad (object sender, AdFailedToLoadEventArgs args)
+	{
+		MonoBehaviour.print (
+			"HandleRewardBasedVideoFailedToLoad event received with message: " +
+			args.Message);
+		//this.RequestRewardBasedVideo ();
+	}
+
+	public void HandleRewardBasedVideoOpened (object sender, EventArgs args)
+	{
+		MonoBehaviour.print ("HandleRewardBasedVideoOpened event received");
+	}
+
+	public void HandleRewardBasedVideoStarted (object sender, EventArgs args)
+	{
+		MonoBehaviour.print ("HandleRewardBasedVideoStarted event received");
+	}
+
+	public void HandleRewardBasedVideoClosed (object sender, EventArgs args)
+	{
+		MonoBehaviour.print ("HandleRewardBasedVideoClosed event received");
+
+		this.RequestRewardBasedVideo ();
+
+	}
+
+	public void HandleRewardBasedVideoRewarded (object sender, Reward args)
+	{
+		/* string type = args.Type;
+		double amount = args.Amount;
+		MonoBehaviour.print (
+			"HandleRewardBasedVideoRewarded event received for " +
+			amount.ToString () + " " + type); */
+
+		//reward the user
+
+		int gem_score = MainMenuController.instance.GetGemScore ();
+
+		gem_score++;
+
+		MainMenuController.instance.SetGemScore (gem_score);
+
+		MainMenuController.instance.TextSetGemScore ();
+	}
+
+	public void HandleRewardBasedVideoLeftApplication (object sender, EventArgs args)
+	{
+		MonoBehaviour.print ("HandleRewardBasedVideoLeftApplication event received");
 	}
 }
