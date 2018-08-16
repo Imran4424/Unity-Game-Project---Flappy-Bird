@@ -25,7 +25,7 @@ public class BannerAdController : MonoBehaviour
 
 		string adUnitId = "ca-app-pub-8350504222422488/8846627340";
 
-		//this.showBannerAd (adUnitId);
+		this.showBannerAd (adUnitId);
 	}
 
 	/*
