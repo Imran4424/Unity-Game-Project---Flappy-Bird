@@ -77,7 +77,9 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		if (Social.localUser.authenticated)
 		{
-			PlayGamesPlatform.Instance.ShowAchievementsUI ();
+			//PlayGamesPlatform.Instance.ShowAchievementsUI ();
+
+			Social.ShowAchievementsUI();			
 		}
 		else
 		{
@@ -92,7 +94,9 @@ public class LeaderBoardController : MonoBehaviour
 	{
 		if (Social.localUser.authenticated)
 		{
-			PlayGamesPlatform.Instance.ShowLeaderboardUI (leaderBoardId);
+			//PlayGamesPlatform.Instance.ShowLeaderboardUI (leaderBoardId);
+
+			Social.ShowLeaderboardUI();
 		}
 	}
 
