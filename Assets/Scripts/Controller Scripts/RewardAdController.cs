@@ -15,7 +15,7 @@ public class RewardAdController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		string appId = "ca-app-pub-8350504222422488~7708154151";
+		string appId = "ca-app-pub-8350504222422488~9384849244";
 
 		// Initialize the Google Mobile Ads SDK.
 		MobileAds.Initialize (appId);
@@ -68,7 +68,7 @@ public class RewardAdController : MonoBehaviour
 
 	private void RequestRewardBasedVideo ()
 	{
-		string adUnitId = "ca-app-pub-8350504222422488/7241250290";
+		string adUnitId = "ca-app-pub-8350504222422488/3422501153";
 
 		// Create an empty ad request.
 		AdRequest request = new AdRequest.Builder ().Build ();
@@ -114,13 +114,12 @@ public class RewardAdController : MonoBehaviour
 
 	public void HandleRewardBasedVideoRewarded (object sender, Reward args)
 	{
-		
 
-		int gem_score = GameController.instance.GetGemScore();
+		int gem_score = GameController.instance.GetGemScore ();
 
 		gem_score++;
 
-		GameController.instance.SetGemScore(gem_score);
+		GameController.instance.SetGemScore (gem_score);
 
 	}
 
