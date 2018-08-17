@@ -78,8 +78,6 @@ public class LeaderBoardController : MonoBehaviour
 
 		if (Social.localUser.authenticated)
 		{
-			ReportScoreLocal (GameController.instance.GetHighScore ());
-			ReportProgressLocal (GameController.instance.GetHighScore ());
 			//Debug.Log ("Loged In");
 
 			//PlayGamesPlatform.Instance.ShowAchievementsUI ();
