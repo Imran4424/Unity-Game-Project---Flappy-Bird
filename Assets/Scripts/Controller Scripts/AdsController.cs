@@ -46,11 +46,6 @@ public class AdsController : MonoBehaviour
 		}
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
-
-	}
 
 	public void LoadRewardVideo ()
 	{
@@ -87,6 +82,7 @@ public class AdsController : MonoBehaviour
 			gem_score++;
 
 			GameController.instance.SetGemScore (gem_score);
+			MenuController.instance.SetGemTextScore();
 		}
 		else if (ev.Contains ("LOADEDREWARDED"))
 		{

@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using GooglePlayGames;
 using Google;
+using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
-
 
 public class LeaderBoardController : MonoBehaviour
 {
@@ -75,14 +74,19 @@ public class LeaderBoardController : MonoBehaviour
 
 	public void ConnectGooglePlayGames ()
 	{
+
 		if (Social.localUser.authenticated)
 		{
+			//Debug.Log ("Loged In");
+
 			//PlayGamesPlatform.Instance.ShowAchievementsUI ();
 
-			Social.ShowAchievementsUI();			
+			Social.ShowAchievementsUI ();
 		}
 		else
 		{
+			//Debug.Log ("Not Log In");
+
 			Social.localUser.Authenticate ((bool success) =>
 			{
 
@@ -92,11 +96,13 @@ public class LeaderBoardController : MonoBehaviour
 
 	public void OpenLeaderBoard ()
 	{
+		//Debug.Log ("In the function");
+
 		if (Social.localUser.authenticated)
 		{
 			//PlayGamesPlatform.Instance.ShowLeaderboardUI (leaderBoardId);
 
-			Social.ShowLeaderboardUI();
+			Social.ShowLeaderboardUI ();
 		}
 	}
 

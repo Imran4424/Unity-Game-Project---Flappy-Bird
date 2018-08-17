@@ -48,17 +48,18 @@ public class MenuController : MonoBehaviour
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 		gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 
-		gemScoreText.text = "" + GameController.instance.GetGemScore ();
+		SetGemTextScore();
 
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
 
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
+	// setting the gem text score
 
+	public void SetGemTextScore ()
+	{
+		gemScoreText.text = "" + GameController.instance.GetGemScore ();
 	}
 
 	void MakeInstance ()
@@ -71,14 +72,14 @@ public class MenuController : MonoBehaviour
 
 	// log in google play
 
-	public void ConnectOnGooglePlayGames()
+	public void ConnectOnGooglePlayGames ()
 	{
-		LeaderBoardController.instance.ConnectGooglePlayGames();
+		LeaderBoardController.instance.ConnectGooglePlayGames ();
 	}
 
-	public void OpenLeaderBoardUI()
+	public void OpenLeaderBoardUI ()
 	{
-		LeaderBoardController.instance.OpenLeaderBoard();
+		LeaderBoardController.instance.OpenLeaderBoard ();
 	}
 
 	// checking if the the birds are unlocked or not

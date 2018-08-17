@@ -288,7 +288,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 67cf2b93e66f1ba4eb5b88af66304eab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a57f4269a688fd048aeb38c77e50f468, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -334,7 +334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -10.9, y: -601}
+  m_AnchoredPosition: {x: -10.9, y: -583}
   m_SizeDelta: {x: 653.7, y: 104.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210973538
@@ -410,7 +410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -10.9, y: -511}
+  m_AnchoredPosition: {x: -10.9, y: -493}
   m_SizeDelta: {x: 653.7, y: 104.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377612394
@@ -506,6 +506,21 @@ Prefab:
     - target: {fileID: 4011812575262142, guid: c431d3112ae1520468ce75e3f3f9b84b, type: 2}
       propertyPath: m_LocalScale.z
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 212323214550904346, guid: c431d3112ae1520468ce75e3f3f9b84b,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300008, guid: a7acfbdd6fd1c504ba093877794b42f6,
+        type: 3}
+    - target: {fileID: 95802222869907932, guid: c431d3112ae1520468ce75e3f3f9b84b,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5af5285c91ab8fa45b38d7336cf24554, type: 2}
+    - target: {fileID: 1791867172892982, guid: c431d3112ae1520468ce75e3f3f9b84b, type: 2}
+      propertyPath: m_Name
+      value: Bird_Green_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c431d3112ae1520468ce75e3f3f9b84b, type: 2}
@@ -694,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -10.9, y: -465}
+  m_AnchoredPosition: {x: -10.9, y: -447}
   m_SizeDelta: {x: 653.7, y: 104.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656760456
@@ -842,7 +857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -10.9, y: -282.73}
+  m_AnchoredPosition: {x: -10.9, y: -279}
   m_SizeDelta: {x: 653.7, y: 283.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863913849
@@ -866,7 +881,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8b21fa5ceebb2364da8d94e5d2c5031c, type: 3}
-    m_FontSize: 25
+    m_FontSize: 22
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
@@ -877,10 +892,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tap to Play\nUnlock Birds - 51 : Green Bird \n            151 : Red Bird\nUnlock
-    levels - 201 : Forest Level\nUnlock levels - 351 : Forest Level\nUnlock levels
-    - 501 : Dark Level\nChange Birds - Tap The Bird\nChange Levels - Tap the Level\n\nUse
-    Gem for second life\nEarn Gem - Touch the Gem in MainMenu"
+  m_Text: 'Tap to Play
+
+
+    Unlock Birds - 3 Birds
+
+    Unlock Levels - 10 Levels
+
+
+    Change Birds - Tap The Bird
+
+    Change Levels - Tap the Level
+
+
+    Use Gem for second life
+
+    Earn Gem - Touch the Gem in MainMenu'
 --- !u!222 &863913850
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -941,7 +968,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 196586e4362ffcf4f9397e4f97f33f6f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a57f4269a688fd048aeb38c77e50f468, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -987,7 +1014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -10.9, y: -118}
+  m_AnchoredPosition: {x: -10.9, y: -120.26999}
   m_SizeDelta: {x: 653.7, y: 104.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1025200373
@@ -1356,7 +1383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -23, y: -645}
+  m_AnchoredPosition: {x: -23, y: -627}
   m_SizeDelta: {x: 653.7, y: 104.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1909074541
