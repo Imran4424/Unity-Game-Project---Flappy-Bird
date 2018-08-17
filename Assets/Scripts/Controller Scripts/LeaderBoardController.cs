@@ -38,8 +38,9 @@ public class LeaderBoardController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder ().Build ();
+		PlayGamesPlatform.InitializeInstance (config);
 		PlayGamesPlatform.Activate ();
-
 	}
 
 	void OnEnable ()
@@ -77,6 +78,8 @@ public class LeaderBoardController : MonoBehaviour
 
 		if (Social.localUser.authenticated)
 		{
+			ReportScoreLocal (GameController.instance.GetHighScore ());
+			ReportProgressLocal (GameController.instance.GetHighScore ());
 			//Debug.Log ("Loged In");
 
 			//PlayGamesPlatform.Instance.ShowAchievementsUI ();
