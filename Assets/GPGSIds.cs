@@ -24,7 +24,22 @@
 
 public static class GPGSIds
 {
+        public const string achievement_unlock_the_dawn_level = "CgkIlY-bvcoNEAIQBg"; // <GPGSID>
+        public const string achievement_unlock_the_rainy_level = "CgkIlY-bvcoNEAIQEA"; // <GPGSID>
+        public const string achievement_unlock_the_winter_level = "CgkIlY-bvcoNEAIQDQ"; // <GPGSID>
+        public const string achievement_unlock_the_green_bird = "CgkIlY-bvcoNEAIQBQ"; // <GPGSID>
+        public const string achievement_pass_the_score_30 = "CgkIlY-bvcoNEAIQAw"; // <GPGSID>
+        public const string achievement_became_the_ultimate_flappy = "CgkIlY-bvcoNEAIQEQ"; // <GPGSID>
+        public const string achievement_unlock_the_evening_level = "CgkIlY-bvcoNEAIQDg"; // <GPGSID>
+        public const string achievement_unlock_farm_level = "CgkIlY-bvcoNEAIQDA"; // <GPGSID>
+        public const string achievement_unlock_the_red_bird = "CgkIlY-bvcoNEAIQCA"; // <GPGSID>
+        public const string achievement_unlock_the_spring_level = "CgkIlY-bvcoNEAIQCw"; // <GPGSID>
+        public const string achievement_become_a_centurian = "CgkIlY-bvcoNEAIQBw"; // <GPGSID>
+        public const string achievement_unlock_the_mountains_level = "CgkIlY-bvcoNEAIQCQ"; // <GPGSID>
         public const string leaderboard_flappy_the_bird_leaderboard = "CgkIlY-bvcoNEAIQAQ"; // <GPGSID>
+        public const string achievement_unlock_the_lake_level = "CgkIlY-bvcoNEAIQCg"; // <GPGSID>
+        public const string achievement_score_5 = "CgkIlY-bvcoNEAIQAg"; // <GPGSID>
+        public const string achievement_unlock_the_dark_level = "CgkIlY-bvcoNEAIQDw"; // <GPGSID>
 
 }
 

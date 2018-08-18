@@ -11,24 +11,24 @@ public class LeaderBoardController : MonoBehaviour
 {
 	public static LeaderBoardController instance;
 
-	public const string leaderBoardId = "CgkIlY-bvcoNEAIQAQ";
+	public const string leaderBoardId = GPGSIds.leaderboard_flappy_the_bird_leaderboard;
 
 	// Achievements ID
-	public const string score5 = "CgkIlY-bvcoNEAIQAg";
-	public const string passTheScore30 = "CgkIlY-bvcoNEAIQAw";
-	public const string unlockTheGreenBird = "CgkIlY-bvcoNEAIQBQ";
-	public const string unlockTheDawnLevel = "CgkIlY-bvcoNEAIQBg";
-	public const string becomeAcenturian = "CgkIlY-bvcoNEAIQBw";
-	public const string unlockTheRedBird = "CgkIlY-bvcoNEAIQCA";
-	public const string unlockTheMountainsLevel = "CgkIlY-bvcoNEAIQCQ";
-	public const string unlockTheLakeLevel = "CgkIlY-bvcoNEAIQCg";
-	public const string unlockTheSpringLevel = "CgkIlY-bvcoNEAIQCw";
-	public const string unlockTheFarmLevel = "CgkIlY-bvcoNEAIQDA";
-	public const string unlockTheWinterLevel = "CgkIlY-bvcoNEAIQDQ";
-	public const string unlockTheEveningLevel = "CgkIlY-bvcoNEAIQDg";
-	public const string unlockTheDarkLevel = "CgkIlY-bvcoNEAIQDw";
-	public const string unlockTheRainyLevel = "CgkIlY-bvcoNEAIQEA";
-	public const string becomeTheUltimateFlappy = "CgkIlY-bvcoNEAIQEQ";
+	public const string score5 = GPGSIds.achievement_score_5;
+	public const string passTheScore30 = GPGSIds.achievement_pass_the_score_30;
+	public const string unlockTheGreenBird = GPGSIds.achievement_unlock_the_green_bird;
+	public const string unlockTheDawnLevel = GPGSIds.achievement_unlock_the_dawn_level;
+	public const string becomeAcenturian = GPGSIds.achievement_become_a_centurian;
+	public const string unlockTheRedBird = GPGSIds.achievement_unlock_the_red_bird;
+	public const string unlockTheMountainsLevel = GPGSIds.achievement_unlock_the_mountains_level;
+	public const string unlockTheLakeLevel = GPGSIds.achievement_unlock_the_lake_level;
+	public const string unlockTheSpringLevel = GPGSIds.achievement_unlock_the_spring_level;
+	public const string unlockTheFarmLevel = GPGSIds.achievement_unlock_farm_level;
+	public const string unlockTheWinterLevel = GPGSIds.achievement_unlock_the_winter_level;
+	public const string unlockTheEveningLevel = GPGSIds.achievement_unlock_the_evening_level;
+	public const string unlockTheDarkLevel = GPGSIds.achievement_unlock_the_dark_level;
+	public const string unlockTheRainyLevel = GPGSIds.achievement_unlock_the_rainy_level;
+	public const string becomeTheUltimateFlappy = GPGSIds.achievement_became_the_ultimate_flappy;
 
 	void Awake ()
 	{
