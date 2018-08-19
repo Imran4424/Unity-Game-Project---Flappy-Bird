@@ -56,7 +56,7 @@ public class LeaderBoardController : MonoBehaviour
 		ReportProgressLocal (GameController.instance.GetHighScore ());
 	}
 
-	
+	// Event unsubscribe On a Scene Leave
 	void OnDisable ()
 	{
 		SceneManager.sceneLoaded -= this.OnLoadCallBack;
