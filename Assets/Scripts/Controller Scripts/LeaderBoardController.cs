@@ -41,7 +41,6 @@ public class LeaderBoardController : MonoBehaviour
 		PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder ().Build ();
 		PlayGamesPlatform.InitializeInstance (config);
 		PlayGamesPlatform.Activate ();
-		
 	}
 
 	void OnEnable ()
