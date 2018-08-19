@@ -56,7 +56,7 @@ public class LeaderBoardController : MonoBehaviour
 		ReportProgressLocal (GameController.instance.GetHighScore ());
 	}
 
-
+	
 	void OnDisable ()
 	{
 		SceneManager.sceneLoaded -= this.OnLoadCallBack;
