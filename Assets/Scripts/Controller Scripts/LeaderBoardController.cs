@@ -43,7 +43,7 @@ public class LeaderBoardController : MonoBehaviour
 		PlayGamesPlatform.Activate ();
 	}
 
-	// Event Subscription
+	// Event Subscription On a Scene Load
 	void OnEnable ()
 	{
 		SceneManager.sceneLoaded += this.OnLoadCallBack;
@@ -56,7 +56,7 @@ public class LeaderBoardController : MonoBehaviour
 		ReportProgressLocal (GameController.instance.GetHighScore ());
 	}
 
-	
+
 	void OnDisable ()
 	{
 		SceneManager.sceneLoaded -= this.OnLoadCallBack;
