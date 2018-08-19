@@ -43,7 +43,7 @@ public class LeaderBoardController : MonoBehaviour
 		PlayGamesPlatform.Activate ();
 	}
 
-	// Event Subscript
+	// Event Subscription
 	void OnEnable ()
 	{
 		SceneManager.sceneLoaded += this.OnLoadCallBack;
