@@ -121,11 +121,11 @@ public class PipeCollector : MonoBehaviour
 		}
 		else if (score > 350 && score <= 400)
 		{
-			distance = 4f;
+			distance = 4.25f;
 		}
 		else if (score > 400 && score <= 500)
 		{
-			distance = 3.75f;
+			distance = 4f;
 		}
 		else if (score > 500 && score <= 600)
 		{
