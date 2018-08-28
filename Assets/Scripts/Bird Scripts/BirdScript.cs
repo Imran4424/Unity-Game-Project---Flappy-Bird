@@ -148,7 +148,7 @@ public class BirdScript : MonoBehaviour
 				temp.x = temp.x + 1.5f;
 				temp.y = 1.5f;
 
-				if (GameController.instance.GetGemScore () >= 2)
+				if (GameController.instance.GetGemScore () >= 0)
 				{
 					GamePlayController.instance.SaveMeMethod (score, temp);
 				}

@@ -173,6 +173,8 @@ public class GamePlayController : MonoBehaviour
 			PlayerDied (saveMeScore);
 
 		}
+		
+		noNeed = false;
 	}
 
 	IEnumerator showGameOverPanel ()
