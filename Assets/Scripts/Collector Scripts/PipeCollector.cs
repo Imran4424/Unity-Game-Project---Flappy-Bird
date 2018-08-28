@@ -99,19 +99,19 @@ public class PipeCollector : MonoBehaviour
 	{
 		if (score > 50 && score <= 100)
 		{
-			distance = 7f;
+			distance = 6f;
 		}
 		else if (score > 100 && score <= 150)
 		{
-			distance = 6f;
+			distance = 5f;
 		}
 		else if (score > 150 && score <= 200)
 		{
-			distance = 5f;
+			distance = 4.5f;
 		}
 		else if (score > 200 && score <= 250)
 		{
-			distance = 4.5f;
+			distance = 4.25f;
 		}
 		else if (score > 250 && score <= 300)
 		{
