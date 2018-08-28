@@ -8,7 +8,7 @@ public class PipeCollector : MonoBehaviour
 	public static PipeCollector instance;
 
 	private GameObject[] pipeHolders;
-	private float distance = 8f;
+	private float distance = 7f;
 	private float lastPipeX, lastPipeY;
 	private float pipeMin = -1.5f;
 	private float pipeMax = 2.4f;
@@ -80,9 +80,7 @@ public class PipeCollector : MonoBehaviour
 
 	}
 
-	/*
-		must have update function in your code unless it will give problem
-	*/
+	
 
 	void Update ()
 	{
