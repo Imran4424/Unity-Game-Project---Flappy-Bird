@@ -27,14 +27,13 @@ public class GamePlayController : MonoBehaviour
 	[SerializeField]
 	private Image medalImage;
 
-	public bool isSaveMeUsed;
 
 	public bool gameStarted;
 
 	void Awake ()
 	{
 		MakeInstance ();
-		isSaveMeUsed = false;
+		
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 0f;
@@ -131,7 +130,6 @@ public class GamePlayController : MonoBehaviour
 
 	public void SaveMeMethod (int score, Vector3 spawnBirdPos)
 	{
-		isSaveMeUsed = true;
 
 		saveMeScore = score;
 		spawnBirdHere = spawnBirdPos;
