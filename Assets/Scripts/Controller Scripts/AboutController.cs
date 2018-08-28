@@ -10,6 +10,5 @@ public class AboutController : MonoBehaviour
 	{
 		SceneFader.instance.FadeIn("MainMenu");
 	}
-
 	
 }
