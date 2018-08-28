@@ -53,6 +53,7 @@ public class MenuController : MonoBehaviour
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
 
+		
 	}
 
 	// setting the gem text score
