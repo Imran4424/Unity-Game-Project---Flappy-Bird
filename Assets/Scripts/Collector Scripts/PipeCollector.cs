@@ -133,7 +133,11 @@ public class PipeCollector : MonoBehaviour
 		{
 			distance = 3f;
 		}
-		else if (score > 700)
+		else if (score > 700 && score <= 800)
+		{
+			distance = 2.75f;
+		}
+		else if(score > 800)
 		{
 			distance = 2.5f;
 		}
