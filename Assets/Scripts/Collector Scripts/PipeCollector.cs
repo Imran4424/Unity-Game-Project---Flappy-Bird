@@ -113,23 +113,23 @@ public class PipeCollector : MonoBehaviour
 		}
 		else if (score > 200 && score <= 250)
 		{
-			distance = 4.75f;
+			distance = 4.5f;
 		}
 		else if (score > 250 && score <= 300)
 		{
-			distance = 4.5f;
+			distance = 4f;
 		}
 		else if (score > 350 && score <= 400)
 		{
-			distance = 4.25f;
+			distance = 3.75f;
 		}
 		else if (score > 400 && score <= 500)
 		{
-			distance = 4f;
+			distance = 3.5f;
 		}
 		else if (score > 500 && score <= 600)
 		{
-			distance = 3.5f;
+			distance = 3.25f;
 		}
 		else if (score > 600 && score <= 700)
 		{
@@ -137,7 +137,7 @@ public class PipeCollector : MonoBehaviour
 		}
 		else if (score > 700)
 		{
-			distance = 2.75f;
+			distance = 2.5f;
 		}
 	}
 
