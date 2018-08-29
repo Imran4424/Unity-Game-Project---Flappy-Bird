@@ -144,14 +144,18 @@ public class BirdScript : MonoBehaviour
 				// working with save me panel
 
 				Vector3 temp = target.transform.position;
-				Vector3 pipeHolderTemp = target.gameObject.transform.parent.gameObject.transform.position;
+
+				if (target.gameObject.tag == "Pipe")
+				{
+					Vector3 pipeHolderTemp = target.gameObject.transform.parent.gameObject.transform.position;
+
+					pipeHolderTemp.x = pipeHolderTemp.x - 9f;
+
+					target.gameObject.transform.parent.gameObject.transform.position = pipeHolderTemp;
+				}
 
 				temp.x = temp.x - 1.5f;
 				temp.y = 1.5f;
-
-				pipeHolderTemp.x = pipeHolderTemp.x - 9f;
-
-				target.gameObject.transform.parent.gameObject.transform.position = pipeHolderTemp;
 
 				if (GameController.instance.GetGemScore () >= 0)
 				{
