@@ -145,14 +145,20 @@ public class BirdScript : MonoBehaviour
 
 				Vector3 temp = target.transform.position;
 
-				temp.x = temp.x + 1.5f;
-				temp.y = 1.5f;
+				if (target.gameObject.tag == "Pipe")
+				{
+					temp.x = temp.x + 1.5f;
+				}
+				else if (target.gameObject.tag == "Ground")
+				{
+					temp.y = 1.5f;
+				}
 
 				if (GameController.instance.GetGemScore () >= 0)
 				{
 					GamePlayController.instance.SaveMeMethod (score, temp);
 				}
-				
+
 			}
 		}
 	}
