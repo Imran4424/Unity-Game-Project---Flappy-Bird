@@ -8,7 +8,7 @@ public class PipeCollector : MonoBehaviour
 	public static PipeCollector instance;
 
 	private GameObject[] pipeHolders;
-	private float distance = 5f;
+	private float distance = 7.5f;
 	private float lastPipeX, lastPipeY;
 	private float pipeMin = -1.5f;
 	private float pipeMax = 2.4f;
@@ -80,8 +80,6 @@ public class PipeCollector : MonoBehaviour
 
 	}
 
-	
-
 	void Update ()
 	{
 
@@ -97,52 +95,71 @@ public class PipeCollector : MonoBehaviour
 
 	public void ManipulatingDistance (int score)
 	{
-		distance = 5f;
 
-		/* if (score > 50 && score <= 100)
+		if (score > 50 && score <= 100)
 		{
-			distance = 6f;
+			distance = 7f;
 		}
 		else if (score > 100 && score <= 150)
 		{
-			distance = 5f;
+			distance = 6.5f;
 		}
 		else if (score > 150 && score <= 200)
 		{
-			distance = 4.5f;
+			distance = 6f;
 		}
 		else if (score > 200 && score <= 250)
 		{
-			distance = 4.25f;
+			distance = 5.75f;
 		}
 		else if (score > 250 && score <= 300)
 		{
-			distance = 4f;
+			distance = 5.5f;
 		}
 		else if (score > 300 && score <= 350)
 		{
-			distance = 3.75f;
+			distance = 5.25f;
 		}
 		else if (score > 350 && score <= 400)
 		{
-			distance = 3.5f;
+			distance = 5f;
 		}
 		else if (score > 400 && score <= 450)
 		{
-			distance = 3.25f;
+			distance = 4.75f;
 		}
 		else if (score > 450 && score <= 500)
 		{
-			distance = 3f;
+			distance = 4.5f;
 		}
 		else if (score > 500 && score <= 550)
 		{
+			distance = 4.25f;
+		}
+		else if (score > 550 && score <= 600)
+		{
+			distance = 4f;
+		}
+		else if (score > 600 && score <= 650)
+		{
+			distance = 3.75f;
+		}
+		else if (score > 650 && score <= 700)
+		{
+			distance = 3.5f;
+		}
+		else if (score > 700 && score <= 750)
+		{
+			distance = 3.25f;
+		}
+		else if (score > 750 && score <= 800)
+		{
+			distance = 3f;
+		}
+		else if (score > 800)
+		{
 			distance = 2.75f;
 		}
-		else if(score > 550)
-		{
-			distance = 2.5f;
-		} */
 	}
 
 	void OnTriggerEnter2D (Collider2D target)

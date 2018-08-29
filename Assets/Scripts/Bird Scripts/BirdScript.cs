@@ -145,16 +145,8 @@ public class BirdScript : MonoBehaviour
 
 				Vector3 temp = target.transform.position;
 
-				if (target.gameObject.tag == "Pipe")
-				{
-					temp.x = temp.x + 1.5f;
-					temp.y = 1.5f;
-				}
-				else if (target.gameObject.tag == "Ground")
-				{
-					temp.y = 1.5f;
-					temp.x = temp.x + 1f;
-				}
+				temp.x = temp.x + 1.5f;
+				temp.y = 1.5f;
 
 				if (GameController.instance.GetGemScore () >= 0)
 				{
@@ -217,6 +209,26 @@ public class BirdScript : MonoBehaviour
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
 			else if (score > 550 && score <= 560)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 600 && score <= 610)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 650 && score <= 660)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 700 && score <= 710)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 750 && score <= 760)
+			{
+				PipeCollector.instance.ManipulatingDistance (score);
+			}
+			else if (score > 800 && score <= 810)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
