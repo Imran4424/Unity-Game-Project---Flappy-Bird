@@ -27,8 +27,8 @@ public class GamePlayController : MonoBehaviour
 	[SerializeField]
 	private Image medalImage;
 
-	public bool gameStarted = false;
-	public bool gameStarted = false;
+	public bool gameStarted;
+	public bool youCanPause = false;
 
 
 	void Awake ()
