@@ -145,7 +145,7 @@ public class BirdScript : MonoBehaviour
 
 				Vector3 temp = target.transform.position;
 
-				temp.x = temp.x + 1.5f;
+				temp.x = temp.x - 1.5f;
 				temp.y = 1.5f;
 
 				if (GameController.instance.GetGemScore () >= 0)
