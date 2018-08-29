@@ -151,13 +151,17 @@ public class BirdScript : MonoBehaviour
 
 				if (target.gameObject.tag == "Pipe")
 				{
+					/*
+						getting parent object position from child object					
+					*/
+
 					Vector3 pipeHolderTemp = target.gameObject.transform.parent.gameObject.transform.position;
 
 					pipeHolderTemp.x = pipeHolderTemp.x - 9f;
 
 					target.gameObject.transform.parent.gameObject.transform.position = pipeHolderTemp;
 				}
-				
+
 				if (GameController.instance.GetGemScore () >= 0)
 				{
 					GamePlayController.instance.SaveMeMethod (score, temp);
