@@ -115,6 +115,8 @@ public class BirdScript : MonoBehaviour
 			Time.timeScale = 1f;
 
 			GamePlayController.instance.gameStarted = false;
+
+			GamePlayController.instance.youCanPause = true;
 		}
 	}
 
