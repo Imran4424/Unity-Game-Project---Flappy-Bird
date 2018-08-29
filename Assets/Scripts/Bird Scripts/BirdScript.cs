@@ -152,13 +152,7 @@ public class BirdScript : MonoBehaviour
 				{
 					GamePlayController.instance.SaveMeMethod (score, temp);
 				}
-				else
-				{
-					// working with gameplay player died option
-
-					GamePlayController.instance.PlayerDied (score);
-				}
-
+				
 			}
 		}
 	}
