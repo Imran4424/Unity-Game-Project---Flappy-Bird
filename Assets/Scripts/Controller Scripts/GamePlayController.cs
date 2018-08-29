@@ -77,7 +77,7 @@ public class GamePlayController : MonoBehaviour
 	{
 		if (BirdScript.instance != null)
 		{
-			if (BirdScript.instance.isAlive && gameStarted)
+			if (BirdScript.instance.isAlive && youCanPause)
 			{
 				pausePanel.SetActive (true);
 
