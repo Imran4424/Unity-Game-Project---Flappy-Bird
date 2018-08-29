@@ -40,6 +40,7 @@ public class MenuController : MonoBehaviour
 		MakeInstance ();
 
 		Time.timeScale = 1f;
+
 	}
 
 	// Use this for initialization

@@ -8,7 +8,7 @@ public class PipeCollector : MonoBehaviour
 	public static PipeCollector instance;
 
 	private GameObject[] pipeHolders;
-	private float distance = 7f;
+	private float distance = 3.5f;
 	private float lastPipeX, lastPipeY;
 	private float pipeMin = -1.5f;
 	private float pipeMax = 2.4f;
@@ -97,6 +97,8 @@ public class PipeCollector : MonoBehaviour
 
 	public void ManipulatingDistance (int score)
 	{
+		//distance = 3.5f;
+
 		if (score > 50 && score <= 100)
 		{
 			distance = 6f;
@@ -117,27 +119,27 @@ public class PipeCollector : MonoBehaviour
 		{
 			distance = 4f;
 		}
-		else if (score > 350 && score <= 400)
+		else if (score > 300 && score <= 350)
 		{
 			distance = 3.75f;
 		}
-		else if (score > 400 && score <= 500)
+		else if (score > 350 && score <= 400)
 		{
 			distance = 3.5f;
 		}
-		else if (score > 500 && score <= 600)
+		else if (score > 400 && score <= 450)
 		{
 			distance = 3.25f;
 		}
-		else if (score > 600 && score <= 700)
+		else if (score > 450 && score <= 500)
 		{
 			distance = 3f;
 		}
-		else if (score > 700 && score <= 800)
+		else if (score > 500 && score <= 550)
 		{
 			distance = 2.75f;
 		}
-		else if(score > 800)
+		else if(score > 550)
 		{
 			distance = 2.5f;
 		}

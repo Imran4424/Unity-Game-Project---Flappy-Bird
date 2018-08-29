@@ -164,7 +164,7 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator wait ()
 	{
-		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (2f));
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (2.5f));
 		saveMePanel.SetActive (false);
 
 		if (!noNeed)

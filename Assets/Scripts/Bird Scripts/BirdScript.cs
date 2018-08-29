@@ -148,11 +148,12 @@ public class BirdScript : MonoBehaviour
 				if (target.gameObject.tag == "Pipe")
 				{
 					temp.x = temp.x + 1.5f;
+					temp.y = 1.5f;
 				}
 				else if (target.gameObject.tag == "Ground")
 				{
 					temp.y = 1.5f;
-					temp.x = temp.x - 1f;
+					temp.x = temp.x + 1f;
 				}
 
 				if (GameController.instance.GetGemScore () >= 0)
@@ -175,47 +176,47 @@ public class BirdScript : MonoBehaviour
 
 			GamePlayController.instance.setScore (score);
 
-			if (score > 50 && score <= 55)
+			if (score > 50 && score <= 60)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 100 && score <= 105)
+			else if (score > 100 && score <= 110)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 150 && score <= 155)
+			else if (score > 150 && score <= 160)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 200 && score <= 205)
+			else if (score > 200 && score <= 210)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 250 && score <= 255)
+			else if (score > 250 && score <= 260)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 350 && score <= 355)
+			else if (score > 300 && score <= 310)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 400 && score <= 405)
+			else if (score > 350 && score <= 360)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 500 && score <= 505)
+			else if (score > 400 && score <= 410)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 600 && score <= 605)
+			else if (score > 450 && score <= 460)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 700 && score <= 705)
+			else if (score > 500 && score <= 510)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
-			else if (score > 800 && score <= 805)
+			else if (score > 550 && score <= 560)
 			{
 				PipeCollector.instance.ManipulatingDistance (score);
 			}
