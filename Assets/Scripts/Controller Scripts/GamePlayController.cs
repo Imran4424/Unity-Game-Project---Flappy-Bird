@@ -27,7 +27,7 @@ public class GamePlayController : MonoBehaviour
 	[SerializeField]
 	private Image medalImage;
 
-	public bool gameStarted;
+	public bool gameStarted = false;
 
 	void Awake ()
 	{
@@ -75,7 +75,7 @@ public class GamePlayController : MonoBehaviour
 	{
 		if (BirdScript.instance != null)
 		{
-			if (BirdScript.instance.isAlive)
+			if (BirdScript.instance.isAlive && gameStarted)
 			{
 				pausePanel.SetActive (true);
 
