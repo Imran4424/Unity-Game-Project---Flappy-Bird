@@ -28,6 +28,8 @@ public class GamePlayController : MonoBehaviour
 	private Image medalImage;
 
 	public bool gameStarted = false;
+	public bool gameStarted = false;
+
 
 	void Awake ()
 	{
