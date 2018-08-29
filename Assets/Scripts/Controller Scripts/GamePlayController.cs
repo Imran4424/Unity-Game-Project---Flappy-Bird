@@ -27,13 +27,12 @@ public class GamePlayController : MonoBehaviour
 	[SerializeField]
 	private Image medalImage;
 
-
 	public bool gameStarted;
 
 	void Awake ()
 	{
 		MakeInstance ();
-		
+
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 
 		Time.timeScale = 0f;
@@ -165,7 +164,7 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator wait ()
 	{
-		yield return new WaitForSeconds (2);
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (2f));
 		saveMePanel.SetActive (false);
 
 		if (!noNeed)
@@ -173,7 +172,7 @@ public class GamePlayController : MonoBehaviour
 			PlayerDied (saveMeScore);
 
 		}
-		
+
 		noNeed = false;
 	}
 
@@ -558,9 +557,9 @@ public class GamePlayController : MonoBehaviour
 				GameController.instance.UnlockDarkLevel ();
 			}
 
-			if (GameController.instance.IsRainyLevelUnlocked() == 0)
+			if (GameController.instance.IsRainyLevelUnlocked () == 0)
 			{
-				GameController.instance.UnlockRainyLevel();
+				GameController.instance.UnlockRainyLevel ();
 			}
 		}
 	}
