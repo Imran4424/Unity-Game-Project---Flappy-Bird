@@ -152,6 +152,7 @@ public class BirdScript : MonoBehaviour
 				else if (target.gameObject.tag == "Ground")
 				{
 					temp.y = 1.5f;
+					temp.x = temp.x - 1.5f;
 				}
 
 				if (GameController.instance.GetGemScore () >= 0)
