@@ -165,7 +165,7 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator wait ()
 	{
-		yield return new WaitForSeconds (3);
+		yield return new WaitForSeconds (2);
 		saveMePanel.SetActive (false);
 
 		if (!noNeed)
@@ -187,7 +187,7 @@ public class GamePlayController : MonoBehaviour
 
 	IEnumerator waitForPlay ()
 	{
-		float pauseEndTime = Time.realtimeSinceStartup + 3f;
+		float pauseEndTime = Time.realtimeSinceStartup + 4f;
 		while (Time.realtimeSinceStartup < pauseEndTime)
 		{
 			yield return 0;
