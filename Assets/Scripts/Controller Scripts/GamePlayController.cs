@@ -155,6 +155,8 @@ public class GamePlayController : MonoBehaviour
 
 			Time.timeScale = 0.000001f;
 
+			youCanPause = false;
+
 			StartCoroutine (waitForPlay ());
 		}
 		else
