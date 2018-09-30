@@ -79,12 +79,7 @@ public class LeaderBoardController : MonoBehaviour
 	public void ConnectGooglePlayGames ()
 	{
 
-		if (Social.localUser.authenticated)
-		{
-			
-			Social.ShowAchievementsUI ();
-		}
-		else
+		if (!Social.localUser.authenticated)
 		{
 			//Debug.Log ("Not Log In");
 
@@ -92,6 +87,15 @@ public class LeaderBoardController : MonoBehaviour
 			{
 
 			});
+		}
+		
+	}
+
+	public void ShowAchievements ()
+	{
+		if (Social.localUser.authenticated)
+		{
+			Social.ShowAchievementsUI ();
 		}
 	}
 
