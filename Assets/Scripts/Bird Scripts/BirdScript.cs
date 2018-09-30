@@ -178,8 +178,7 @@ public class BirdScript : MonoBehaviour
 	{
 		if (target.tag == "PipeHolder")
 		{
-			score++;
-
+			
 			if (GameController.instance.GetSelectedLevel () == 0 || GameController.instance.GetSelectedLevel () == 1)
 			{
 				score = score + 1;
