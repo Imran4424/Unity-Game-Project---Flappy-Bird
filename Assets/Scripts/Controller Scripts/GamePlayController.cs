@@ -198,6 +198,7 @@ public class GamePlayController : MonoBehaviour
 
 		Time.timeScale = 1f;
 
+		youCanPause = true;
 	}
 
 	// player died
