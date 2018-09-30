@@ -147,7 +147,6 @@ public class BirdScript : MonoBehaviour
 
 				Vector3 temp = target.transform.position;
 
-
 				temp.x = temp.x - 1.5f;
 				temp.y = 1.5f;
 
@@ -181,7 +180,26 @@ public class BirdScript : MonoBehaviour
 		{
 			score++;
 
-			
+			if (GameController.instance.GetSelectedLevel () == 0 || GameController.instance.GetSelectedLevel () == 1)
+			{
+				score = score + 1;
+			}
+			else if (GameController.instance.GetSelectedLevel () == 2 || GameController.instance.GetSelectedLevel () == 3)
+			{
+				score = score + 2;
+			}
+			else if (GameController.instance.GetSelectedLevel () == 4 || GameController.instance.GetSelectedLevel () == 5)
+			{
+				score = score + 3;
+			}
+			else if (GameController.instance.GetSelectedLevel () == 6 || GameController.instance.GetSelectedLevel () == 7)
+			{
+				score = score + 4;
+			}
+			else if (GameController.instance.GetSelectedLevel () == 8 || GameController.instance.GetSelectedLevel () == 9)
+			{
+				score = score + 5;
+			}
 
 			audioSC.PlayOneShot (pointClip);
 
