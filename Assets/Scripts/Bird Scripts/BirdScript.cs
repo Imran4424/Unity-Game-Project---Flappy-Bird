@@ -180,6 +180,9 @@ public class BirdScript : MonoBehaviour
 		if (target.tag == "PipeHolder")
 		{
 			score++;
+
+			
+
 			audioSC.PlayOneShot (pointClip);
 
 			GamePlayController.instance.setScore (score);
