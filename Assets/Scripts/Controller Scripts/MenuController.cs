@@ -41,6 +41,7 @@ public class MenuController : MonoBehaviour
 
 		Time.timeScale = 1f;
 
+		LeaderBoardController.instance.ConnectGooglePlayGames ();
 	}
 
 	// Use this for initialization
@@ -49,12 +50,11 @@ public class MenuController : MonoBehaviour
 		birds[GameController.instance.GetSelectedBird ()].SetActive (true);
 		gameLevels[GameController.instance.GetSelectedLevel ()].SetActive (true);
 
-		SetGemTextScore();
+		SetGemTextScore ();
 
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
 
-	
 	}
 
 	// setting the gem text score
@@ -76,6 +76,7 @@ public class MenuController : MonoBehaviour
 
 	public void ConnectOnGooglePlayGames ()
 	{
+		LeaderBoardController.instance.ConnectGooglePlayGames ();
 		LeaderBoardController.instance.ShowAchievements ();
 	}
 
