@@ -195,6 +195,8 @@ public class BirdScript : MonoBehaviour
 			else if (GameController.instance.GetSelectedLevel () == 2 || GameController.instance.GetSelectedLevel () == 3)
 			{
 				score = score + 2;
+
+				
 			}
 			else if (GameController.instance.GetSelectedLevel () == 4 || GameController.instance.GetSelectedLevel () == 5)
 			{
