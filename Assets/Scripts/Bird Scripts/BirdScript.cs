@@ -234,6 +234,15 @@ public class BirdScript : MonoBehaviour
 			else if (GameController.instance.GetSelectedLevel () == 8 || GameController.instance.GetSelectedLevel () == 9)
 			{
 				score = score + 5;
+
+				if (GameController.instance.GetSelectedBird () == 1)
+				{
+					score = score + 1;
+				}
+				else if (GameController.instance.GetSelectedBird () == 2)
+				{
+					score = score + 2;
+				}
 			}
 
 			audioSC.PlayOneShot (pointClip);
