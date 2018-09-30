@@ -81,10 +81,7 @@ public class LeaderBoardController : MonoBehaviour
 
 		if (Social.localUser.authenticated)
 		{
-			//Debug.Log ("Loged In");
-
-			//PlayGamesPlatform.Instance.ShowAchievementsUI ();
-
+			
 			Social.ShowAchievementsUI ();
 		}
 		else
