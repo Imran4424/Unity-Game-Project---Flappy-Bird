@@ -41,7 +41,6 @@ public class MenuController : MonoBehaviour
 
 		Time.timeScale = 1f;
 
-		LeaderBoardController.instance.ConnectGooglePlayGames ();
 	}
 
 	// Use this for initialization
@@ -55,6 +54,16 @@ public class MenuController : MonoBehaviour
 		CheckIfBirdsAreUnlocked ();
 		CheckIfLevelsAreUnlocked ();
 
+		StartCoroutine(WaitToLogin());
+	}
+
+	//Wait to sign in
+
+	IEnumerator WaitToLogin ()
+	{
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (2));
+
+		LeaderBoardController.instance.ConnectGooglePlayGames ();
 	}
 
 	// setting the gem text score
