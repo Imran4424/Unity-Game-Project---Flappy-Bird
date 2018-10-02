@@ -157,7 +157,9 @@ public class GamePlayController : MonoBehaviour
 
 			youCanPause = false;
 
-			StartCoroutine (waitForPlay ());
+			//StartCoroutine (waitForPlay ());
+
+			gameStarted = true;
 		}
 		else
 		{
