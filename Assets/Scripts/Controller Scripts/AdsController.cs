@@ -15,7 +15,7 @@ public class AdsController : MonoBehaviour
 	}
 
 	// Use this for initialization
-	void Start ()
+	public void Start ()
 	{
 		AppLovin.SetSdkKey(sdkKey);
 		AppLovin.InitializeSdk ();
