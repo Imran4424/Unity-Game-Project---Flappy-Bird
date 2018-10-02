@@ -42,14 +42,9 @@ public class AdsController : MonoBehaviour
 
 	void MakeSingleton ()
 	{
-		if (instance != null)
-		{
-			Destroy (gameObject);
-		}
-		else
+		if (instance == null)
 		{
 			instance = this;
-			DontDestroyOnLoad (instance);
 		}
 	}
 
