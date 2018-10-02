@@ -10,7 +10,7 @@ public class AdsController : MonoBehaviour
 
 	void Awake ()
 	{
-		MakeSingleton ();
+		MakeInstance ();
 	}
 
 	// Use this for initialization
@@ -40,7 +40,7 @@ public class AdsController : MonoBehaviour
 		AppLovin.ShowAd (AppLovin.AD_POSITION_CENTER, AppLovin.AD_POSITION_BOTTOM);
 	}
 
-	void MakeSingleton ()
+	void MakeInstance ()
 	{
 		if (instance == null)
 		{
@@ -57,7 +57,7 @@ public class AdsController : MonoBehaviour
 	{
 		AppLovin.ShowRewardedInterstitial ();
 
-		Debug.Log("Add is working");
+		Debug.Log ("Add is working");
 	}
 
 	void onAppLovinEventReceived (string ev)
