@@ -61,7 +61,7 @@ public class MenuController : MonoBehaviour
 
 	IEnumerator WaitToLogin ()
 	{
-		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (1.5f));
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (2f));
 
 		LeaderBoardController.instance.ConnectGooglePlayGames ();
 		//AdsController.instance.CallAds();
