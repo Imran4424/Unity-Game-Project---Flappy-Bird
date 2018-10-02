@@ -187,15 +187,6 @@ public class GamePlayController : MonoBehaviour
 		PlayerDied (saveMeScore);
 	}
 
-	IEnumerator waitForPlay ()
-	{
-		float pauseEndTime = Time.realtimeSinceStartup + 4f;
-		
-		while (Time.realtimeSinceStartup < pauseEndTime)
-		{
-			yield return 0;
-		}
-	}
 
 	// player died
 	//working fine, no need to touch
