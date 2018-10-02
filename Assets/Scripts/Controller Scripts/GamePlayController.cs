@@ -190,14 +190,11 @@ public class GamePlayController : MonoBehaviour
 	IEnumerator waitForPlay ()
 	{
 		float pauseEndTime = Time.realtimeSinceStartup + 4f;
+		
 		while (Time.realtimeSinceStartup < pauseEndTime)
 		{
 			yield return 0;
 		}
-
-		Time.timeScale = 1f;
-
-		youCanPause = true;
 	}
 
 	// player died
