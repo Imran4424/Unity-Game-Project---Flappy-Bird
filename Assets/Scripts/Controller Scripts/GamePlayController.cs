@@ -174,7 +174,6 @@ public class GamePlayController : MonoBehaviour
 		if (!noNeed)
 		{
 			PlayerDied (saveMeScore);
-
 		}
 
 		noNeed = false;
