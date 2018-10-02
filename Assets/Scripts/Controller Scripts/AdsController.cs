@@ -19,13 +19,15 @@ public class AdsController : MonoBehaviour
 		AppLovin.SetSdkKey (sdkKey);
 		AppLovin.InitializeSdk ();
 
-		AppLovin.SetUnityAdListener (this.gameObject.name);
+		//AppLovin.SetUnityAdListener (this.gameObject.name);
 
-		CallAds();
+		CallAds ();
 	}
 
 	public void CallAds ()
 	{
+		AppLovin.SetUnityAdListener (this.gameObject.name);
+
 		LoadRewardVideo ();
 		StartCoroutine (callBanner ());
 	}
