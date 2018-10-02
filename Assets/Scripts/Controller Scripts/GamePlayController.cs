@@ -153,11 +153,9 @@ public class GamePlayController : MonoBehaviour
 
 			saveMePanel.SetActive (false);
 
-			Time.timeScale = 0.000001f;
+			Time.timeScale = 0f;
 
 			youCanPause = false;
-
-			//StartCoroutine (waitForPlay ());
 
 			gameStarted = true;
 		}
