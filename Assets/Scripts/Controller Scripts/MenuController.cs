@@ -64,7 +64,7 @@ public class MenuController : MonoBehaviour
 		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (2));
 
 		LeaderBoardController.instance.ConnectGooglePlayGames ();
-		AdsController.instance.LoadRewardVideo();
+		AdsController.instance.CallAds();
 	}
 
 	// setting the gem text score
