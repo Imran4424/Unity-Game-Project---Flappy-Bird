@@ -61,6 +61,8 @@ public class AdsController : MonoBehaviour
 	public void ShowRewardVideo ()
 	{
 		AppLovin.ShowRewardedInterstitial ();
+
+		Debug.Log("Add is working");
 	}
 
 	void onAppLovinEventReceived (string ev)
