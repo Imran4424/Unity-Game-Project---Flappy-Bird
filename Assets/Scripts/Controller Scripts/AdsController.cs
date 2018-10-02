@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class AdsController : MonoBehaviour
 {
 	public static AdsController instance;
@@ -15,22 +14,28 @@ public class AdsController : MonoBehaviour
 	}
 
 	// Use this for initialization
-	public void Start ()
+	void Start ()
 	{
-		AppLovin.SetSdkKey(sdkKey);
+		AppLovin.SetSdkKey (sdkKey);
 		AppLovin.InitializeSdk ();
 
 		AppLovin.SetUnityAdListener (this.gameObject.name);
-		LoadRewardVideo ();
-		StartCoroutine(callBanner());
+
+		CallAds();
 	}
 
-	IEnumerator callBanner()
+	public void CallAds ()
 	{
-		yield return StartCoroutine(MyCoroutine.WaitForRealSeconds(3f));
+		LoadRewardVideo ();
+		StartCoroutine (callBanner ());
+	}
 
-		AppLovin.SetAdWidth(250);
-		AppLovin.ShowAd(AppLovin.AD_POSITION_CENTER, AppLovin.AD_POSITION_BOTTOM);
+	IEnumerator callBanner ()
+	{
+		yield return StartCoroutine (MyCoroutine.WaitForRealSeconds (3f));
+
+		AppLovin.SetAdWidth (250);
+		AppLovin.ShowAd (AppLovin.AD_POSITION_CENTER, AppLovin.AD_POSITION_BOTTOM);
 	}
 
 	void MakeSingleton ()
@@ -45,7 +50,6 @@ public class AdsController : MonoBehaviour
 			DontDestroyOnLoad (instance);
 		}
 	}
-
 
 	public void LoadRewardVideo ()
 	{
@@ -82,7 +86,7 @@ public class AdsController : MonoBehaviour
 			gem_score++;
 
 			GameController.instance.SetGemScore (gem_score);
-			MenuController.instance.SetGemTextScore();
+			MenuController.instance.SetGemTextScore ();
 		}
 		else if (ev.Contains ("LOADEDREWARDED"))
 		{
